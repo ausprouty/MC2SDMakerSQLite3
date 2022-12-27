@@ -1,0 +1,29 @@
+npm install @capacitor/core
+npm install @capacitor/cli
+npm install @awesome-cordova-plugins/core --save
+npm install @awesome-cordova-plugins/diagnostic --save
+npm install @awesome-cordova-plugins/file-path --save
+npm install @awesome-cordova-plugins/file --save
+
+/// see https://ionicframework.com/docs/native/community
+
+// https://ionicframework.com/docs/native/file-path
+npm install cordova.plugins.diagnostic
+npm install cordova-plugin-filepath
+npm install cordova-plugin-file
+npm install @capacitor/android
+npx cap init
+npx cap add android
+// now modify AndroidManifest.xml
+ android:requestLegacyExternalStorage="true"
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+npm install @capacitor/filesystem
+npm install --save @capacitor-community/sqlite
+Copy manually the file sql-wasm.wasm from node_modules/sql.js/dist/sql-wasm.wasm to the public/assets folder of YOUR_APP
+npm install copyfiles
+
+
+npm run build
+npx cap sync
+npx cap open android
