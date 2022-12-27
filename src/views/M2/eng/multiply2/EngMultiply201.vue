@@ -1,15 +1,16 @@
 <script>
-import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
+import NoteTaker from '@/components/NoteTaker.vue'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
+	components: {
+		NoteTaker,
+	},
    methods:{
-    addNote(){
-      useAddNote(this.$route.name)
-    },
+
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
@@ -45,7 +46,6 @@ export default {
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
     useRevealMedia(series_path)
-    useShowNotes(this.$route.name)
   },
 }
 </script>
@@ -132,15 +132,7 @@ export default {
 <p class="back"><span><span>Our vision is: <em> &ldquo;A church for every village and community, and the gospel for every person.&rdquo;</em></span></span></p>
 
 <!-- begin note sdcard -->
-<div class="note-div">
-    <form class="auto_submit_item">
-      <textarea
-        class="textarea resize-ta"
-        @keyup="this.addNote('note1Text')"
-        id="note1Text"
-      ></textarea>
-    </form>
-</div>
+<NoteTaker noteId="eng-multiply201-1" />
 <!-- end note sdcard -->
 
 </div>
@@ -200,15 +192,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
-    <form class="auto_submit_item">
-      <textarea
-        class="textarea resize-ta"
-        @keyup="this.addNote('note2Text')"
-        id="note2Text"
-      ></textarea>
-    </form>
-</div>
+<NoteTaker noteId="eng-multiply201-2" />
 <!-- end note sdcard -->
 
 
@@ -300,7 +284,7 @@ export default {
 		<li>Gospel</li>
 		<li>Foundational Bible Studies (<!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/multiply1/index', '#1')">
-    Multiply 1 
+    Multiply 1
 </span>
 <!-- end linkInternal sdcard-->
 )</li>
@@ -316,15 +300,7 @@ export default {
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
-    <form class="auto_submit_item">
-      <textarea
-        class="textarea resize-ta"
-        @keyup="this.addNote('note3Text')"
-        id="note3Text"
-      ></textarea>
-    </form>
-</div>
+<NoteTaker noteId="eng-multiply201-3" />
 <!-- end note sdcard -->
 
 
@@ -346,7 +322,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

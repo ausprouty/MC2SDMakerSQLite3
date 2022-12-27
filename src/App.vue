@@ -1,4 +1,21 @@
-<script setup></script>
+<script>
+import { defineComponent, getCurrentInstance, onMounted } from "vue";
+import { useSQLite } from "vue-sqlite-hook";
+
+export default defineComponent({
+  name: "App",
+  setup () {
+    const app = getCurrentInstance();
+    onMounted(async () => {
+      console.log(" in App on Mounted");
+      if (app != null) {
+        app.appContext.config.globalProperties.$sqlite = useSQLite();
+      }
+    });
+    return;
+  },
+});
+</script>
 
 <template>
   <RouterView />
