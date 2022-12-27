@@ -24,6 +24,19 @@ Copy manually the file sql-wasm.wasm from node_modules/sql.js/dist/sql-wasm.wasm
 npm install copyfiles
 
 
+ionic init
+ionic cap add android
+ Since the Capacitor config already exists (.\capacitor.config.json), the
+       Capacitor integration has been enabled.
+
+       You can re-integrate this project by doing the following:
+
+       - Run ionic integrations disable capacitor
+       - Remove the .\capacitor.config.json file
+       - Run ionic integrations enable capacitor --add
+
+ionic cap run android
+
 npm run build
 npx cap sync
 npx cap open android
