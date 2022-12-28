@@ -11,7 +11,7 @@
   "dependencies": {
     "@awesome-cordova-plugins/core": "^6.2.0",
     "@awesome-cordova-plugins/diagnostic": "^6.2.0",
-    "@capacitor/android": "^4.5.0",
+    "@capacitor/android": "4.6.1",
     "@capacitor/app": "4.1.1",
     "@capacitor/core": "4.6.1",
     "@capacitor/filesystem": "^4.1.4",
@@ -36,6 +36,5 @@
     "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
     "vue-sqlite-hook": "^3.0.3"
-
   }
 }
