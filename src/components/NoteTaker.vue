@@ -7,7 +7,7 @@
 </template>
 
 <script>
-
+import { defineComponent, ref, onMounted, getCurrentInstance } from "vue";
 
 export default {
     name: "NoteTaker",
@@ -18,8 +18,8 @@ export default {
         }
     },
     methods:{
-        addNote(noteId){
-            alert (this.noteId)
+        addNote(noteid){
+            console.log (this.noteId + ' ' +  noteid )
 
         },
         async noEncryptionTest(log, sqlite, platform) {
