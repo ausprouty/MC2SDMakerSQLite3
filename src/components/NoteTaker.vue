@@ -1,28 +1,60 @@
 <template>
     <div class="note-div">
         <form class="auto_submit_item">
-            <textarea class="textarea resize-ta" @keyup="this.addNote()">{{noteText}}</textarea>
+            <textarea v-model="noteText" class="textarea" :style="{ height: textHeight + 'px' }" @keyup="this.addNote()"></textarea>
         </form>
     </div>
 </template>
 
 <script>
-import { defineComponent, ref, onMounted, getCurrentInstance } from "vue";
+import { ref, onMounted, getCurrentInstance } from "vue";
 
 export default {
     name: "NoteTaker",
     props:{noteId:String},
     data: function () {
         return {
-            noteText: String,
+            noteText: 'Biby',
+            textHeight:80,
         }
     },
     methods:{
-        addNote(noteid){
-            console.log (this.noteId + ' ' +  noteid )
+        async addNote(){
+            console.log (this.noteId)
+            console.log(this.noteText)
+            var height = this.calcNoteHeight(this.noteText)
+            console.log (height)
+            this.textHeight= height
+            const log = ref("");
+            const app = getCurrentInstance();
+            const sqlite = app?.appContext.config.globalProperties.$sqlite;
+            console.log ("* After  useSQLite definition *\n");
+            //const retNoEncryption = await this.noEncryptionTest(log, sqlite);
 
         },
-        async noEncryptionTest(log, sqlite, platform) {
+        // Dealing with Textarea Height
+        // from https://css-tricks.com/auto-growing-inputs-textareas/
+        calcNoteHeight(value) {
+            let numberOfLineBreaks = (value.match(/\n/g) || []).length
+            console.log('linebreakd = ' + numberOfLineBreaks)
+            // look for long lines
+            var longLines = 0
+            var extraLines = 0
+            var lineMax = window.innerWidth / 7
+            console.log('linemax = ' + lineMax)
+            const line = value.split('/\n')
+            var len = line.length
+            for (var i = 0; i < len; i++) {
+                if (line[i].length > lineMax) {
+                    extraLines = Math.round(line[i].length / lineMax)
+                    longLines += extraLines
+                }
+            }
+            // min-height + lines x line-height + padding + border
+            let newHeight = 80 + (numberOfLineBreaks + longLines) * 20
+            return newHeight
+        },
+        async noEncryptionTest(log, sqlite) {
             try {
                 let res = await sqlite.echo("Hello from echo");
                 if (res.value !== "Hello from echo") {
@@ -104,6 +136,7 @@ export default {
                     log.value = log.value.concat(" Execute2 failed\n");
                     return false;
                 }
+                console.log('created tables')
                 // Insert two users with execute method
                 res = await db.execute(importTwoUsers);
                 if (res.changes.changes !== 2) {
@@ -177,6 +210,7 @@ export default {
                 await sqlite.closeConnection("NoEncryption");
 
                 log.value = log.value.concat("* Ending testDatabaseNoEncryption *\n");
+                console.log (log.value)
                 return true;
             } catch (err) {
                 log.value = log.value.concat(`\n* Error ${err} *\n`);
