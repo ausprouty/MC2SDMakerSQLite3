@@ -1,37 +1,29 @@
 <script>
 import {useShare} from "@/assets/javascript/share.js"
-import { useCheckPermissions } from "@/assets/javascript/permission.js"
+
 export default {
+  
   methods:{
     vuePush(id){
       this.$router.push({
         name: id,
       })
     },
-    async checkPermissions () {
-      useCheckPermissions();
-    },
     share(what, v1, v2){
       useShare(what, v1, v2)
     }
   },
-  async mounted() {
-    await this.checkPermissions()
-    let last_page = localStorage.getItem("returnpage", null)
-    console.log('last_page :'+ last_page)
-    if(last_page != null){
-      localStorage.setItem("returnpage", null)
-      this.vuePush(last_page);
-    }
+  mounted() {
+    localStorage.setItem("returnpage", this.$route.path)
   }
 }
 </script>
 <template>
   <!-- sdcard template from mc2 -->
-
+  
   <div class="page_content" dir="ltr">
     <div>
-
+      
     </div>
     <div>
       <!-- begin mc2 sdcard bookImage -->
@@ -81,7 +73,7 @@ export default {
 <!-- end mc2 sdcard bookImage -->
 
     </div>
-    <!-- begin sdcard languageFooter -->
+    <!-- begin mc2 sdcard languageFooter -->
 
 <div class="languages" id="languages"><img class="languages" src="@/assets/images/standard//OtherLanguagesTop.png" /></div>
 <table class="social">
@@ -90,7 +82,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
@@ -103,10 +95,10 @@ export default {
 </table>
 <div class="footer">
 <p class="footer">MC2</p>
-<p class="footer"><a class="no_underline"  target="_blank" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer" @click="share('website', 'https://GlobalChurchMovements.org', '')"> GlobalChurchMovements.org</p>
 </div>
 
-<!-- end sdcard languageFooter -->
+<!-- end mc2 sdcard languageFooter -->
 </div>
 <!-- end default library -->
 </template>

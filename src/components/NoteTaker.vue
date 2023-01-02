@@ -15,7 +15,7 @@ export default {
     props:{noteId:String},
     data: function () {
         return {
-            noteText: 'Bpolu',
+            noteText: 'Bpoiiu',
             textHeight:80,
         }
     },
@@ -59,37 +59,38 @@ export default {
         },
 
     },
-    mounted(){
-        console.log ('i Entered note taker created')
-        window.addEventListener("DOMContentLoaded", async () => {
-            console.log('i entered the event listener')
-            const sqlite = new SQLiteConnection(CapacitorSQLite);
-            console.log('i past const sqlite')
-            try {
-                console.log ('I am trying')
-                const ret = await sqlite.checkConnectionsConsistency();
-                console.log(`after checkConnectionsConsistency ${ret.result}`);
-                const isConn = (await sqlite.isConnection("db_mc2notes")).result;
-                console.log(`after isConnection ${isConn}`);
-                let db;
-                if (ret.result && isConn) {
-                    db = await sqlite.retrieveConnection("db_mc2notes");
-                } else {
-                    db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
-                }
-                console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
-                await db.open();
-                console.log(`db.open()`);
-                const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
-                let values = ['eng-multiply201', '1']
-                let res = await db.execute(query, values);
-                console.log (res)
-                await sqlite.closeConnection("db_mc2notes");
-            } catch (err) {
-                console.log(`Error: ${err}`);
-                throw new Error(`Error: ${err}`);
+    async mounted(){
+        //console.log ('i Entered note taker created')
+        const sqlite = new SQLiteConnection(CapacitorSQLite);
+        //console.log('i past const sqlite')
+        try {
+            console.log('I am trying')
+            const ret = await sqlite.checkConnectionsConsistency();
+            console.log(`after checkConnectionsConsistency ${ret.result}`);
+            console.log(ret.result)
+            const isConn = (await sqlite.isConnection("db_mc2notes")).result;
+            console.log(`after isConnection ${isConn}`);
+            let db;
+            if (ret.result && isConn) {
+                console.log ("I am retreiving connection")
+                db = await sqlite.retrieveConnection("db_mc2notes");
+            } else {
+                console.log("I am creating  connection")
+                db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
             }
-        });
+            console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
+            //await db.open();
+            //console.log(`db.open()`);
+
+            const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+            let values = ['eng-multiply201', '1']
+            let res = await db.execute(query, values);
+            console.log(res)
+            //await sqlite.closeConnection("db_mc2notes");
+        } catch (err) {
+            console.log(`Error: ${err}`);
+            throw new Error(`Error: ${err}`);
+        }
 
     }
 };

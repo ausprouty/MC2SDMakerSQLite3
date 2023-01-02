@@ -1,5 +1,5 @@
 <script>
-import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
+//import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
@@ -7,13 +7,13 @@ import { useShare} from "@/assets/javascript/share.js"
 
 export default {
    methods:{
-    addNote(){
-      useAddNote(this.$route.name)
-    },
+  //  addNote(){
+   //   useAddNote(this.$route.name)
+  //  },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
-        path: goto,
+        name: goto,
       })
     },
     pageGoBack(returnto){
@@ -41,11 +41,10 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     let route_path = this.$route.path
-    localStorage.setItem("returnpage", route_path)
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
     useRevealMedia(series_path)
-    useShowNotes(this.$route.name)
+    //useShowNotes(this.$route.name)
   },
 }
 </script>
