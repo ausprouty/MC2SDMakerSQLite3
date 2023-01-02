@@ -57,6 +57,15 @@ ionic cap add android
 [capacitor]         > Run with --scan to get full insights.
 [capacitor]
 
+ Line 88 - Msg: Uncaught (in promise) ReferenceError: Cannot access 'sqlite' before initialization
+ Line 88 - Msg: Uncaught (in promise) ReferenceError: Cannot access 'sqlite' before initialization
+ onMounted(async () => {
+            const platform = (await sqlite.getPlatform()).platform;
+            console.log(`platform ${platform}`);
+            const app = getCurrentInstance();
+            const sqlite = app?.appContext.config.globalProperties.$sqlite;
+            console.log("I am in on mounted After  useSQLite definition *\n");
+
 
 C:\capacitor\MC2SDMakerSQLite3\android\app\src\main\java\com\mc2\english\MainActivity.java:20: error: incompatible types: Class<CapacitorSQLite> cannot be converted to Class<? extends Plugin>
       add(CapacitorSQLite.class);
@@ -66,5 +75,4 @@ ionic cap run android -l --external
 npm run build
 npx cap sync
 npx cap open android
-
-ionic cap run android  --external
+ionic cap run android  -l --external

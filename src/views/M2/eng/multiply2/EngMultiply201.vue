@@ -14,7 +14,7 @@ export default {
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
-        path: goto,
+        name: goto,
       })
     },
     pageGoBack(returnto){
@@ -41,8 +41,7 @@ export default {
   mounted() {
     useFindSummaries()
     useFindCollapsible()
-    let route_path = this.$route.path
-    localStorage.setItem("returnpage", route_path)
+	let route_path = this.$route.path
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
     useRevealMedia(series_path)

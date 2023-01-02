@@ -8,40 +8,43 @@
 
 <script>
 import { ref, onMounted, getCurrentInstance } from "vue";
+import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 export default {
     name: "NoteTaker",
     props:{noteId:String},
     data: function () {
         return {
-            noteText: 'Biby',
+            noteText: 'Bpolu',
             textHeight:80,
         }
     },
     methods:{
         async addNote(){
-            console.log (this.noteId)
+            //console.log (this.noteId)
             console.log(this.noteText)
             var height = this.calcNoteHeight(this.noteText)
-            console.log (height)
+            //console.log (height)
             this.textHeight= height
-            const log = ref("");
             const app = getCurrentInstance();
             const sqlite = app?.appContext.config.globalProperties.$sqlite;
-            console.log ("* After  useSQLite definition *\n");
-            //const retNoEncryption = await this.noEncryptionTest(log, sqlite);
+            console.log (sqlite)
+           // console.log ("* After  useSQLite definition *\n");
+            //let retNoEncryption = await this.noEncryptionTest(sqlite);
+
+            console.log(retNoEncryption)
 
         },
         // Dealing with Textarea Height
         // from https://css-tricks.com/auto-growing-inputs-textareas/
         calcNoteHeight(value) {
             let numberOfLineBreaks = (value.match(/\n/g) || []).length
-            console.log('linebreakd = ' + numberOfLineBreaks)
+            //console.log('linebreakd = ' + numberOfLineBreaks)
             // look for long lines
             var longLines = 0
             var extraLines = 0
             var lineMax = window.innerWidth / 7
-            console.log('linemax = ' + lineMax)
+           // console.log('linemax = ' + lineMax)
             const line = value.split('/\n')
             var len = line.length
             for (var i = 0; i < len; i++) {
@@ -54,191 +57,40 @@ export default {
             let newHeight = 80 + (numberOfLineBreaks + longLines) * 20
             return newHeight
         },
-        async noEncryptionTest(log, sqlite) {
-            try {
-                let res = await sqlite.echo("Hello from echo");
-                if (res.value !== "Hello from echo") {
-                    log.value = log.value.concat(`> Echo not returning "Hello from echo"\n`);
-                    return false;
-                }
 
-                log.value = log.value.concat("> Echo successful\n");
-                // create a connection for NoEncryption
-                const db = await sqlite.createConnection("NoEncryption");
-                log.value = log.value.concat(
-                    "> createConnection " + " 'NoEncryption' successful\n"
-                );
-                // open NoEncryption database
-                await db.open();
-                log.value = log.value.concat("> open 'NoEncryption' successful\n");
-                const createTablesNoEncryption = `
-            CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY NOT NULL,
-            email TEXT UNIQUE NOT NULL,
-            name TEXT,
-            company TEXT,
-            size FLOAT,
-            age INTEGER,
-            last_modified INTEGER DEFAULT (strftime('%s', 'now'))
-            );
-            CREATE TABLE IF NOT EXISTS messages (
-            id INTEGER PRIMARY KEY NOT NULL,
-            userid INTEGER,
-            title TEXT NOT NULL,
-            body TEXT NOT NULL,
-            last_modified INTEGER DEFAULT (strftime('%s', 'now')),
-            FOREIGN KEY (userid) REFERENCES users(id) ON DELETE SET DEFAULT
-            );
-            CREATE INDEX IF NOT EXISTS users_index_name ON users (name);
-            CREATE INDEX IF NOT EXISTS users_index_last_modified ON users (last_modified);
-            CREATE INDEX IF NOT EXISTS messages_index_last_modified ON messages (last_modified);
-            CREATE TRIGGER IF NOT EXISTS users_trigger_last_modified
-            AFTER UPDATE ON users
-            FOR EACH ROW WHEN NEW.last_modified <= OLD.last_modified
-            BEGIN
-                UPDATE users SET last_modified= (strftime('%s', 'now')) WHERE id=OLD.id;
-            END;
-            CREATE TRIGGER IF NOT EXISTS messages_trigger_last_modified AFTER UPDATE ON messages
-            FOR EACH ROW WHEN NEW.last_modified <= OLD.last_modified
-            BEGIN
-                UPDATE messages SET last_modified= (strftime('%s', 'now')) WHERE id=OLD.id;
-            END;
-            PRAGMA user_version = 1;
-            `;
-                const importTwoUsers = `
-            DELETE FROM users;
-            INSERT INTO users (name,email,age) VALUES ("Whiteley","Whiteley.com",30);
-            INSERT INTO users (name,email,age) VALUES ("Jones","Jones.com",44);
-            `;
-                const importThreeMessages = `
-            DELETE FROM messages;
-            INSERT INTO messages (userid,title,body) VALUES (1,"test post 1","content test post 1");
-            INSERT INTO messages (userid,title,body) VALUES (2,"test post 2","content test post 2");
-            INSERT INTO messages (userid,title,body) VALUES (1,"test post 3","content test post 3");
-            `;
-                const dropTablesTablesNoEncryption = `
-            PRAGMA foreign_keys = OFF;
-            DROP TABLE IF EXISTS users;
-            DROP TABLE IF EXISTS messages;
-            PRAGMA foreign_keys = ON;
-            `;
-                // Drop tables if exists
-                res = await db.execute(dropTablesTablesNoEncryption, false);
-                console.log(`drop tables res: ${JSON.stringify(res)}`);
-                log.value = log.value.concat(`drop tables res: ${JSON.stringify(res)}\n`);
-                if (res.changes.changes < 0) {
-                    log.value = log.value.concat(" Execute1 failed\n");
-                    return false;
-                }
-                // Create tables
-                res = await db.execute(createTablesNoEncryption);
-                if (res.changes.changes !== 0 && res.changes.changes !== 1) {
-                    log.value = log.value.concat(" Execute2 failed\n");
-                    return false;
-                }
-                console.log('created tables')
-                // Insert two users with execute method
-                res = await db.execute(importTwoUsers);
-                if (res.changes.changes !== 2) {
-                    log.value = log.value.concat(" Execute3 failed\n");
-                    return false;
-                }
-                if (platform === "web") {
-                    // save the database
-                    await sqlite.saveToStore("NoEncryption");
-                }
-
-                // Select all Users
-                res = await db.query("SELECT * FROM users");
-                if (
-                    res.values.length !== 2 ||
-                    res.values[0].name !== "Whiteley" ||
-                    res.values[1].name !== "Jones"
-                ) {
-                    log.value = log.value.concat(" Select1 failed\n");
-                    return false;
-                }
-                // add one user with statement and values
-                let sqlcmd = "INSERT INTO users (name,email,age) VALUES (?,?,?)";
-                let values = ["Simpson", "Simpson@example.com", 69];
-                res = await db.run(sqlcmd, values);
-                if (res.changes.changes !== 1 || res.changes.lastId !== 3) {
-                    log.value = log.value.concat(" Run1 failed\n");
-                    return false;
-                }
-                // add one user with statement
-                sqlcmd = `INSERT INTO users (name,email,age) VALUES `;
-                sqlcmd += `("Brown","Brown@example.com",15)`;
-                res = await db.run(sqlcmd);
-                if (res.changes.changes !== 1 || res.changes.lastId !== 4) {
-                    log.value = log.value.concat(" Run2 failed\n");
-                    return false;
-                }
-                // Select all Users
-                res = await db.query("SELECT * FROM users");
-                if (res.values.length !== 4) {
-                    log.value = log.value.concat(" Select2 failed\n");
-                    return false;
-                }
-                // Select Users with age > 35
-                sqlcmd = "SELECT name,email,age FROM users WHERE age > ?";
-                values = ["35"];
-                res = await db.query(sqlcmd, values);
-                if (res.values.length !== 2) {
-                    log.value = log.value.concat(" Select with filter on age failed\n");
-                    return false;
-                }
-                // Import three messages
-                res = await db.execute(importThreeMessages);
-                if (res.changes.changes !== 3) {
-                    log.value = log.value.concat(" Insert messages failed\n");
-                    return false;
-                }
-                // Select all Messages
-                res = await db.query("SELECT * FROM messages");
-                if (
-                    res.values.length !== 3 ||
-                    res.values[0].title !== "test post 1" ||
-                    res.values[1].title !== "test post 2" ||
-                    res.values[2].title !== "test post 3"
-                ) {
-                    log.value = log.value.concat(" Select messages failed\n");
-                    return false;
-                }
-
-                // Close Connection NoEncryption
-                await sqlite.closeConnection("NoEncryption");
-
-                log.value = log.value.concat("* Ending testDatabaseNoEncryption *\n");
-                console.log (log.value)
-                return true;
-            } catch (err) {
-                log.value = log.value.concat(`\n* Error ${err} *\n`);
-                return false;
-            }
-        },
     },
-    setup () {
-        const log = ref("");
-        const app = getCurrentInstance();
-        const sqlite = app?.appContext.config.globalProperties.$sqlite;
-        onMounted(async () => {
-            this.noteText = 'note goes here'
-            const platform = (await sqlite.getPlatform()).platform;
-            console.log(`platform ${platform}`);
-
-            log.value = log.value.concat("* After  useSQLite definition *\n");
-            const retNoEncryption = await noEncryptionTest(log, sqlite, platform);
-            if (!retNoEncryption) {
-                log.value = log.value.concat("* testDatabaseNoEncryption failed*\n");
-                log.value = log.value.concat("\n* The set of tests failed *\n");
-                console.log("The set of tests failed");
-            } else {
-                log.value = log.value.concat("\n* The set of tests was successful *\n");
-                console.log("The set of tests was successful");
+    mounted(){
+        console.log ('i Entered note taker created')
+        window.addEventListener("DOMContentLoaded", async () => {
+            console.log('i entered the event listener')
+            const sqlite = new SQLiteConnection(CapacitorSQLite);
+            console.log('i past const sqlite')
+            try {
+                console.log ('I am trying')
+                const ret = await sqlite.checkConnectionsConsistency();
+                console.log(`after checkConnectionsConsistency ${ret.result}`);
+                const isConn = (await sqlite.isConnection("db_mc2notes")).result;
+                console.log(`after isConnection ${isConn}`);
+                let db;
+                if (ret.result && isConn) {
+                    db = await sqlite.retrieveConnection("db_mc2notes");
+                } else {
+                    db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
+                }
+                console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
+                await db.open();
+                console.log(`db.open()`);
+                const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+                let values = ['eng-multiply201', '1']
+                let res = await db.execute(query, values);
+                console.log (res)
+                await sqlite.closeConnection("db_mc2notes");
+            } catch (err) {
+                console.log(`Error: ${err}`);
+                throw new Error(`Error: ${err}`);
             }
         });
-        return { log };
+
     }
 };
 
