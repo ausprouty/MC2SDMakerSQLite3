@@ -15,7 +15,7 @@ export default {
     props:{noteId:String},
     data: function () {
         return {
-            noteText: 'Bpoiiu',
+            noteText: 'Bpythiu',
             textHeight:80,
         }
     },

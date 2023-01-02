@@ -1,11 +1,17 @@
 <script>
 //import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
+import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
+	data: function () {
+		return {
+			notices: 'Bpythiu',
+		}
+	},
    methods:{
   //  addNote(){
    //   useAddNote(this.$route.name)
@@ -37,15 +43,53 @@ export default {
       })
     },
   },
-  mounted() {
+  async mounted() {
     useFindSummaries()
     useFindCollapsible()
     let route_path = this.$route.path
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
     useRevealMedia(series_path)
-    //useShowNotes(this.$route.name)
-  },
+	const sqlite = new SQLiteConnection(CapacitorSQLite);
+	//console.log('i past const sqlite')
+	try {
+		const ret = await sqlite.checkConnectionsConsistency();
+		console.log(`after checkConnectionsConsistency ${ret.result}`);
+		console.log(ret.result)
+		const isConn = (await sqlite.isConnection("db_mc2notes")).result;
+		console.log(`after isConnection ${isConn}`);
+		let db;
+		if (ret.result && isConn) {
+			console.log("I am retreiving connection")
+			db = await sqlite.retrieveConnection("db_mc2notes");
+		} else {
+			console.log("I am creating  connection")
+			db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
+		}
+		console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
+		await db.open();
+		const insertNotes = `
+			DELETE FROM notes;
+			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , '1', 'This is my first note');
+			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , '2', 'This is my second note');
+			`;
+		await db.execute(insertNotes);
+		console.log('after insert notes')
+
+		const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+		let values = ['eng-multiply201', '1']
+		console.log ('before query result')
+		let res = await db.query(query, values);
+		this.notices= res.values[0].note
+		console.log('after query result')
+
+		//await sqlite.closeConnection("db_mc2notes");
+	} catch (err) {
+		console.log(`Error: ${err}`);
+		throw new Error(`Error: ${err}`);
+	}
+
+  }
 }
 </script>
 <template>
@@ -61,7 +105,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+<div class="lesson-subtitle"><span class="back">{{ notices }}</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -299,7 +343,7 @@ export default {
 		<li>Gospel</li>
 		<li>Foundational Bible Studies (<!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/multiply1/index', '#1')">
-    Multiply 1 
+    Multiply 1
 </span>
 <!-- end linkInternal sdcard-->
 )</li>
@@ -345,7 +389,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
