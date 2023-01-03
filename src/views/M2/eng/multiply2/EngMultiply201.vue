@@ -70,18 +70,28 @@ export default {
 		await db.open();
 		const insertNotes = `
 			DELETE FROM notes;
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , '1', 'This is my first note');
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , '2', 'This is my second note');
+			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note1Text', 'This is my first note');
+			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note2Text', 'This is my second note');
 			`;
 		await db.execute(insertNotes);
 		console.log('after insert notes')
 
 		const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
-		let values = ['eng-multiply201', '1']
-		console.log ('before query result')
+		let values = ['eng-multiply201', 'note1Text']
 		let res = await db.query(query, values);
 		this.notices= res.values[0].note
 		console.log('after query result')
+		var coll = document.getElementsByClassName("textarea");
+		var i;
+		var noteid
+		for (i = 0; i < coll.length; i++) {
+			noteid ='note' + i+'Text'
+			values = ['eng-multiply201', noteid]
+			res = await db.query(query, values);
+			console.log(res.values[0].note)
+			coll[i].innerHTML = res.values[0].note
+			coll[i].innerHTML = 'fried eggs'
+		}
 
 		//await sqlite.closeConnection("db_mc2notes");
 	} catch (err) {
