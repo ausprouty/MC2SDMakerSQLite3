@@ -13,8 +13,48 @@ export default {
 		}
 	},
    methods:{
-    addNote(noteid){
-     alert (noteid)
+    async addNote(noteid){
+	const sqlite = new SQLiteConnection(CapacitorSQLite);
+	//console.log('i past const sqlite')
+	try {
+		const ret = await sqlite.checkConnectionsConsistency();
+		console.log('after checkConnectionsConsistency');
+		console.log(ret.result)
+		const isConn = (await sqlite.isConnection("db_mc2notes")).result;
+		console.log('after isConnection');
+		let db;
+		if (ret.result && isConn) {
+			console.log("I am retreiving connection")
+			db = await sqlite.retrieveConnection("db_mc2notes");
+		} else {
+			console.log("I am creating  connection")
+			db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
+		}
+		await db.open();
+		var noteText = document.getElementById(noteid).value
+		const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+		let values = ['eng-multiply201', noteid]
+		let res = await db.query(query, values);
+		if (res.values[0] !== undefined) {
+		    query = 'UPDATE notes set note = ?  WHERE page=? AND noteid = ?'
+		}
+		else{
+			query = 'INSERT INTO notes (note, page, notid) VALUES (?, ?, ?'
+		}
+		values = [noteText, 'eng-multiply201', noteid]
+		res = await db.query(query, values);
+
+		query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+		values = ['eng-multiply201', 'note1Text']
+		res = await db.query(query, values);
+		this.notices = res.values[0].note
+
+		alert(noteText)
+	} catch (err) {
+		console.log(`Error: ${err}`);
+		throw new Error(`Error: ${err}`);
+	}
+
    },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
@@ -93,7 +133,7 @@ export default {
 			}
 		}
 
-		//await sqlite.closeConnection("db_mc2notes");
+		await sqlite.closeConnection("db_mc2notes");
 	} catch (err) {
 		console.log(`Error: ${err}`);
 		throw new Error(`Error: ${err}`);
