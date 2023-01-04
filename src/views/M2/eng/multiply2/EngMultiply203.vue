@@ -1,15 +1,21 @@
 <script>
 //import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
+import NoteTakingService from '@/services/NoteTakingService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
+  data () {
+    return {
+      notices: [],
+    }
+  },
    methods:{
-  //  addNote(){
-   //   useAddNote(this.$route.name)
-  //  },
+    addNote(noteid){
+      NoteTakingService.addNote(noteid, this.$route.name)
+    },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
@@ -44,7 +50,7 @@ export default {
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
     useRevealMedia(series_path)
-    //useShowNotes(this.$route.name)
+    NoteTakingService.initialize(this.$route.name)
   },
 }
 </script>
@@ -61,7 +67,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+<div class="lesson-subtitle"><span class="back">{{notices}}</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -288,7 +294,7 @@ Rachel weeping for her children<br />
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
