@@ -13,9 +13,9 @@ export default {
 		}
 	},
    methods:{
-  //  addNote(){
-   //   useAddNote(this.$route.name)
-  //  },
+    addNote(noteid){
+     alert (noteid)
+   },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
@@ -70,27 +70,27 @@ export default {
 		await db.open();
 		const insertNotes = `
 			DELETE FROM notes;
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note1Text', 'This is my first note');
+			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note1Text', 'This is My First Note');
 			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note2Text', 'This is my second note');
 			`;
 		await db.execute(insertNotes);
-		console.log('after insert notes')
-
 		const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
 		let values = ['eng-multiply201', 'note1Text']
 		let res = await db.query(query, values);
 		this.notices= res.values[0].note
-		console.log('after query result')
 		var coll = document.getElementsByClassName("textarea");
 		var i;
-		var noteid
-		for (i = 0; i < coll.length; i++) {
-			noteid ='note' + i+'Text'
+		var noteid;
+		var thisNote
+		console.log(coll.length)
+		for (i = 1; i <= coll.length; i++) {
+			noteid ='note' + i + 'Text'
 			values = ['eng-multiply201', noteid]
 			res = await db.query(query, values);
-			console.log(res.values[0].note)
-			coll[i].innerHTML = res.values[0].note
-			coll[i].innerHTML = 'fried eggs'
+			if (res.values[0] !== undefined){
+				thisNote = document.getElementById(noteid);
+				thisNote.value = res.values[0].note
+			}
 		}
 
 		//await sqlite.closeConnection("db_mc2notes");
