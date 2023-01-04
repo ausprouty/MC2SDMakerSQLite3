@@ -2,7 +2,7 @@
 import {useShare} from "@/assets/javascript/share.js"
 
 export default {
-  
+
   methods:{
     vuePush(id){
       this.$router.push({
@@ -14,16 +14,16 @@ export default {
     }
   },
   mounted() {
-    localStorage.setItem("returnpage", this.$route.path)
+    localStorage.setItem("returnpage", this.$route.name)
   }
 }
 </script>
 <template>
   <!-- sdcard template from mc2 -->
-  
+
   <div class="page_content" dir="ltr">
     <div>
-      
+
     </div>
     <div>
       <!-- begin mc2 sdcard bookImage -->
@@ -82,7 +82,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

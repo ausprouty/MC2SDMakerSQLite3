@@ -4,32 +4,16 @@ import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 
 export default {
-  async initialize(route){
+  async notes (route){
 	try {
 		const sqlite = new SQLiteConnection(CapacitorSQLite);
 		let db =  await this.openDatabase()
-		var coll = document.getElementsByClassName("textarea");
-
-        const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
-		for (var i = 1; i <= coll.length; i++) {
-			var noteid ='note' + i + 'Text'
-			values = [route, noteid]
-            alert ('values known')
-			var res = await db.query(query, values)
-			alert ('I ran query')
-			if (res.values[0] !== undefined){
-                alert (res.values[0].noteid  + '|' + res.values[0].note)
-				document.getElementById(noteid).value = res.values[0].note
-			}
-			else{
-				alert ('I have nothing to say')
-			}
-			document.getElementById(noteid).value = 'I can enter text'
-		}
-		alert (' finihsed loop')
+        const query = 'SELECT * FROM notes WHERE page=?'
+		var res = await db.query(query,  [route])
 		await sqlite.closeConnection("db_mc2notes");
+        return res.values
 	} catch (err) {
-		alert (' error in Intialiaze')
+		alert (' error in initialize')
 		console.log(`Error: ${err}`);
 		throw new Error(`Error: ${err}`);
 	}

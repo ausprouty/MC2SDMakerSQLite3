@@ -16,6 +16,7 @@ export default {
       useShare(what, v1, v2)
     },
     vuePush(id){
+      alert (id)
       this.$router.push({
         name: id,
       })
@@ -1104,7 +1105,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

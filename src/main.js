@@ -16,9 +16,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   const sqlite = new SQLiteConnection(CapacitorSQLite);
   const app = createApp(App).use(router);
   try {
-
-    // example: database creation with standard SQLite statements
-    //-->> if needed not required
     const ret = await sqlite.checkConnectionsConsistency();
     console.log(`after checkConnectionsConsistency ${ret.result}`);
     const isConn = (await sqlite.isConnection("db_mc2notes")).result;
@@ -30,7 +27,6 @@ window.addEventListener("DOMContentLoaded", async () => {
       db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
     }
     console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
-
     await db.open();
     console.log(`db.open()`);
     const query = `
@@ -44,12 +40,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (res.changes && res.changes.changes && res.changes.changes < 0) {
       throw new Error(`Error: execute failed`);
     }
-    const insertNotes=`
-      DELETE FROM notes;
-      INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , '1', 'This is my first note');
-      INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , '2', 'This is my second note');
-      `;
-    await db.execute(insertNotes);
+
 
     await sqlite.closeConnection("db_mc2notes");
 

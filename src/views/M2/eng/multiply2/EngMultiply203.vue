@@ -9,7 +9,7 @@ import { useShare} from "@/assets/javascript/share.js"
 export default {
   data () {
     return {
-      notices: [],
+      notices: 'Bpythiu',
     }
   },
    methods:{

@@ -1,11 +1,17 @@
 <script>
 //import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
+import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
+  data () {
+    return {
+      notices: 'Bpythiu',
+    }
+  },
    methods:{
   //  addNote(){
    //   useAddNote(this.$route.name)
@@ -37,14 +43,16 @@ export default {
       })
     },
   },
-  mounted() {
+  async mounted() {
     useFindSummaries()
     useFindCollapsible()
     let route_path = this.$route.path
     let last = route_path.lastIndexOf('/')
     let series_path = route_path.substr(0, last)
     useRevealMedia(series_path)
-    //useShowNotes(this.$route.name)
+    let notes = await SQLiteService.notes(this.$routes.name)
+    this.notices = notes
+
   },
 }
 </script>
@@ -61,7 +69,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
+<div class="lesson-subtitle"><span class="back">{{notices}}</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -309,7 +317,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

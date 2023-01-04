@@ -32,7 +32,7 @@ export default {
 		}
 		await db.open();
 		var noteText = document.getElementById(noteid).value
-		const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+		let query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
 		let values = ['eng-multiply201', noteid]
 		let res = await db.query(query, values);
 		if (res.values[0] !== undefined) {
@@ -63,10 +63,12 @@ export default {
       })
     },
     pageGoBack(returnto){
+		alert('1' + returnto)
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
         localStorage.removeItem("returnpage")
       }
+		alert('2' + returnto)
       this.$router.push({
         name: returnto,
       })
