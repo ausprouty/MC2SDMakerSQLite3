@@ -1,5 +1,4 @@
 <script>
-//import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
 import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
@@ -7,11 +6,6 @@ import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
-  data () {
-    return {
-      notices: 'Bujiuu',
-    }
-  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -56,7 +50,6 @@ export default {
     }
   },
 }
-</script>
 <template>
   <div id="nav">
     <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply2-index')">
@@ -70,7 +63,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">{{notices}}</span></div>
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -318,7 +311,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

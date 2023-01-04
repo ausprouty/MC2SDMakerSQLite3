@@ -1,20 +1,16 @@
 <script>
-//import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
-import NoteTakingService from '@/services/NoteTakingService.js'
+import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
-  data () {
-    return {
-      notices: 'Bpythiu',
-    }
-  },
    methods:{
-    addNote(noteid){
-      NoteTakingService.addNote(noteid, this.$route.name)
+    async addNote(noteid){
+       var noteText = document.getElementById(noteid).value
+       var noteHeight = await SQLiteService.addNote(noteid, this.$route.name, noteText)
+       document.getElementById(noteid).style.height = noteHeight
     },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
@@ -43,17 +39,17 @@ export default {
       })
     },
   },
-  mounted() {
+  async mounted() {
     useFindSummaries()
     useFindCollapsible()
-    let route_path = this.$route.path
-    let last = route_path.lastIndexOf('/')
-    let series_path = route_path.substr(0, last)
-    useRevealMedia(series_path)
-    NoteTakingService.initialize(this.$route.name)
+    useRevealMedia()
+    let notes = await SQLiteService.notes(this.$route.name)
+    for (var i = 0; i< notes.length; i++){
+      var noteid = notes[i].noteid
+      document.getElementById(noteid).value =notes[i].note
+    }
   },
 }
-</script>
 <template>
   <div id="nav">
     <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply2-index')">
@@ -67,7 +63,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">{{notices}}</span></div>
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -294,7 +290,7 @@ Rachel weeping for her children<br />
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

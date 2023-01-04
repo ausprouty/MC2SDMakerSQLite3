@@ -1,61 +1,17 @@
 <script>
-//import { useAddNote, useShowNotes} from "@/assets/javascript/notes.js"
-import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
+import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 
 
 export default {
-	data: function () {
-		return {
-			notices: 'Bpythiu',
-		}
-	},
    methods:{
     async addNote(noteid){
-	const sqlite = new SQLiteConnection(CapacitorSQLite);
-	//console.log('i past const sqlite')
-	try {
-		const ret = await sqlite.checkConnectionsConsistency();
-		console.log('after checkConnectionsConsistency');
-		console.log(ret.result)
-		const isConn = (await sqlite.isConnection("db_mc2notes")).result;
-		console.log('after isConnection');
-		let db;
-		if (ret.result && isConn) {
-			console.log("I am retreiving connection")
-			db = await sqlite.retrieveConnection("db_mc2notes");
-		} else {
-			console.log("I am creating  connection")
-			db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
-		}
-		await db.open();
-		var noteText = document.getElementById(noteid).value
-		let query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
-		let values = ['eng-multiply201', noteid]
-		let res = await db.query(query, values);
-		if (res.values[0] !== undefined) {
-		    query = 'UPDATE notes set note = ?  WHERE page=? AND noteid = ?'
-		}
-		else{
-			query = 'INSERT INTO notes (note, page, notid) VALUES (?, ?, ?'
-		}
-		values = [noteText, 'eng-multiply201', noteid]
-		res = await db.query(query, values);
-
-		query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
-		values = ['eng-multiply201', 'note1Text']
-		res = await db.query(query, values);
-		this.notices = res.values[0].note
-
-		alert(noteText)
-	} catch (err) {
-		console.log(`Error: ${err}`);
-		throw new Error(`Error: ${err}`);
-	}
-
-   },
+       var noteText = document.getElementById(noteid).value
+       var noteHeight = await SQLiteService.addNote(noteid, this.$route.name, noteText)
+       document.getElementById(noteid).style.height = noteHeight
+    },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
@@ -63,12 +19,10 @@ export default {
       })
     },
     pageGoBack(returnto){
-		alert('1' + returnto)
       if (localStorage.getItem("returnpage")) {
         returnto = localStorage.getItem("returnpage");
         localStorage.removeItem("returnpage")
       }
-		alert('2' + returnto)
       this.$router.push({
         name: returnto,
       })
@@ -88,62 +42,14 @@ export default {
   async mounted() {
     useFindSummaries()
     useFindCollapsible()
-    let route_path = this.$route.path
-    let last = route_path.lastIndexOf('/')
-    let series_path = route_path.substr(0, last)
-    useRevealMedia(series_path)
-	const sqlite = new SQLiteConnection(CapacitorSQLite);
-	//console.log('i past const sqlite')
-	try {
-		const ret = await sqlite.checkConnectionsConsistency();
-		console.log(`after checkConnectionsConsistency ${ret.result}`);
-		console.log(ret.result)
-		const isConn = (await sqlite.isConnection("db_mc2notes")).result;
-		console.log(`after isConnection ${isConn}`);
-		let db;
-		if (ret.result && isConn) {
-			console.log("I am retreiving connection")
-			db = await sqlite.retrieveConnection("db_mc2notes");
-		} else {
-			console.log("I am creating  connection")
-			db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
-		}
-		console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
-		await db.open();
-		const insertNotes = `
-			DELETE FROM notes;
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note1Text', 'This is My First Note');
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply201' , 'note2Text', 'This is my second note');
-			`;
-		await db.execute(insertNotes);
-		const query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
-		let values = ['eng-multiply201', 'note1Text']
-		let res = await db.query(query, values);
-		this.notices= res.values[0].note
-		var coll = document.getElementsByClassName("textarea");
-		var i;
-		var noteid;
-		var thisNote
-		console.log(coll.length)
-		for (i = 1; i <= coll.length; i++) {
-			noteid ='note' + i + 'Text'
-			values = ['eng-multiply201', noteid]
-			res = await db.query(query, values);
-			if (res.values[0] !== undefined){
-				thisNote = document.getElementById(noteid);
-				thisNote.value = res.values[0].note
-			}
-		}
-
-		await sqlite.closeConnection("db_mc2notes");
-	} catch (err) {
-		console.log(`Error: ${err}`);
-		throw new Error(`Error: ${err}`);
-	}
-
-  }
+    useRevealMedia()
+    let notes = await SQLiteService.notes(this.$route.name)
+    for (var i = 0; i< notes.length; i++){
+      var noteid = notes[i].noteid
+      document.getElementById(noteid).value =notes[i].note
+    }
+  },
 }
-</script>
 <template>
   <div id="nav">
     <div class="nav full internal-link" @click="this.pageGoBack('eng-multiply2-index')">
@@ -157,7 +63,7 @@ export default {
                     </div>
 <div id="showVideoOptions"></div>
   <div class="lesson"><img class="lesson-icon" src="@/assets/images/standard/look-back.png" />
-<div class="lesson-subtitle"><span class="back">{{ notices }}</span></div>
+<div class="lesson-subtitle"><span class="back">LOOKING BACK</span></div>
 </div>
 
 <!-- begin default revealSummary -->
@@ -395,7 +301,7 @@ export default {
 		<li>Gospel</li>
 		<li>Foundational Bible Studies (<!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/multiply1/index', '#1')">
-    Multiply 1
+    Multiply 1 
 </span>
 <!-- end linkInternal sdcard-->
 )</li>
@@ -441,7 +347,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

@@ -22,7 +22,7 @@ export default {
     }
   },
   mounted() {
-    localStorage.setItem("returnpage", this.$route.path)
+    localStorage.setItem("returnpage", this.$route.name)
   }
 }
 </script>
@@ -1104,7 +1104,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
