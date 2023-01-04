@@ -16,7 +16,6 @@ export default {
       useShare(what, v1, v2)
     },
     vuePush(id){
-      alert (id)
       this.$router.push({
         name: id,
       })

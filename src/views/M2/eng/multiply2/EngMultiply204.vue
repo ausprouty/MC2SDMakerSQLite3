@@ -9,13 +9,15 @@ import { useShare} from "@/assets/javascript/share.js"
 export default {
   data () {
     return {
-      notices: 'Bpythiu',
+      notices: 'Bujiuu',
     }
   },
    methods:{
-  //  addNote(){
-   //   useAddNote(this.$route.name)
-  //  },
+    async addNote(noteid){
+       var noteText = document.getElementById(noteid).value
+       var noteHeight = await SQLiteService.addNote(noteid, this.$route.name, noteText)
+       document.getElementById(noteid).style.height = noteHeight
+    },
     goToPageAndSetReturn(goto){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
@@ -46,13 +48,12 @@ export default {
   async mounted() {
     useFindSummaries()
     useFindCollapsible()
-    let route_path = this.$route.path
-    let last = route_path.lastIndexOf('/')
-    let series_path = route_path.substr(0, last)
-    useRevealMedia(series_path)
-    let notes = await SQLiteService.notes(this.$routes.name)
-    this.notices = notes
-
+    useRevealMedia()
+    let notes = await SQLiteService.notes(this.$route.name)
+    for (var i = 0; i< notes.length; i++){
+      var noteid = notes[i].noteid
+      document.getElementById(noteid).value =notes[i].note
+    }
   },
 }
 </script>

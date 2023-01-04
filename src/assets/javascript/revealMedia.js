@@ -2,7 +2,8 @@ import { Filesystem } from '@capacitor/filesystem';
 import { Diagnostic } from '@awesome-cordova-plugins/diagnostic';
 import { Capacitor } from '@capacitor/core';
 
-export async function useRevealMedia(series_path) {
+export async function useRevealMedia() {
+
   await Diagnostic.isExternalStorageAuthorized().then(async (response)=>{
     console.log ('revealMedia is looking for external storage')
      if (response == true){
