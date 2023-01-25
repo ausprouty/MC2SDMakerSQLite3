@@ -1,5 +1,6 @@
 export function useZoomShow(id, image) {
-  alert ('I am trying to show Zoom')
+  console.log (id)
+  console.log (image)
   document.getElementById('pinch-zoom-image').src = image
   var div = document.getElementById('pinch-zoom-parent')
   div.classList.remove('offscreen')
@@ -12,7 +13,7 @@ export function useZoomShow(id, image) {
 
 
 export function useZoomClose() {
-  alert ('I am trying to close Zoom')
+
   var div = document.getElementById('pinch-zoom-parent')
   div.classList.add('offscreen')
   div.classList.remove('overlay')

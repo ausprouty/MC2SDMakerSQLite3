@@ -10,10 +10,7 @@
     factory(mod.exports)
     global.PinchZoom = mod.exports
   }
-})
-
-// see https://stackoverflow.com/questions/60365052/why-is-functionglobal-factory-used-in-so-many-js-libraries
-export function publicPinchZoom (exports) {
+})(this, function (exports) {
   'use strict'
 
   Object.defineProperty(exports, '__esModule', {
@@ -937,4 +934,4 @@ export function publicPinchZoom (exports) {
   var PinchZoom = definePinchZoom()
 
   exports.default = PinchZoom
-}
+})
