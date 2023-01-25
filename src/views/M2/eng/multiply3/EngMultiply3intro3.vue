@@ -3,7 +3,7 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
-import { showZoom, closeZoom } from "@/assets/javascript/myZoom.js"
+import { useZoomShow, useZoomClose } from "@/assets/javascript/myZoom.js"
 import {PinchZoom } from "@/assets/javascript/pinchZoom.js"
 
 
@@ -28,6 +28,12 @@ export default {
       this.$router.push({
         name: returnto,
       })
+    },
+    zoomClose(){
+       useZoomClose()
+    },
+    zoomShow (id, image){
+      useZoomShow(id, image)
     },
     popUp(verse){
       usePopUp(verse)
@@ -68,7 +74,7 @@ export default {
 <p>&nbsp;</p>
 
 <div class="page pinch-zoom-parent offscreen" id="pinch-zoom-parent">
-  <div class="pinch-zoom-close" @click="zoomClose()">
+  <div class="pinch-zoom-close" @click="this.zoomClose()">
     <input type="hidden" id="pinch-zoom-id" value="0">
     <img class="close" src="@/assets/images/standard/close.png" />
   </div>
@@ -76,12 +82,12 @@ export default {
     <div><img id="pinch-zoom-image" src="@/assets/images/eng/multiply3/Trip1.png" /></div>
   </div>
 </div>
-<div id="pinch-zoom0" @click="zoomShow('0', '@/assets/images/eng/multiply3/Trip1.png', )">
+<div id="pinch-zoom0" @click="this.zoomShow('0', '@/assets/images/eng/multiply3/Trip1.png' )">
   <img alt="" src="@/assets/images/eng/multiply3/Trip1.png" />
 </div>
 
 
-<p>(1st Missionary Journey from Antioch) [46-48 AD]</p>
+<p>(1st Missionary JourneY from Antioch) [46-48 AD]</p>
 
 <h2><br />
 Summary</h2>
