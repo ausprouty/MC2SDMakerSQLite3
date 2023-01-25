@@ -22,57 +22,20 @@ npm install @capacitor/filesystem
 npm install --save @capacitor-community/sqlite
 Copy manually the file sql-wasm.wasm from node_modules/sql.js/dist/sql-wasm.wasm to the public/assets folder of YOUR_APP
 npm install copyfiles
-
-
 ionic init
 ionic cap add android
- Since the Capacitor config already exists (.\capacitor.config.json), the
-       Capacitor integration has been enabled.
-
-       You can re-integrate this project by doing the following:
-
-       - Run ionic integrations disable capacitor
-       - Remove the .\capacitor.config.json file
-       - Run ionic integrations enable capacitor --add
-
-
-        FAILURE: Build failed with an exception.
-[capacitor]
-[capacitor]         * Where:
-[capacitor]         Build file 'C:\capacitor\MC2SDMakerSQLite3\android\app\build.gradle' line: 1
-[capacitor]
-[capacitor]         * What went wrong:
-[capacitor]         A problem occurred evaluating project ':app'.
-[capacitor]         > Failed to apply plugin 'com.android.internal.application'.
-[capacitor]         > Android Gradle plugin requires Java 11 to run. You are currently using Java 1.8.
-[capacitor]         Your current JDK is located in  C:\Program Files\Java\jdk1.8.0_201\jre
-[capacitor]         You can try some of the following options:
-[capacitor]         - changing the IDE settings.
-[capacitor]         - changing the JAVA_HOME environment variable.
-[capacitor]         - changing `org.gradle.java.home` in `gradle.properties`.
-[capacitor]
-[capacitor]         * Try:
-[capacitor]         > Run with --stacktrace option to get the stack trace.
-[capacitor]         > Run with --info or --debug option to get more log output.
-[capacitor]         > Run with --scan to get full insights.
-[capacitor]
-
- Line 88 - Msg: Uncaught (in promise) ReferenceError: Cannot access 'sqlite' before initialization
- Line 88 - Msg: Uncaught (in promise) ReferenceError: Cannot access 'sqlite' before initialization
- onMounted(async () => {
-            const platform = (await sqlite.getPlatform()).platform;
-            console.log(`platform ${platform}`);
-            const app = getCurrentInstance();
-            const sqlite = app?.appContext.config.globalProperties.$sqlite;
-            console.log("I am in on mounted After  useSQLite definition *\n");
-
-
-C:\capacitor\MC2SDMakerSQLite3\android\app\src\main\java\com\mc2\english\MainActivity.java:20: error: incompatible types: Class<CapacitorSQLite> cannot be converted to Class<? extends Plugin>
-      add(CapacitorSQLite.class);
-
 ionic cap run android -l --external
+
+
+DEV:
 
 npm run build
 npx cap sync
 npx cap open android
 ionic cap run android  -l --external
+
+PRODUCTION:
+npm run build
+npx cap sync
+npx cap open android
+Make APK

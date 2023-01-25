@@ -12,10 +12,10 @@ export default {
        var noteHeight = await SQLiteService.addNote(noteid, this.$route.name, noteText)
        document.getElementById(noteid).style.height = noteHeight
     },
-    goToPageAndSetReturn(goto){
+    goToPageAndSetReturn(gotoPath){
       localStorage.setItem("returnpage", this.$route.name);
       this.$router.push({
-        name: goto,
+        path: gotoPath,
       })
     },
     pageGoBack(returnto){
@@ -50,6 +50,7 @@ export default {
     }
   },
 }
+</script>
 <template>
   <div id="nav">
     <div class="nav full internal-link" @click="this.pageGoBack('eng-prophet-index')">

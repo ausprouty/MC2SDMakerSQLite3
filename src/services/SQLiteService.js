@@ -8,12 +8,6 @@ export default {
 	try {
 		const sqlite = new SQLiteConnection(CapacitorSQLite);
 		let db =  await this.openDatabase()
-		const insertNotes = `
-			DELETE FROM notes;
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply204' , 'note1Text', 'This is My First Note');
-			INSERT INTO notes (page, noteid, note) VALUES ('eng-multiply204', 'note2Text', 'This is my second note');
-			`;
-		await db.execute(insertNotes);
         let query = 'SELECT * FROM notes WHERE page=?'
 		var res = await db.query(query,  [route])
 		await sqlite.closeConnection("db_mc2notes");
