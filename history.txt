@@ -38,4 +38,4 @@ PRODUCTION:
 npm run build
 npx cap sync
 npx cap open android
-Make APK
+Build -> Build APK

@@ -3,6 +3,8 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import { showZoom, closeZoom } from "@/assets/javascript/myZoom.js"
+import {PinchZoom } from "@/assets/javascript/pinchZoom.js"
 
 
 export default {
@@ -60,9 +62,24 @@ export default {
 <div class="page_content ltr">
 <h1>Period 3: Expanding to New Territories</h1>
 <div id="showVideoOptions"></div>
-  <p><span class="zoom"><img alt="" src="@/assets/images/eng/multiply3/Trip1.png" /></span></p>
+  <p><span class="zoom">
+    <img alt="" src="@/assets/images/eng/multiply3/Trip1.png" /></span></p>
 
 <p>&nbsp;</p>
+
+<div class="page pinch-zoom-parent offscreen" id="pinch-zoom-parent">
+  <div class="pinch-zoom-close" @click="zoomClose()">
+    <input type="hidden" id="pinch-zoom-id" value="0">
+    <img class="close" src="@/assets/images/standard/close.png" />
+  </div>
+  <div class="pinch-zoom">
+    <div><img id="pinch-zoom-image" src="@/assets/images/eng/multiply3/Trip1.png" /></div>
+  </div>
+</div>
+<div id="pinch-zoom0" @click="zoomShow('0', '@/assets/images/eng/multiply3/Trip1.png', )">
+  <img alt="" src="@/assets/images/eng/multiply3/Trip1.png" />
+</div>
+
 
 <p>(1st Missionary Journey from Antioch) [46-48 AD]</p>
 
@@ -87,7 +104,7 @@ Summary</h2>
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

@@ -22,6 +22,9 @@ export default {
   <!-- sdcard template from mc2 -->
   
   <div class="page_content" dir="ltr">
+    <div  class="app-series-header">
+    <img src="@/assets/images/standard/header-front.png" class="app-series-header" />
+  </div>
     <div>
       
     </div>
