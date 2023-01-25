@@ -4,7 +4,7 @@ import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascri
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
 import { useZoomShow, useZoomClose } from "@/assets/javascript/myZoom.js"
-import {PinchZoom } from "@/assets/javascript/pinchZoom.js"
+
 
 
 export default {
@@ -51,6 +51,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
+    pinchZoom()
     let notes = await SQLiteService.notes(this.$route.name)
     for (var i = 0; i< notes.length; i++){
       var noteid = notes[i].noteid
@@ -72,6 +73,8 @@ export default {
     <img alt="" src="@/assets/images/eng/multiply3/Trip1.png" /></span></p>
 
 <p>&nbsp;</p>
+<script src="@/assets/javascript/pinchZoom.js"></script>
+
 
 <div class="page pinch-zoom-parent offscreen" id="pinch-zoom-parent">
   <div class="pinch-zoom-close" @click="this.zoomClose()">
