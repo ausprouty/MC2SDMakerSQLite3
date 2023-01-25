@@ -7,7 +7,7 @@ export default defineComponent({
   setup () {
     const app = getCurrentInstance();
     onMounted(async () => {
-      console.log(" in App on Mounted");
+
       if (app != null) {
         app.appContext.config.globalProperties.$sqlite = useSQLite();
       }

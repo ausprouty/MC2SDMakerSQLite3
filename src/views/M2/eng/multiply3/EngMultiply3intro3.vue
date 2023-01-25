@@ -3,12 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
-import PinchZoom from 'vue-pinch-zoom';
-
-
-
+import VueImageZoomer from './components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 export default {
+  components: {
+    PinchZoom,
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -69,6 +71,16 @@ export default {
 </pinch-zoom>
 
 
+<vue-image-zoomer
+  regular="/src/assets/images/eng/multiply3/Trip1.png"
+  zoom="/src/assets/images/eng/multiply3/Trip1.png"
+  :zoom-amount="3"
+  img-class="img-fluid"
+  :img-width="20"
+  :img-height="20"
+  alt="Trip 1 Map">
+  <img src="/src/assets/images/eng/multiply3/Trip1.png" img-class="img-fluid" />
+</vue-image-zoomer>
 
 
 
