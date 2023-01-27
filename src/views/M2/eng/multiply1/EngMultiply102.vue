@@ -46,6 +46,7 @@ export default {
     let notes = await SQLiteService.notes(this.$route.name)
     for (var i = 0; i< notes.length; i++){
       var noteid = notes[i].noteid
+      console.log (noteid)
       document.getElementById(noteid).value =notes[i].note
     }
   },
@@ -240,7 +241,7 @@ export default {
 <div class="for-enrichment">
 <p>For further enrichment: Read <!-- begin linkInternal sdcard-->
 <span id= "return1" class="internal-link" @click="this.goToPageAndSetReturn('/M2/eng/tc/tc02', '#1')">
-    Transferable Concept #2:  
+    Transferable Concept #2:
 </span>
 <!-- end linkInternal sdcard-->
  and discuss with another group member.</p>
@@ -256,7 +257,7 @@ export default {
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>

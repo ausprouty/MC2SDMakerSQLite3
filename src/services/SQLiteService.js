@@ -1,28 +1,71 @@
-
-
 import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 export default {
 	async notes (route){
 		var source = localStorage.getItem('mc2NoteSource');
 		if (source == 'database'){
-			return await notesFromDatabase(route)
+			return await this.notesFromDatabase(route)
 		}
-		return notesFromLocalStorage(route)
+		return this.notesFromLocalStorage(route)
 	},
 
 	async addNote(noteid, route, noteText){
 		var source = localStorage.getItem('mc2NoteSource');
 		if (source == 'database'){
-			return await addNoteToDatabase(noteid, route, noteText)
+			return await this.addNoteToDatabase(noteid, route, noteText)
 		}
-		return addNoteToLocalStorage(noteid, route, noteText)
+		return this.addNoteToLocalStorage(noteid, route, noteText)
+	},
+
+	async notesFromDatabase(route){
+			try {
+				const sqlite = new SQLiteConnection(CapacitorSQLite);
+				let db =  await this.openDatabase()
+				let query = 'SELECT * FROM notes WHERE page=?'
+				var res = await db.query(query,  [route])
+				alert (res)
+				await sqlite.closeConnection("db_mc2notes");
+				return res.values
+			} catch (err) {
+				alert (' error in SQLite Service Notes')
+				console.log(`Error: ${err}`);
+				throw new Error(`Error: ${err}`);
+			}
+	},
+	async notesFromLocalStorage(route){
+		var notes = JSON.parse(localStorage.getItem('Notes-'+ route));
+		if (notes == null){
+			notes = [];
+		}
+		console.log (notes)
+		return notes;
+	},
+
+    addNoteToLocalStorage (noteid, route, noteText ){
+       var height= this.calcNoteHeight(noteText)
+		// resize note
+		document.getElementById(noteid).style.height = height + 'px'
+		// find ids of all textareas
+		var txtAreas = document.getElementsByTagName('textarea')
+		var len = txtAreas.length
+		var ids = new Array()
+		var notes = new Array()
+		for (i = 0; i < len; i++) {
+			ids.push(txtAreas[i].id)
+		}
+		for (var i = 0; i < len; i++) {
+			var note = document.getElementById(ids[i])
+			var entry = new Object()
+			entry.key = ids[i]
+			entry.value = note.value
+			notes[i] = entry
+		}
+		localStorage.setItem('Notes-'+ route, JSON.stringify(notes)) //put the object back
 	},
 	async openDatabase(){
 		try {
 			const sqlite = new SQLiteConnection(CapacitorSQLite);
 			const ret = await sqlite.checkConnectionsConsistency();
-
 			const isConn = (await sqlite.isConnection("db_mc2notes")).result;
 			//console.log(`after isConnection ${isConn}`);
 			let db;
@@ -41,52 +84,6 @@ export default {
 		}
 
 	},
-	async notesFromDatabase(route){
-			try {
-				const sqlite = new SQLiteConnection(CapacitorSQLite);
-				let db =  await this.openDatabase()
-				let query = 'SELECT * FROM notes WHERE page=?'
-				var res = await db.query(query,  [route])
-				alert (res)
-				await sqlite.closeConnection("db_mc2notes");
-				return res.values
-			} catch (err) {
-				alert (' error in SQLite Service Notes')
-				console.log(`Error: ${err}`);
-				throw new Error(`Error: ${err}`);
-			}
-	},
-	async notesFromLocalStorage(route){
-			var notes = JSON.parse(localStorage.getItem('Notes'+ route));
-			return notes;
-
-	},
-
-    addNoteToLocalStorage(noteid, route, noteText){
-		console.log('In add_note for ' + noteid)
-		// resize note
-		document.getElementById(noteid).style.height =
-			calcNoteHeight(noteText) + 'px'
-		// find ids of all textareas
-		var txtAreas = document.getElementsByTagName('textarea')
-		var len = txtAreas.length
-		var ids = new Array()
-		var notes = new Array()
-		for (i = 0; i < len; i++) {
-			ids.push(txtAreas[i].id)
-		}
-		for (var i = 0; i < len; i++) {
-			var note = document.getElementById(ids[i])
-			var entry = new Object()
-			entry.key = ids[i]
-			entry.value = note.value
-			console.log(entry)
-			notes[i] = entry
-		}
-		localStorage.setItem('Notes'+ route, JSON.stringify(notes)) //put the object back
-	},
-
-
   // Dealing with Textarea Height
 	// from https://css-tricks.com/auto-growing-inputs-textareas/
 	calcNoteHeight(value) {
@@ -95,7 +92,6 @@ export default {
 	var longLines = 0
 	var extraLines = 0
 	var lineMax = window.innerWidth / 7
-	console.log('linemax = ' + lineMax)
 	const line = value.split('/\n')
 	var len = line.length
 	for (var i = 0; i < len; i++) {
