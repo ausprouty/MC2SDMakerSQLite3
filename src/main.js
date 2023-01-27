@@ -11,22 +11,23 @@ import { Capacitor } from "@capacitor/core";
 import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 window.addEventListener("DOMContentLoaded", async () => {
+
   const sqlite = new SQLiteConnection(CapacitorSQLite);
   const app = createApp(App).use(router);
   try {
     const ret = await sqlite.checkConnectionsConsistency();
-    console.log(`after checkConnectionsConsistency ${ret.result}`);
+    //console.log(`after checkConnectionsConsistency ${ret.result}`);
     const isConn = (await sqlite.isConnection("db_mc2notes")).result;
-    console.log(`after isConnection ${isConn}`);
+    //console.log(`after isConnection ${isConn}`);
     let db;
     if (ret.result && isConn) {
       db = await sqlite.retrieveConnection("db_mc2notes");
     } else {
       db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
     }
-    console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
+    //console.log(`after create/retrieveConnection ${JSON.stringify(db)}`);
     await db.open();
-    console.log(`db.open()`);
+    //console.log(`db.open()`);
     const query = `
      CREATE TABLE IF NOT EXISTS notes (
           page   VARCHAR NOT NULL,
@@ -39,14 +40,14 @@ window.addEventListener("DOMContentLoaded", async () => {
       throw new Error(`Error: execute failed`);
     }
     await sqlite.closeConnection("db_mc2notes");
-     console.log(`sqlite.closeConnection`);
+    localStorage.setItem('mc2NoteSource', 'database')
     router.isReady().then(() => {
-      console.log(`router is ready`);
       app.mount("#app");
     });
   } catch (err) {
-    alert ('error in main.js')
-    console.log(`Error: ${err}`);
-    throw new Error(`Error: ${err}`);
+    localStorage.setItem('mc2NoteSource', 'localstorage')
+    router.isReady().then(() => {
+      app.mount("#app");
+    });
   }
 });
