@@ -5,3 +5,4 @@ export default {
 	},
 }
 export { default as VueImageZoomer } from "@/components/vueImageZoomer.vue";
+console.log ('in index.js')
