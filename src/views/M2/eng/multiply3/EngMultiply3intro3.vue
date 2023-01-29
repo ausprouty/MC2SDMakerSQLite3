@@ -65,12 +65,12 @@ export default {
     <h1>Period 3: Expanding to New Territories</h1>
     <div id="showVideoOptions"></div>
 
-    <vue-image-zoomer regular="/assets/Trip1-4b5ad07e.png"
-      zoom="/assets/Trip1-4b5ad07e.png" :zoom-amount="3" img-class="img-fluid" alt="Trip 1 Map">
+    <vue-image-zoomer regular="/images/zoom/Trip1.png" zoom="/images/zoom/Trip1.png" :zoom-amount="3"
+      img-class="img-fluid" alt="Trip 1 Map">
       <img src="@/assets/images/eng/multiply3/Trip1.png" img-class="img-fluid" />
     </vue-image-zoomer>
 
-    <p>(1st Missionary Journey from ANTIOCH) [46-48 AD]</p>
+    <p>(1st Missionary Journey from Antioch) [46-48 AD]</p>
 
     <h2><br />
       Summary</h2>

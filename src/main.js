@@ -12,7 +12,6 @@ import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 window.addEventListener("DOMContentLoaded", async () => {
   const app = createApp(App).use(router);
-  localStorage.setItem('mc2NoteSource', 'localstorage')
   var noteSource = localStorage.getItem('mc2NoteSource')
   if (noteSource != 'localstorage'){
     const sqlite = new SQLiteConnection(CapacitorSQLite);

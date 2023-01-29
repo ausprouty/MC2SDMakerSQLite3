@@ -26,6 +26,9 @@ ionic init
 ionic cap add android
 ionic cap run android -l --external
 
+Line 11 - Msg: Uncaught (in promise) Error: Error: Error: CapacitorSQLitePlugin: Protocol message contained an invalid tag (zero).
+so I decided to have two ways of storing notes
+
 
 DEV:
 
@@ -42,6 +45,3 @@ npm run build
 npx cap sync
 npx cap open android
 Build -> Build APK
-
-
-Line 11 - Msg: Uncaught (in promise) Error: Error: Error: CapacitorSQLitePlugin: Protocol message contained an invalid tag (zero).

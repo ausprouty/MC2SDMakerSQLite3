@@ -2,6 +2,7 @@ import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 export default {
 	async notes (route){
+
 		var source = localStorage.getItem('mc2NoteSource');
 		if (source == 'database'){
 			return await this.notesFromDatabase(route)
@@ -17,27 +18,12 @@ export default {
 		return this.addNoteToLocalStorage(noteid, route, noteText)
 	},
 
-	async notesFromDatabase(route){
-			try {
-				const sqlite = new SQLiteConnection(CapacitorSQLite);
-				let db =  await this.openDatabase()
-				let query = 'SELECT * FROM notes WHERE page=?'
-				var res = await db.query(query,  [route])
-				alert (res)
-				await sqlite.closeConnection("db_mc2notes");
-				return res.values
-			} catch (err) {
-				alert (' error in SQLite Service Notes')
-				console.log(`Error: ${err}`);
-				throw new Error(`Error: ${err}`);
-			}
-	},
-	async notesFromLocalStorage(route){
+
+	notesFromLocalStorage(route){
 		var notes = JSON.parse(localStorage.getItem('Notes-'+ route));
 		if (notes == null){
 			notes = [];
 		}
-		console.log (notes)
 		return notes;
 	},
 
@@ -56,11 +42,51 @@ export default {
 		for (var i = 0; i < len; i++) {
 			var note = document.getElementById(ids[i])
 			var entry = new Object()
-			entry.key = ids[i]
-			entry.value = note.value
+			entry.noteid = ids[i]
+			entry.note = note.value
+
 			notes[i] = entry
 		}
 		localStorage.setItem('Notes-'+ route, JSON.stringify(notes)) //put the object back
+	},
+	async notesFromDatabase(route){
+			try {
+				const sqlite = new SQLiteConnection(CapacitorSQLite);
+				let db =  await this.openDatabase()
+				let query = 'SELECT * FROM notes WHERE page=?'
+				var res = await db.query(query,  [route])
+				await sqlite.closeConnection("db_mc2notes");
+				return res.values
+			} catch (err) {
+				alert (' error in SQLite Service Notes')
+				console.log(`Error: ${err}`);
+				throw new Error(`Error: ${err}`);
+			}
+	},
+	async addNoteToDatabase(noteid, route, noteText){
+		try {
+			const sqlite = new SQLiteConnection(CapacitorSQLite);
+			let db =  await this.openDatabase()
+			let query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+			let values = [route, noteid]
+			let res = await db.query(query, values);
+			if (res.values[0] !== undefined) {
+				query = 'UPDATE notes set note = ?  WHERE page=? AND noteid = ?'
+			}
+			else{
+				query = 'INSERT INTO notes (note, page, noteid) VALUES (?, ?, ?)'
+			}
+			values = [noteText, route, noteid]
+			res = await db.query(query, values);
+			query = 'SELECT note FROM notes WHERE page=? AND noteid = ?'
+			values = [route, noteid]
+			res = await db.query(query, values);
+			return this.calcNoteHeight(res.values[0].note) +'px'
+
+		} catch (err) {
+			console.log(`Error: ${err}`);
+			throw new Error(`Error: ${err}`);
+		}
 	},
 	async openDatabase(){
 		try {
