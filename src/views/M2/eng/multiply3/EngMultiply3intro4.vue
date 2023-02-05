@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -60,7 +65,12 @@ export default {
 <div class="page_content ltr">
 <h1>Period 4: Training Leaders for New Movement Centers</h1>
 <div id="showVideoOptions"></div>
-  <p><img alt="" src="@/assets/images/eng/multiply3/Trip2.png" />&nbsp;</p>
+  <p>   
+    <vue-image-zoomer
+    regular="images/zoom/eng/multiply3/Trip2.png" 
+    zoom="images/zoom/eng/multiply3/Trip2.png" :zoom-amount="3" img-class="img-fluid" alt="">
+    <img src="@/assets/images/eng/multiply3/Trip2.png" img-class="img-fluid" />
+    </vue-image-zoomer>&nbsp;</p>
 
 <p>(2nd Missionary Journey from Antioch) [49 - 51 AD]</p>
 

@@ -160,7 +160,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -223,7 +223,7 @@ And lead us not into temptation.&rsquo;&rdquo;</p>
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

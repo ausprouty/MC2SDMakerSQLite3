@@ -199,7 +199,7 @@ export default {
 <p><strong>Apply:</strong>&nbsp; Make a list of those whom you are having difficulty loving as God loves.&nbsp; Hypocrisy creeps in unawares.&nbsp; We put on our politeness mask and pretend everything is O.K.&nbsp; But there is someone in your life right now who is waiting to see your agape love in action &ndash; without any selfish pretentions.&nbsp; Choose today to pray for each person on your list.&nbsp; Expect to see results.</p>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

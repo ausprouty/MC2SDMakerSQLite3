@@ -261,7 +261,7 @@ Many believed, so Paul and Barnabas did initial follow up by encouraging them to
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

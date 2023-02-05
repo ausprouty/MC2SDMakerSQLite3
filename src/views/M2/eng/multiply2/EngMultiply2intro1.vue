@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -60,7 +65,12 @@ export default {
 <div class="page_content ltr">
 <h1>Period 1 -- Preparation</h1>
 <div id="showVideoOptions"></div>
-  <p class="year"><img alt="Stage of Ministry" class="lesson_image" src="@/assets/images/eng/multiply2/Period1.png" /><br />
+  <p class="year">   
+    <vue-image-zoomer
+    regular="images/zoom/eng/multiply2/Period1.png" 
+    zoom="images/zoom/eng/multiply2/Period1.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
+    <img src="@/assets/images/eng/multiply2/Period1.png" img-class="img-fluid" />
+    </vue-image-zoomer><br />
 Period 1: Preparation: around 4 B.C. &ndash; 26 AD</p>
 
 <h2><br />

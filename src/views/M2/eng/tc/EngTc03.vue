@@ -220,7 +220,7 @@ If you prayed this prayer or expressed your heart similarly to God in your own w
 <p>&nbsp;</p>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

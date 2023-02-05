@@ -52,10 +52,18 @@ export default {
 }
 </script>
 <template>
-  <div id="nav">
-    <div class="nav full internal-link" @click="this.pageGoBack('eng-tc-index')">
-        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
-    </div>
+  <!-- begin note sdcard -->
+<div class="note-area">
+    <form class="auto_submit_item">
+      <textarea
+        class="textarea resize-ta"
+        @keyup="this.addNote('note2Text')"
+        id="note2Text"
+      ></textarea>
+    </form>
+</div>
+<!-- end note sdcard -->
+
 </div>
 <div class="page_content ltr">
 <div class="block ltr">
@@ -202,9 +210,8 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 	<li>To whom should I pass along this</li>
 </ol>
 
-<div class="note-div">
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

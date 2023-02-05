@@ -191,7 +191,7 @@ and turn, and I would heal them.&rsquo;</p>
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -266,7 +266,7 @@ During his time in Rome, Paul continued coaching and mentoring believers in Phil
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

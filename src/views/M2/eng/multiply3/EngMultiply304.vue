@@ -204,7 +204,7 @@ Your sons and daughters will prophesy,<br />
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -343,7 +343,7 @@ Jewish pilgrims from every part of the Roman world heard the Gospel message of J
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"

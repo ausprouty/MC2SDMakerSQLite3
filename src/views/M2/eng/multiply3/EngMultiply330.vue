@@ -197,7 +197,7 @@ says the Lord, who does these things&rsquo;&mdash;<br />
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
@@ -267,7 +267,7 @@ they still believed God required circumcision and observing the Law as necessary
 </ul>
 
 <!-- begin note sdcard -->
-<div class="note-div">
+<div class="note-area">
     <form class="auto_submit_item">
       <textarea
         class="textarea resize-ta"
