@@ -205,7 +205,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Once again Paul shares his testimony. This is the longest version recorded. Paul is speaking before the Jewish provincial King Agrippa and Governor Festus. Paul is already considered not guilty by the governor who sought clarity of what to tell Caesar. Read <span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 1:12-16</a</span>bsp;</p>
+<p class="up">Once again Paul shares his testimony. This is the longest version recorded. Paul is speaking before the Jewish provincial King Agrippa and Governor Festus. Paul is already considered not guilty by the governor who sought clarity of what to tell Caesar. Read <span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 1:12-16</span>.&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -216,7 +216,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Paul admitted that he was just like his accusers before he met Jesus. He firmly believed it was God&rsquo;s will and was his duty to violently stop the message of Jesus. Apparently, Paul had been resisting promptings to accept the gospel during this period of his life (<span class="popup-link" @click = "popUp('pop2')"> Acts 26:14</a</span>nbsp;
+Paul admitted that he was just like his accusers before he met Jesus. He firmly believed it was God&rsquo;s will and was his duty to violently stop the message of Jesus. Apparently, Paul had been resisting promptings to accept the gospel during this period of his life (<span class="popup-link" @click = "popUp('pop2')"> Acts 26:14</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

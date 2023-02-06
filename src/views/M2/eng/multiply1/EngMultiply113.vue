@@ -69,7 +69,9 @@ export default {
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 100</a</span><div class="popup invisible" id="pop1"><!-- begin bible -->
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 100</span>
+
+	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
 	<div>
@@ -118,7 +120,7 @@ export default {
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:1-10</a</span>bsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:1-10</span>.&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
@@ -198,7 +200,7 @@ export default {
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 16:18</a</span>bsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 16:18</span>.&nbsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>

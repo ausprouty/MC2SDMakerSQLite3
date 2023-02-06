@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -218,7 +218,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Over the last six months, Jesus has been drawing a sharp contrast between the type of leadership He expects and the type of leadership His disciples have had as a model growing up. He points out how the leaders of Israel are leading. He says this is not how leadership should be in the Kingdom. He uses the illustration of yeast that spreads through dough to make bread as an example of what to avoid. There are two types, the yeast of the Pharisees and the yeast of the Sadducees. The Pharisees taught one thing, but did another. The Pharisees were hypocrites. The yeast of the Sadducees is found in how they hardened their hearts against the power of God and believing the scriptures. They wrongly believed that the resurrection of the dead could not happen and that there were no angels or demons (<span class="popup-link" @click = "popUp('pop3')"> Acts 23:8</a</span>
+	<li class="nobreak-final-final">Over the last six months, Jesus has been drawing a sharp contrast between the type of leadership He expects and the type of leadership His disciples have had as a model growing up. He points out how the leaders of Israel are leading. He says this is not how leadership should be in the Kingdom. He uses the illustration of yeast that spreads through dough to make bread as an example of what to avoid. There are two types, the yeast of the Pharisees and the yeast of the Sadducees. The Pharisees taught one thing, but did another. The Pharisees were hypocrites. The yeast of the Sadducees is found in how they hardened their hearts against the power of God and believing the scriptures. They wrongly believed that the resurrection of the dead could not happen and that there were no angels or demons (<span class="popup-link" @click = "popUp('pop3')"> Acts 23:8</span>).
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>

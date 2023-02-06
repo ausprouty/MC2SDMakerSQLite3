@@ -183,7 +183,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">After planting another church in Derbe, Paul and Barnabas decide to revisit the new churches on their return journey to Syrian Antioch. Their purpose was to strengthen the faith of the new believers and stabilize the churches by identifying and appointing local elders in each new church. Even though these churches were only a few months old, they were led by new believers. Part of the foundational discipleship Paul taught the new believers was how to respond to persecution and the reality of hardships that come with boldly following Jesus (<span class="popup-link" @click = "popUp('pop1')"> Acts 14:22</a</span>nbsp;</p>
+<p class="up">After planting another church in Derbe, Paul and Barnabas decide to revisit the new churches on their return journey to Syrian Antioch. Their purpose was to strengthen the faith of the new believers and stabilize the churches by identifying and appointing local elders in each new church. Even though these churches were only a few months old, they were led by new believers. Part of the foundational discipleship Paul taught the new believers was how to respond to persecution and the reality of hardships that come with boldly following Jesus (<span class="popup-link" @click = "popUp('pop1')"> Acts 14:22</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

@@ -178,7 +178,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">This story shows us what the community of believers did when they met together. In <span class="popup-link" @click = "popUp('pop1')"> Acts 5:11</a</span>p>
+<p class="up">This story shows us what the community of believers did when they met together. In <span class="popup-link" @click = "popUp('pop1')"> Acts 5:11</span>,</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

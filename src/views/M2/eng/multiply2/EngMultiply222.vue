@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -220,7 +220,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">Further Study: <span class="popup-link" @click = "popUp('pop3')"> Matthew 9:1-8</a</span>bsp;</span>
+	<li class="nobreak-final-final"><span class="for-enrichment">Further Study: <span class="popup-link" @click = "popUp('pop3')"> Matthew 9:1-8</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop3"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -232,7 +232,7 @@ export default {
 	<p><span class="for-enrichment"><sup class="versenum">4&nbsp;</sup>Knowing their thoughts, Jesus said, &ldquo;Why do you entertain evil thoughts in your hearts?<sup class="versenum">5&nbsp;</sup>Which is easier: to say, &lsquo;Your sins are forgiven,&rsquo; or to say, &lsquo;Get up and walk&rsquo;?<sup class="versenum">6&nbsp;</sup>But I want you to know that the Son of Man has authority on earth to forgive sins.&rdquo; So he said to the paralyzed man, &ldquo;Get up, take your mat and go home.&rdquo;<sup class="versenum">7&nbsp;</sup>Then the man got up and went home.<sup class="versenum">8&nbsp;</sup>When the crowd saw this, they were filled with awe; and they praised God, who had given such authority to man.</span></p>
 	
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop4')"> Mark 2:1-13</a</span>span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop4')"> Mark 2:1-13</span>.</span>
 
 	<div class="popup invisible" id="pop4"><span class="for-enrichment"><!-- begin bible --></span>
 

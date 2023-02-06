@@ -101,7 +101,8 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">When we accept Christ, our lives are changed forever. <span class="popup-link" @click = "popUp('pop1')"> 2 Corinthians 5:17</a</span>
+	<li class="nobreak-final-final">When we accept Christ, our lives are changed forever. <span class="popup-link" @click = "popUp('pop1')"> 2 Corinthians 5:17</span>
+
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>

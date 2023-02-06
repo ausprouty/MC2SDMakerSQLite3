@@ -76,7 +76,7 @@ export default {
 <h2 class="lesson">Establishing a relational God-centered foundation for making disciples</h2>
 
 <ul>
-	<li class="nobreak-final-final">This period starts in mid-26 AD when Jesus is about the age of 30 and lasts for 18-21 months. Jesus&rsquo; public ministry is initiated with His baptism then steadily grows through the initial contacts He made (<span class="popup-link" @click = "popUp('pop1')"> John 1:35-44</a</span>sp;,
+	<li class="nobreak-final-final">This period starts in mid-26 AD when Jesus is about the age of 30 and lasts for 18-21 months. Jesus&rsquo; public ministry is initiated with His baptism then steadily grows through the initial contacts He made (<span class="popup-link" @click = "popUp('pop1')"> John 1:35-44</span>&nbsp;,
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -103,7 +103,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	<span class="popup-link" @click = "popUp('pop7')"> John 4:1-4</a</span>
+	<span class="popup-link" @click = "popUp('pop7')"> John 4:1-4</span>).
 
 	<div class="popup invisible" id="pop7"><!-- begin bible -->
 	<div>
@@ -114,7 +114,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	It ends with His first rejection at His home village of Nazareth (<span class="popup-link" @click = "popUp('pop3')"> Luke 4:16-31</a</span>nbsp;
+	It ends with His first rejection at His home village of Nazareth (<span class="popup-link" @click = "popUp('pop3')"> Luke 4:16-31</span>).&nbsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -146,14 +146,16 @@ export default {
 	</div>
 	<!-- end bible --></div>
 	</li>
-	<li class="nobreak-final-final">This period is characterized by ministry foundations being laid. Jesus is intentional in creating a relational environment where He gathers people as followers of the new way. Jesus&rsquo; ministry starts from nothing then grows over time until it is larger than the size of John the Baptist&rsquo;s ministry (<span class="popup-link" @click = "popUp('pop4')"> John 4:1-3</a</span>	<div class="popup invisible" id="pop4"><!-- begin bible -->
+	<li class="nobreak-final-final">This period is characterized by ministry foundations being laid. Jesus is intentional in creating a relational environment where He gathers people as followers of the new way. Jesus&rsquo; ministry starts from nothing then grows over time until it is larger than the size of John the Baptist&rsquo;s ministry (<span class="popup-link" @click = "popUp('pop4')"> John 4:1-3</span>;
+	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">1 </sup>Now Jesus learned that the Pharisees had heard that he was gaining and baptizing more disciples than John&mdash;<sup class="versenum">2&nbsp;</sup>although in fact it was not Jesus who baptized, but his disciples.<sup class="versenum">3&nbsp;</sup>So he left Judea and went back once more to Galilee.</p>
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Luke 3:19-20</a</span>
+	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Luke 3:19-20</span>;
+
 	<div class="popup invisible" id="pop6"><!-- begin bible -->
 	<div>
 	<div>
@@ -161,7 +163,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	<span class="popup-link" @click = "popUp('pop5')"> Matthew 4:12</a</span>nbsp;
+	<span class="popup-link" @click = "popUp('pop5')"> Matthew 4:12</span>).&nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>

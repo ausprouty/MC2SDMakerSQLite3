@@ -92,7 +92,8 @@ export default {
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">God has given us every spiritual blessing through Jesus. He has adopted us into His family and calls us His children. &ldquo;You were included in Christ when you heard the word of truth, the gospel of your salvation. Having believed, you were marked in Him with a seal, the promised Holy Spirit, who is a deposit guaranteeing our inheritance.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Ephesians 3:13-14a</a</span>
+	<li class="nobreak-final-final">God has given us every spiritual blessing through Jesus. He has adopted us into His family and calls us His children. &ldquo;You were included in Christ when you heard the word of truth, the gospel of your salvation. Having believed, you were marked in Him with a seal, the promised Holy Spirit, who is a deposit guaranteeing our inheritance.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Ephesians 3:13-14a</span>).
+
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
@@ -179,7 +180,7 @@ export default {
 <p class="up">Jesus wants us to understand God&rsquo;s Word and what it teaches us about Him. Jesus&rsquo; life fulfilled the promises in God&rsquo;s Word. He wants us to tell others about what we learn.&nbsp;</p>
 
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> 2 Timothy 3:16-17</a</span>bsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> 2 Timothy 3:16-17</span>,&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
@@ -188,7 +189,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop3')"> Romans 10:17</a</span>sp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop3')"> Romans 10:17</span>&nbsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -197,7 +198,9 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	and <span class="popup-link" @click = "popUp('pop4')"> Hebrews 4:12</a</span><div class="popup invisible" id="pop4"><!-- begin bible -->
+	and <span class="popup-link" @click = "popUp('pop4')"> Hebrews 4:12</span>
+
+	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">12&nbsp;</sup>For the word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart.</p>

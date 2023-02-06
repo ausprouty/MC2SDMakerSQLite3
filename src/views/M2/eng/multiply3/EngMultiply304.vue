@@ -222,7 +222,7 @@ Your sons and daughters will prophesy,<br />
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Just weeks earlier, Jesus had opened the minds of the disciples to understand what scripture said about Him (<span class="popup-link" @click = "popUp('pop1')"> Luke 24:44-49</a</span>nbsp;</p>
+<p class="up">Just weeks earlier, Jesus had opened the minds of the disciples to understand what scripture said about Him (<span class="popup-link" @click = "popUp('pop1')"> Luke 24:44-49</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -233,7 +233,8 @@ Your sons and daughters will prophesy,<br />
 </div>
 </div>
 <!-- end bible --></div>
-)Now, through the Spirit Peter was able to use scripture to interpret the recent events (<span class="popup-link" @click = "popUp('pop2')"> Joel 2:28-32</a</span>
+)Now, through the Spirit Peter was able to use scripture to interpret the recent events (<span class="popup-link" @click = "popUp('pop2')"> Joel 2:28-32</span>),
+
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
 <div>
@@ -262,7 +263,7 @@ even among the survivors<br />
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop3')"> Psalm 16:8-11</a</span>bsp;
+<span class="popup-link" @click = "popUp('pop3')"> Psalm 16:8-11</span>,&nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -284,7 +285,8 @@ even among the survivors<br />
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop4')"> Psalm 110:1</a</span>
+<span class="popup-link" @click = "popUp('pop4')"> Psalm 110:1</span>).
+
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
 <div>

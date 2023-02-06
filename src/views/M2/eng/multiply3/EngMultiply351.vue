@@ -193,7 +193,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Luke and Aristarchus, one of the Thessalonian leaders who came to Jerusalem with Paul two years before, joined the prisoner transfer to Rome (v2). The sailors took a great risk by trying to sail too late in the travel season, putting everyone in very dangerous circumstances. As far as we know Paul, Luke, and Aristarchus were the only Christians on board with about 273 non-Christians (<span class="popup-link" @click = "popUp('pop1')"> Acts 27:37</a</span>nbsp;</p>
+<p class="up">Luke and Aristarchus, one of the Thessalonian leaders who came to Jerusalem with Paul two years before, joined the prisoner transfer to Rome (v2). The sailors took a great risk by trying to sail too late in the travel season, putting everyone in very dangerous circumstances. As far as we know Paul, Luke, and Aristarchus were the only Christians on board with about 273 non-Christians (<span class="popup-link" @click = "popUp('pop1')"> Acts 27:37</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

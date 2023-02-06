@@ -182,7 +182,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">The believers in Damascus were surprised by Saul. Instead of arresting them, Saul began preaching Jesus as the living Son of God. Saul&rsquo;s advanced education allowed him to immediately apply his knowledge of scripture to give persuasive proof that Jesus was the promised Messiah. Jesus taught that people with such understanding were able to bring out treasures from the Old Testament and from new teachings about the Kingdom (<span class="popup-link" @click = "popUp('pop1')"> Matthew 13:52</a</span>nbsp;</p>
+<p class="up">The believers in Damascus were surprised by Saul. Instead of arresting them, Saul began preaching Jesus as the living Son of God. Saul&rsquo;s advanced education allowed him to immediately apply his knowledge of scripture to give persuasive proof that Jesus was the promised Messiah. Jesus taught that people with such understanding were able to bring out treasures from the Old Testament and from new teachings about the Kingdom (<span class="popup-link" @click = "popUp('pop1')"> Matthew 13:52</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -191,7 +191,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Saul was so powerful in his witness that the Jews could not argue with him, so they tried to kill him in Damascus. When Saul came to Jerusalem, only Barnabas accepted him and endorsed him to the Apostles. Saul&rsquo;s life was threatened again, so the disciples sent him to his hometown of Tarsus, in the province of Cilicia, about 930 km northwest of Jerusalem. This story includes the second summary statement found in the book of Acts: the church had peace and grew in numbers as it lived out of a deep reverence for God&rsquo;s holiness and power (<span class="popup-link" @click = "popUp('pop2')"> Acts 9:31</a</span>nbsp;
+Saul was so powerful in his witness that the Jews could not argue with him, so they tried to kill him in Damascus. When Saul came to Jerusalem, only Barnabas accepted him and endorsed him to the Apostles. Saul&rsquo;s life was threatened again, so the disciples sent him to his hometown of Tarsus, in the province of Cilicia, about 930 km northwest of Jerusalem. This story includes the second summary statement found in the book of Acts: the church had peace and grew in numbers as it lived out of a deep reverence for God&rsquo;s holiness and power (<span class="popup-link" @click = "popUp('pop2')"> Acts 9:31</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

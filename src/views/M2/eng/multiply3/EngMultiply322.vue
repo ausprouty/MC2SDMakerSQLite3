@@ -184,7 +184,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Our past several stories have been focused on Peter, but he was not the only believer who was active during this time. The believers that fled Jerusalem during Saul&rsquo;s persecution (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:1</a</span>bsp;</p>
+<p class="up">Our past several stories have been focused on Peter, but he was not the only believer who was active during this time. The believers that fled Jerusalem during Saul&rsquo;s persecution (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:1</span>)&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

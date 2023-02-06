@@ -216,7 +216,7 @@ says the Lord, who does these things&rsquo;&mdash;<br />
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Some of the Jewish believers insisted that without circumcision the new converts could not be saved. Circumcision was the God given sign that Jews were members of the Old Testament covenant. Even though they had come to understand that God&rsquo;s offer of salvation was for all peoples (<span class="popup-link" @click = "popUp('pop1')"> Acts 11:18</a</span>nbsp;</p>
+<p class="up">Some of the Jewish believers insisted that without circumcision the new converts could not be saved. Circumcision was the God given sign that Jews were members of the Old Testament covenant. Even though they had come to understand that God&rsquo;s offer of salvation was for all peoples (<span class="popup-link" @click = "popUp('pop1')"> Acts 11:18</span>),&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

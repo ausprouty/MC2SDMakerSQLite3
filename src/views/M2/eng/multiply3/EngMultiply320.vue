@@ -182,7 +182,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">The Lord uses Peter to bring salvation to Cornelius and his household. This experience also teaches Peter, and the other Jewish believers with him, an important theological truth: the Lord accepts people from every nation and his offer of salvation is the same for all people. As reinforcement of this truth, the Gentiles experience the gift of the Holy Spirit in the same way that the Jews had at Pentecost (<span class="popup-link" @click = "popUp('pop1')"> Acts 2:4</a</span>bsp;</p>
+<p class="up">The Lord uses Peter to bring salvation to Cornelius and his household. This experience also teaches Peter, and the other Jewish believers with him, an important theological truth: the Lord accepts people from every nation and his offer of salvation is the same for all people. As reinforcement of this truth, the Gentiles experience the gift of the Holy Spirit in the same way that the Jews had at Pentecost (<span class="popup-link" @click = "popUp('pop1')"> Acts 2:4</span>;&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -191,7 +191,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop2')"> Acts 10:47</a</span>nbsp;
+<span class="popup-link" @click = "popUp('pop2')"> Acts 10:47</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -200,7 +200,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Peter recognizes the Lord&rsquo;s acceptance of the non-Jewish people and commands that they immediately be baptized, just as they did with new Jewish believers. Peter stays several more days in a non-Jewish home to do immediate follow up with the new believers. Peter has now been part of seeing churches planted beyond all the cultural barriers that Jesus talked about (<span class="popup-link" @click = "popUp('pop3')"> Acts 1:8</a</span>nbsp;
+Peter recognizes the Lord&rsquo;s acceptance of the non-Jewish people and commands that they immediately be baptized, just as they did with new Jewish believers. Peter stays several more days in a non-Jewish home to do immediate follow up with the new believers. Peter has now been part of seeing churches planted beyond all the cultural barriers that Jesus talked about (<span class="popup-link" @click = "popUp('pop3')"> Acts 1:8</span>);&nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -209,7 +209,7 @@ Peter recognizes the Lord&rsquo;s acceptance of the non-Jewish people and comman
 </div>
 </div>
 <!-- end bible --></div>
-&nbsp;among the Jews in Jerusalem and Judea, among the Samaritans (<span class="popup-link" @click = "popUp('pop4')"> Acts 8</a</span>nbsp;
+&nbsp;among the Jews in Jerusalem and Judea, among the Samaritans (<span class="popup-link" @click = "popUp('pop4')"> Acts 8</span>),&nbsp;
 
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
@@ -261,7 +261,7 @@ Peter recognizes the Lord&rsquo;s acceptance of the non-Jewish people and comman
 </div>
 </div>
 <!-- end bible --></div>
-&nbsp;and now among Gentiles (<span class="popup-link" @click = "popUp('pop5')"> Acts 10</a</span>nbsp;
+&nbsp;and now among Gentiles (<span class="popup-link" @click = "popUp('pop5')"> Acts 10</span>).&nbsp;
 
 <div class="popup invisible" id="pop5"><!-- begin bible -->
 <div>

@@ -69,7 +69,9 @@ export default {
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 <ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</a</span><div class="popup invisible" id="pop1"><!-- begin bible -->
+	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Hebrews 13:14-15</span>
+
+	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">14&nbsp;</sup>For here we do not have an enduring city, but we are looking for the city that is to come.</p>
@@ -79,7 +81,7 @@ export default {
 	</div>
 	<!-- end bible --></div>
 	and sing songs.&nbsp;</li>
-	<li class="back">Use a Statement of Faith about Jesus like<span class="popup-link" @click = "popUp('pop2')">  Philippians 2:11</a</span>
+	<li class="back">Use a Statement of Faith about Jesus like<span class="popup-link" @click = "popUp('pop2')">  Philippians 2:11</span>b +
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
@@ -90,7 +92,9 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop3')"> 1 Timothy 2:4-6</a</span>	<div class="popup invisible" id="pop3"><!-- begin bible -->
+	&nbsp;<span class="popup-link" @click = "popUp('pop3')"> 1 Timothy 2:4-6</span>a
+
+	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -194,7 +198,7 @@ export default {
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">When we follow Christ, the benefits are eternal and beyond compare: forgiveness of sins, salvation, and security in the King of Kings and Lord of Lords. But being a disciple of Jesus will not make you exempt from pain and trials. Because we live in an evil world, following Christ will also bring you persecution and challenges. Anyone who desires to live a godly life in Jesus will be persecuted by others. But let&rsquo;s be encouraged by Peter, one of Jesus&rsquo; closest friends, read <span class="popup-link" @click = "popUp('pop4')"> 1 Peter 4:12-16</a</span>sp;and
+	<li class="nobreak-final-final">When we follow Christ, the benefits are eternal and beyond compare: forgiveness of sins, salvation, and security in the King of Kings and Lord of Lords. But being a disciple of Jesus will not make you exempt from pain and trials. Because we live in an evil world, following Christ will also bring you persecution and challenges. Anyone who desires to live a godly life in Jesus will be persecuted by others. But let&rsquo;s be encouraged by Peter, one of Jesus&rsquo; closest friends, read <span class="popup-link" @click = "popUp('pop4')"> 1 Peter 4:12-16</span>&nbsp;and
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -203,7 +207,9 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	and <span class="popup-link" @click = "popUp('pop5')"> 1 Peter 4:19</a</span>	<div class="popup invisible" id="pop5"><!-- begin bible -->
+	and <span class="popup-link" @click = "popUp('pop5')"> 1 Peter 4:19</span>.
+
+	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">19&nbsp;</sup>So then, those who suffer according to God&rsquo;s will should commit themselves to their faithful Creator and continue to do good.</p>

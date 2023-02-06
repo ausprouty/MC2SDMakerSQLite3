@@ -203,7 +203,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">The believers had a good reputation among the people who lived in Jerusalem. Many from nearby villages and towns were being attracted by the ministry of the Jerusalem church. The Apostles were living out what they had been trained to do by Jesus: healing the sick, casting out demons, and preaching the good news of the Kingdom (<span class="popup-link" @click = "popUp('pop1')"> Matthew 10</a</span>bsp;</p>
+<p class="up">The believers had a good reputation among the people who lived in Jerusalem. Many from nearby villages and towns were being attracted by the ministry of the Jerusalem church. The Apostles were living out what they had been trained to do by Jesus: healing the sick, casting out demons, and preaching the good news of the Kingdom (<span class="popup-link" @click = "popUp('pop1')"> Matthew 10</span>,&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -241,7 +241,7 @@ a daughter-in-law against her mother-in-law&mdash;<br />
 </div>
 </div>
 <!-- end bible --></div>
-&nbsp;<span class="popup-link" @click = "popUp('pop2')"> Luke 10</a</span>nbsp;
+&nbsp;<span class="popup-link" @click = "popUp('pop2')"> Luke 10</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -294,7 +294,7 @@ a daughter-in-law against her mother-in-law&mdash;<br />
 </div>
 </div>
 <!-- end bible --></div>
-However, they were not going to the people outside of Jerusalem like Jesus had instructed them (<span class="popup-link" @click = "popUp('pop3')"> Acts 1:8</a</span>nbsp;
+However, they were not going to the people outside of Jerusalem like Jesus had instructed them (<span class="popup-link" @click = "popUp('pop3')"> Acts 1:8</span>).&nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>

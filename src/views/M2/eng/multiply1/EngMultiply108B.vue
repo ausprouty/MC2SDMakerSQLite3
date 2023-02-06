@@ -70,7 +70,8 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 92:1-2</a</span>
+	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 92:1-2</span>
+
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>

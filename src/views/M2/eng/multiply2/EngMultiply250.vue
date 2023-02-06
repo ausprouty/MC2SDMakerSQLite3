@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -260,7 +260,8 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">He has risen from the dead! The Bible says that Jesus&rsquo; resurrection changes everything. &ldquo;Now if we died with Christ, we believe that we will also live with him. For we know that since Christ was raised from the dead, he cannot die again; death no longer has mastery over him. The death he died, he died to sin once for all; but the life he lives, he lives to God. In the same way, count yourselves dead to sin but alive to God in Christ Jesus.&rdquo; (<span class="popup-link" @click = "popUp('pop3')"> Romans 6:8-11</a</span>
+	<li class="nobreak-final-final">He has risen from the dead! The Bible says that Jesus&rsquo; resurrection changes everything. &ldquo;Now if we died with Christ, we believe that we will also live with him. For we know that since Christ was raised from the dead, he cannot die again; death no longer has mastery over him. The death he died, he died to sin once for all; but the life he lives, he lives to God. In the same way, count yourselves dead to sin but alive to God in Christ Jesus.&rdquo; (<span class="popup-link" @click = "popUp('pop3')"> Romans 6:8-11</span>
+
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<p><sup class="versenum">8&nbsp;</sup>Now if we died with Christ, we believe that we will also live with him.<sup class="versenum">9&nbsp;</sup>For we know that since Christ was raised from the dead, he cannot die again; death no longer has mastery over him.<sup class="versenum">10&nbsp;</sup>The death he died, he died to sin once for all; but the life he lives, he lives to God.</p>
 
@@ -272,7 +273,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop4')"> Luke 23:50-24:49</a</span>bsp;</span>
+	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop4')"> Luke 23:50-24:49</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop4"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -318,7 +319,7 @@ export default {
 
 	<p><span class="for-enrichment"><sup class="versenum">45&nbsp;</sup>Then he opened their minds so they could understand the Scriptures.<sup class="versenum">46&nbsp;</sup>He told them, &ldquo;This is what is written: The Messiah will suffer and rise from the dead on the third day,<sup class="versenum">47&nbsp;</sup>and repentance for the forgiveness of sins will be preached in his name to all nations, beginning at Jerusalem.<sup class="versenum">48&nbsp;</sup>You are witnesses of these things.<sup class="versenum">49&nbsp;</sup>I am going to send you what my Father has promised; but stay in the city until you have been clothed with power from on high.&rdquo;</span></p>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Matthew 27:57-28:15</a</span>bsp;</span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Matthew 27:57-28:15</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop5"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -344,7 +345,7 @@ export default {
 
 	<p><span class="for-enrichment"><sup class="versenum">11&nbsp;</sup>While the women were on their way, some of the guards went into the city and reported to the chief priests everything that had happened.<sup class="versenum">12&nbsp;</sup>When the chief priests had met with the elders and devised a plan, they gave the soldiers a large sum of money,<sup class="versenum">13&nbsp;</sup>telling them, &ldquo;You are to say, &lsquo;His disciples came during the night and stole him away while we were asleep.&rsquo;<sup class="versenum">14&nbsp;</sup>If this report gets to the governor, we will satisfy him and keep you out of trouble.&rdquo;<sup class="versenum">15&nbsp;</sup>So the soldiers took the money and did as they were instructed. And this story has been widely circulated among the Jews to this very day.</span></p>
 	</div>
-	<span class="for-enrichment"><span class="popup-link" @click = "popUp('pop6')"> Mark 15:42- 16:18</a</span>span>
+	<span class="for-enrichment"><span class="popup-link" @click = "popUp('pop6')"> Mark 15:42- 16:18</span>.</span>
 
 	<div class="popup invisible" id="pop6"><span class="for-enrichment"><!-- begin bible --></span>
 

@@ -84,7 +84,7 @@ Preparing for a life and movement of multiplication</h2>
 <p>&nbsp;</p>
 
 <ul>
-	<li class="nobreak-final-final">Over the first 30 years of His life, Jesus &ldquo;grew and became&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Luke 2:40</a</span>bsp;
+	<li class="nobreak-final-final">Over the first 30 years of His life, Jesus &ldquo;grew and became&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Luke 2:40</span>,&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -93,7 +93,7 @@ Preparing for a life and movement of multiplication</h2>
 	</div>
 	</div>
 	<!-- end bible --></div>
-	<span class="popup-link" @click = "popUp('pop2')"> &nbsp;Luke 2:51-52</a</span>bsp;
+	<span class="popup-link" @click = "popUp('pop2')"> &nbsp;Luke 2:51-52</span>)&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>

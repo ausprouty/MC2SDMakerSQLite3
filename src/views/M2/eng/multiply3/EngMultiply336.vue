@@ -197,7 +197,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Corinth was a major economic city in the ancient world known for its immoral culture. When Paul arrived, he met Aquila and Priscilla, who had just come from Rome. They were like-minded business people who became a powerful husband-wife church planting team. Paul worked together with them in business and ministry. When Silas and Timothy arrived from Macedonia, they brought financial support and news of how the new believers in Thessalonica were doing (<span class="popup-link" @click = "popUp('pop1')"> 1 Thessalonians 3:2</a</span>nbsp;</p>
+<p class="up">Corinth was a major economic city in the ancient world known for its immoral culture. When Paul arrived, he met Aquila and Priscilla, who had just come from Rome. They were like-minded business people who became a powerful husband-wife church planting team. Paul worked together with them in business and ministry. When Silas and Timothy arrived from Macedonia, they brought financial support and news of how the new believers in Thessalonica were doing (<span class="popup-link" @click = "popUp('pop1')"> 1 Thessalonians 3:2</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -206,7 +206,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Paul wrote both of his letters to the disciples in Thessalonica while he was church planting in Corinth. Paul faced a lot of social pressure and battled fears (<span class="popup-link" @click = "popUp('pop2')"> Acts 18:9</a</span>nbsp;
+Paul wrote both of his letters to the disciples in Thessalonica while he was church planting in Corinth. Paul faced a lot of social pressure and battled fears (<span class="popup-link" @click = "popUp('pop2')"> Acts 18:9</span>),&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -215,7 +215,7 @@ Paul wrote both of his letters to the disciples in Thessalonica while he was chu
 </div>
 </div>
 <!-- end bible --></div>
-but the Lord told him to keep going. Read <span class="popup-link" @click = "popUp('pop3')"> 1 Corinthians 1:14-16</a</span>bsp;
+but the Lord told him to keep going. Read <span class="popup-link" @click = "popUp('pop3')"> 1 Corinthians 1:14-16</span>.&nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>

@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -256,7 +256,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Jesus was betrayed, lied about, treated unjustly, beaten, whipped, and finally nailed to a cross to die between two criminals. In His humanity, Jesus suffered greatly in those last hours of life. God placed the sin of the world on Jesus as an innocent substitute for us. Jesus suffered separation from the Father for the first time. He was forsaken by the Father, who turned His back on Jesus because Jesus was carrying all the weight of the world&rsquo;s sin. The Passover Lamb of God shed His blood and the veil of the temple was torn. Jesus was the last sacrifice. Now we have access to the living God. Those who believe have been adopted into this new family. He made a way to the Father. He laid down His life to pay our debt. On the cross a great exchange happened, &ldquo;God made Him who had no sin to be sin so that we might become the righteousness of God.&rdquo; (<span class="popup-link" @click = "popUp('pop3')"> 2 Corinthians 5:21</a</span>>
+<p class="up">Jesus was betrayed, lied about, treated unjustly, beaten, whipped, and finally nailed to a cross to die between two criminals. In His humanity, Jesus suffered greatly in those last hours of life. God placed the sin of the world on Jesus as an innocent substitute for us. Jesus suffered separation from the Father for the first time. He was forsaken by the Father, who turned His back on Jesus because Jesus was carrying all the weight of the world&rsquo;s sin. The Passover Lamb of God shed His blood and the veil of the temple was torn. Jesus was the last sacrifice. Now we have access to the living God. Those who believe have been adopted into this new family. He made a way to the Father. He laid down His life to pay our debt. On the cross a great exchange happened, &ldquo;God made Him who had no sin to be sin so that we might become the righteousness of God.&rdquo; (<span class="popup-link" @click = "popUp('pop3')"> 2 Corinthians 5:21</span></p>
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -272,7 +272,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study:<span class="popup-link" @click = "popUp('pop4')">  Luke 23:26-49</a</span>bsp;</span>
+	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study:<span class="popup-link" @click = "popUp('pop4')">  Luke 23:26-49</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop4"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -311,7 +311,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment"><span class="popup-link" @click = "popUp('pop5')"> Matthew 27:27-56</a</span>bsp;</span>
+	<span class="for-enrichment"><span class="popup-link" @click = "popUp('pop5')"> Matthew 27:27-56</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop5"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -343,7 +343,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Mark 15:16-41</a</span>bsp;</span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Mark 15:16-41</span>.&nbsp;</span>
 
 	<div class="popup invisible" id="pop6"><span class="for-enrichment"><!-- begin bible --></span>
 

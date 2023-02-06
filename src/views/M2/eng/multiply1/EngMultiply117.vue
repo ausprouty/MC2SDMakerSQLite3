@@ -71,7 +71,7 @@ export default {
 
 <ul>
 	<li class="back">Read a scripture and sing worship songs</li>
-	<li class="back">(Optional Creed) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>
+	<li class="back">(Optional Creed) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
@@ -82,7 +82,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a)
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>

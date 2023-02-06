@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -227,7 +227,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Jesus was led into the wilderness to be tempted by Satan himself. After 40 days of temptations of every kind, the enemy comes again to Jesus. Jesus is now weak, tired and very, very hungry. Satan&rsquo;s temptation was a direct attack on the truth of God&rsquo;s words. This has been Satan&rsquo;s strategy from the beginning when he used it with Adam and Eve (<span class="popup-link" @click = "popUp('pop12')"> Genesis 3</a</span>nbsp;
+	<li class="nobreak-final-final">Jesus was led into the wilderness to be tempted by Satan himself. After 40 days of temptations of every kind, the enemy comes again to Jesus. Jesus is now weak, tired and very, very hungry. Satan&rsquo;s temptation was a direct attack on the truth of God&rsquo;s words. This has been Satan&rsquo;s strategy from the beginning when he used it with Adam and Eve (<span class="popup-link" @click = "popUp('pop12')"> Genesis 3</span>).&nbsp;
 
 	<div class="popup invisible" id="pop12"><!-- begin bible -->
 	<div>
@@ -303,7 +303,7 @@ export default {
 
 </div>
 
-<p class="up"><span class="for-enrichment">Further Study: <span class="popup-link" @click = "popUp('pop9')"> Matthew 4:1-11</a</span>span></p>
+<p class="up"><span class="for-enrichment">Further Study: <span class="popup-link" @click = "popUp('pop9')"> Matthew 4:1-11</span> </span></p>
 
 <div class="popup invisible" id="pop9"><!-- begin bible -->
 <div>

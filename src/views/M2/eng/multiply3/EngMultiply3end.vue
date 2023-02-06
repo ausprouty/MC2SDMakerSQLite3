@@ -56,7 +56,7 @@ export default {
 <div class="page_content ltr">
 <h1>Conclusion</h1>
 <div id="showVideoOptions"></div>
-  <p>During his time in Rome, Paul continued coaching and mentoring believers in Philippi, Colossae and Ephesus through letter writing. Paul also wrote a personal letter to a church leader in Colossae named Philemon. This letter reveals that Paul anticipated being released (<span class="popup-link" @click = "popUp('pop1')"> Philemon 1:22</a</span>nbsp;</p>
+  <p>During his time in Rome, Paul continued coaching and mentoring believers in Philippi, Colossae and Ephesus through letter writing. Paul also wrote a personal letter to a church leader in Colossae named Philemon. This letter reveals that Paul anticipated being released (<span class="popup-link" @click = "popUp('pop1')"> Philemon 1:22</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -66,7 +66,7 @@ export default {
 </div>
 <!-- end bible --></div>
 
-<p>Church history shows us that Paul was indeed released from prison and did more missionary travel (<span class="popup-link" @click = "popUp('pop2')"> Titus 3:12</a</span>bsp;</p>
+<p>Church history shows us that Paul was indeed released from prison and did more missionary travel (<span class="popup-link" @click = "popUp('pop2')"> Titus 3:12</span>,&nbsp;</p>
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -76,7 +76,7 @@ export default {
 </div>
 <!-- end bible --></div>
 
-<p><span class="popup-link" @click = "popUp('pop3')"> 2 Timothy 4:20</a</span>nbsp;</p>
+<p><span class="popup-link" @click = "popUp('pop3')"> 2 Timothy 4:20</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>

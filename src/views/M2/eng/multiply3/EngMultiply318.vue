@@ -184,7 +184,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Peter begins to travel outside of Jerusalem to visit believers who have settled in other towns. The Spirit uses him to perform many miracles and lead many people to Christ in Lydda and Joppa. These are the first churches outside of Jerusalem that Peter helps to start. Directed by the Spirit through prayer, Peter raises Tabitha to life in the same way that he saw Jesus raise Jarius&rsquo; daughter (<span class="popup-link" @click = "popUp('pop1')"> Mark 5:38-42</a</span>nbsp;</p>
+<p class="up">Peter begins to travel outside of Jerusalem to visit believers who have settled in other towns. The Spirit uses him to perform many miracles and lead many people to Christ in Lydda and Joppa. These are the first churches outside of Jerusalem that Peter helps to start. Directed by the Spirit through prayer, Peter raises Tabitha to life in the same way that he saw Jesus raise Jarius&rsquo; daughter (<span class="popup-link" @click = "popUp('pop1')"> Mark 5:38-42</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -195,7 +195,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-)So far, we have seen many examples of what Jesus said would happen when the Spirit comes, &ldquo;these works you will do and even greater works&rdquo; (<span class="popup-link" @click = "popUp('pop2')"> John 14:12</a</span>nbsp;
+)So far, we have seen many examples of what Jesus said would happen when the Spirit comes, &ldquo;these works you will do and even greater works&rdquo; (<span class="popup-link" @click = "popUp('pop2')"> John 14:12</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

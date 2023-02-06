@@ -191,7 +191,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Paul and team left Philippi and went to the provincial capital of Thessalonica. Paul continued his practice of going to the synagogue to find spiritually interested people. A church was planted with some Jews, many Greek men, and some prominent women of the city. The pattern of persecution often started with jealousy from the local Jewish leaders. This time they brought charges of causing civil unrest. The local authorities made Jason, who was hosting Paul and the team, pay a fine (<span class="popup-link" @click = "popUp('pop1')"> Acts 17:7-9</a</span>nbsp;</p>
+<p class="up">Paul and team left Philippi and went to the provincial capital of Thessalonica. Paul continued his practice of going to the synagogue to find spiritually interested people. A church was planted with some Jews, many Greek men, and some prominent women of the city. The pattern of persecution often started with jealousy from the local Jewish leaders. This time they brought charges of causing civil unrest. The local authorities made Jason, who was hosting Paul and the team, pay a fine (<span class="popup-link" @click = "popUp('pop1')"> Acts 17:7-9</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

@@ -202,7 +202,7 @@ for I am going to do something in your days<br />
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Paul and Barnabas leave Cyprus for the province of Pamphylia, where John Mark decides to leave them. Traveling inland to the north, they reach Pisidian Antioch, the capital city of the mountainous province of Galatia. History gives important insight as to why they may have went to this city. The governor of Cyprus had family in that city, which suggests that Paul and Barnabas continued to follow the relational networks the Lord was opening. This city was also at a major crossroad for the surrounding region. Paul and Barnabas spoke at the synagogue, knowing they would find devout Jews and spiritually interested Gentiles (<span class="popup-link" @click = "popUp('pop1')"> Acts 13:26</a</span>nbsp;</p>
+<p class="up">Paul and Barnabas leave Cyprus for the province of Pamphylia, where John Mark decides to leave them. Traveling inland to the north, they reach Pisidian Antioch, the capital city of the mountainous province of Galatia. History gives important insight as to why they may have went to this city. The governor of Cyprus had family in that city, which suggests that Paul and Barnabas continued to follow the relational networks the Lord was opening. This city was also at a major crossroad for the surrounding region. Paul and Barnabas spoke at the synagogue, knowing they would find devout Jews and spiritually interested Gentiles (<span class="popup-link" @click = "popUp('pop1')"> Acts 13:26</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -211,7 +211,7 @@ for I am going to do something in your days<br />
 </div>
 </div>
 <!-- end bible --></div>
-Paul used stories from scripture that showed Jesus was God&rsquo;s provision for their sin (<span class="popup-link" @click = "popUp('pop2')"> Acts 13:38-39</a</span>nbsp;
+Paul used stories from scripture that showed Jesus was God&rsquo;s provision for their sin (<span class="popup-link" @click = "popUp('pop2')"> Acts 13:38-39</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

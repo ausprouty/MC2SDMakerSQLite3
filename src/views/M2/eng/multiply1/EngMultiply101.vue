@@ -103,7 +103,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">God loves people! The Bible tells us God&rsquo;s desire is that all people are saved and come to understand the truth (<span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 2:4</a</span>nbsp;
+	<li class="nobreak-final-final">God loves people! The Bible tells us God&rsquo;s desire is that all people are saved and come to understand the truth (<span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 2:4</span>).&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>

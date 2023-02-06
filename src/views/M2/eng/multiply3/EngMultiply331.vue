@@ -189,7 +189,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Paul wanted to continue following his calling to bring about obedience to the faith among all peoples (<span class="popup-link" @click = "popUp('pop1')"> Romans 1:5</a</span>nbsp;</p>
+<p class="up">Paul wanted to continue following his calling to bring about obedience to the faith among all peoples (<span class="popup-link" @click = "popUp('pop1')"> Romans 1:5</span>).&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -198,7 +198,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-As Paul and Barnabas prepared to leave, they had a big disagreement over Barnabas&rsquo; cousin John Mark. Paul did not trust that John Mark was up to the task because he had deserted them on the first journey. Barnabas saw John Mark&rsquo;s leadership potential and wanted to give him a second chance. As a result, Paul and Barnabas separated and formed two mission teams. Barnabas took John Mark and travelled back to Cyprus. Paul chose Silas, a prophet from the church in Jerusalem (<span class="popup-link" @click = "popUp('pop2')"> Acts 15:32</a</span>nbsp;
+As Paul and Barnabas prepared to leave, they had a big disagreement over Barnabas&rsquo; cousin John Mark. Paul did not trust that John Mark was up to the task because he had deserted them on the first journey. Barnabas saw John Mark&rsquo;s leadership potential and wanted to give him a second chance. As a result, Paul and Barnabas separated and formed two mission teams. Barnabas took John Mark and travelled back to Cyprus. Paul chose Silas, a prophet from the church in Jerusalem (<span class="popup-link" @click = "popUp('pop2')"> Acts 15:32</span>),&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -207,7 +207,7 @@ As Paul and Barnabas prepared to leave, they had a big disagreement over Barnaba
 </div>
 </div>
 <!-- end bible --></div>
-as a new partner and revisited the churches from the previous trip to Galatia. They strengthened the young churches and Paul also recruited a new believer in Lystra named Timothy to assist in the ministry. This story includes the fourth summary statement found in Acts: as a result of the team&rsquo;s encouragement and teaching, the churches grew stronger in faith and increased daily in numbers (<span class="popup-link" @click = "popUp('pop3')"> Acts 16:5</a</span>
+as a new partner and revisited the churches from the previous trip to Galatia. They strengthened the young churches and Paul also recruited a new believer in Lystra named Timothy to assist in the ministry. This story includes the fourth summary statement found in Acts: as a result of the team&rsquo;s encouragement and teaching, the churches grew stronger in faith and increased daily in numbers (<span class="popup-link" @click = "popUp('pop3')"> Acts 16:5</span>).
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>

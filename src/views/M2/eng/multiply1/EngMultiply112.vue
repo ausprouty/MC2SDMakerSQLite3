@@ -69,7 +69,9 @@ export default {
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 9:1-2</a</span><div class="popup invisible" id="pop1"><!-- begin bible -->
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 9:1-2</span>
+
+	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
 	<div>
@@ -120,7 +122,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Acts 10:1-8</a</span>bsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Acts 10:1-8</span>.&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
@@ -196,7 +198,7 @@ export default {
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Persons of Peace are people of relationship. We can share the gospel with individual people, but we need to also look for opportunities to follow open doors to share with the friends and family of Persons of Peace. Other examples of the gospel spreading through relationships are Lydia and her household (<span class="popup-link" @click = "popUp('pop3')"> Acts 16:14-15</a</span>nbsp;
+	<li class="nobreak-final-final">Persons of Peace are people of relationship. We can share the gospel with individual people, but we need to also look for opportunities to follow open doors to share with the friends and family of Persons of Peace. Other examples of the gospel spreading through relationships are Lydia and her household (<span class="popup-link" @click = "popUp('pop3')"> Acts 16:14-15</span>),&nbsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -205,7 +207,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;the Philippian jailer and his household (<span class="popup-link" @click = "popUp('pop4')"> Acts 16:30-33</a</span>bsp;
+	&nbsp;the Philippian jailer and his household (<span class="popup-link" @click = "popUp('pop4')"> Acts 16:30-33</span>)&nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -216,7 +218,8 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;and Matthew the tax collector and his friends (<span class="popup-link" @click = "popUp('pop5')"> Matthew 9:9-10</a</span>
+	&nbsp;and Matthew the tax collector and his friends (<span class="popup-link" @click = "popUp('pop5')"> Matthew 9:9-10</span>).
+
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
 	<div>

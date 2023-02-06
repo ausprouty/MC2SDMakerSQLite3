@@ -70,7 +70,8 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="back">Read. <span class="popup-link" @click = "popUp('pop1')"> Hebrews 4:14-16 </a</span>
+	<li class="back">Read. <span class="popup-link" @click = "popUp('pop1')"> Hebrews 4:14-16 </span>
+
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
@@ -79,7 +80,8 @@ export default {
 	</div>
 	<!-- end bible --></div>
 	and sing songs&nbsp;</li>
-	<li class="back">Use a Statement of Faith about Jesus like <span class="popup-link" @click = "popUp('pop2')"> Philippians 2:11</a</span>	<div class="popup invisible" id="pop2"><!-- begin bible -->
+	<li class="back">Use a Statement of Faith about Jesus like <span class="popup-link" @click = "popUp('pop2')"> Philippians 2:11</span>b
+	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
 	<div>
@@ -89,7 +91,8 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	and&nbsp;&nbsp;<span class="popup-link" @click = "popUp('pop3')"> 1 Timothy 2:4-6</a</span>
+	and&nbsp;&nbsp;<span class="popup-link" @click = "popUp('pop3')"> 1 Timothy 2:4-6</span>a
+
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
 	<div>
@@ -126,7 +129,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">One day Jesus sent out His followers to minister to people in the surrounding villages.&nbsp; When they returned they were so excited about all that God had done through them, &ldquo;Lord, even the demons obey us when we use your name!&rdquo; After Jesus celebrated with them, He gave them this perspective: &ldquo;But don&rsquo;t rejoice because evil spirits obey you; rejoice because your names are registered in heaven.&rdquo; (<span class="popup-link" @click = "popUp('pop4')"> Luke 10:17-20</a</span>nbsp;
+	<li class="nobreak-final-final">One day Jesus sent out His followers to minister to people in the surrounding villages.&nbsp; When they returned they were so excited about all that God had done through them, &ldquo;Lord, even the demons obey us when we use your name!&rdquo; After Jesus celebrated with them, He gave them this perspective: &ldquo;But don&rsquo;t rejoice because evil spirits obey you; rejoice because your names are registered in heaven.&rdquo; (<span class="popup-link" @click = "popUp('pop4')"> Luke 10:17-20</span>).&nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -208,7 +211,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Even from the beginning of the church, the believers cared for one another&rsquo;s needs by giving. We learn from this story that we should give willingly, not under compulsion. This is clearly stated in <span class="popup-link" @click = "popUp('pop5')"> 2 Corinthians 9:7</a</span>bsp;
+	<li class="nobreak-final-final">Even from the beginning of the church, the believers cared for one another&rsquo;s needs by giving. We learn from this story that we should give willingly, not under compulsion. This is clearly stated in <span class="popup-link" @click = "popUp('pop5')"> 2 Corinthians 9:7</span>.&nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -218,7 +221,7 @@ export default {
 	</div>
 	</div>
 	</li>
-	<li class="nobreak-final-final">Read<span class="popup-link" @click = "popUp('pop6')">  Acts 11:27-29</a</span>bsp;
+	<li class="nobreak-final-final">Read<span class="popup-link" @click = "popUp('pop6')">  Acts 11:27-29</span>.&nbsp;
 	<div class="popup invisible" id="pop6"><!-- begin bible -->
 	<div>
 	<div>
@@ -227,7 +230,7 @@ export default {
 	</div>
 	<!-- end bible --></div>
 	The early church also gave to believers in other churches. This shows us that our giving can be used for needs outside of our own church.</li>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop7')"> Luke 8:1-3</a</span>bsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop7')"> Luke 8:1-3</span>.&nbsp;
 	<div class="popup invisible" id="pop7"><!-- begin bible -->
 	<div>
 	<div>
@@ -236,7 +239,7 @@ export default {
 	</div>
 	<!-- end bible --></div>
 	This story shows us that giving is also used for taking the gospel to other places and spread God&rsquo;s message.</li>
-	<li class="nobreak-final-final">In <span class="popup-link" @click = "popUp('pop8')"> 1 Corinthians 16:2</a</span>bsp;
+	<li class="nobreak-final-final">In <span class="popup-link" @click = "popUp('pop8')"> 1 Corinthians 16:2</span>,&nbsp;
 	<div class="popup invisible" id="pop8"><!-- begin bible -->
 	<div>
 	<div>

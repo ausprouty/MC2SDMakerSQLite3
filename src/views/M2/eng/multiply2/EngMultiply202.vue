@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -208,7 +208,8 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Colossians 1:15-20</a</span>
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Colossians 1:15-20</span>
+
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
 	<div>
@@ -216,7 +217,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	and <span class="popup-link" @click = "popUp('pop4')"> Hebrews 2:17</a</span>nbsp;
+	and <span class="popup-link" @click = "popUp('pop4')"> Hebrews 2:17</span>).&nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -225,7 +226,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	Jesus leaves heaven&rsquo;s glory for earth&rsquo;s insignificance. The Bible says that &ldquo;He was made like us in every way&rdquo;. Jesus made a huge sacrifice to become one of us! The Creator enters creation, so that He might be our high priest and our way to God (<span class="popup-link" @click = "popUp('pop5')"> John 14:6</a</span>
+	Jesus leaves heaven&rsquo;s glory for earth&rsquo;s insignificance. The Bible says that &ldquo;He was made like us in every way&rdquo;. Jesus made a huge sacrifice to become one of us! The Creator enters creation, so that He might be our high priest and our way to God (<span class="popup-link" @click = "popUp('pop5')"> John 14:6</span>).
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -265,8 +266,9 @@ export default {
 <!-- end bible --></div>
 
 <ul>
-	<li><span class="popup-link" @click = "popUp('pop6')"> Luke 2:1-20</a</span>i>
-	<li><span class="popup-link" @click = "popUp('pop7')"> Matthew 1: 18-25</a</span><div class="popup invisible" id="pop7"><!-- begin bible -->
+	<li><span class="popup-link" @click = "popUp('pop6')"> Luke 2:1-20</span></li>
+	<li><span class="popup-link" @click = "popUp('pop7')"> Matthew 1: 18-25</span>
+	<div class="popup invisible" id="pop7"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">18&nbsp;</sup>This is how the birth of Jesus the Messiah came about: His mother Mary was pledged to be married to Joseph, but before they came together, she was found to be pregnant through the Holy Spirit.<sup class="versenum">19&nbsp;</sup>Because Joseph her husband was faithful to the law, and yet did not want to expose her to public disgrace, he had in mind to divorce her quietly.</p>

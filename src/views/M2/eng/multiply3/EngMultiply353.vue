@@ -180,7 +180,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 8:28-39</a</span>bsp;</p>
+<p class="up">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 8:28-39</span>.&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

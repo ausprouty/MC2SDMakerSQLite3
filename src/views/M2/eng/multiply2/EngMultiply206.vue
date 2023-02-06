@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -211,7 +211,8 @@ export default {
 <ul>
 	<li class="nobreak-final-final">
 	<div class="popup invisible" id="pop3"><!-- end bible --></div>
-	Jesus travelled south to an area near Jericho, about 3-4 days journey from his home in Galilee. He may not have been sure of His next steps, but the Father led Him to be baptized by John. Baptism was used to identify a messenger and his message. <span class="popup-link" @click = "popUp('pop4')"> Luke 3:23</a</span>
+	Jesus travelled south to an area near Jericho, about 3-4 days journey from his home in Galilee. He may not have been sure of His next steps, but the Father led Him to be baptized by John. Baptism was used to identify a messenger and his message. <span class="popup-link" @click = "popUp('pop4')"> Luke 3:23</span>
+
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
 	<div>
@@ -229,7 +230,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final">Further Study: <span class="popup-link" @click = "popUp('pop5')"> Luke 3:21-23</a</span>bsp;
+	<li class="nobreak-final-final">Further Study: <span class="popup-link" @click = "popUp('pop5')"> Luke 3:21-23</span>;&nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -244,7 +245,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Mark 1: 9-11</a</span>bsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Mark 1: 9-11</span>.&nbsp;
 
 	<div class="popup invisible" id="pop6"><!-- begin bible -->
 	<div>

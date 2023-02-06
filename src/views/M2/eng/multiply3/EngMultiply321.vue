@@ -190,7 +190,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">News spread quickly back to Jerusalem of the new work among the Gentiles. Peter returns home from his ministry tour (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:32</a</span>bsp;</p>
+<p class="up">News spread quickly back to Jerusalem of the new work among the Gentiles. Peter returns home from his ministry tour (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:32</span>)&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

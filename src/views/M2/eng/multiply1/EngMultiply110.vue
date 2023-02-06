@@ -70,7 +70,8 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</a</span>
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36</span>
+
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">33&nbsp;</sup>Oh, the depth of the riches of the wisdom and knowledge of God!<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;How unsearchable his judgments,<br />
@@ -108,7 +109,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">In<span class="popup-link" @click = "popUp('pop2')">  John 3:8</a</span>bsp;
+	<li class="nobreak-final-final">In<span class="popup-link" @click = "popUp('pop2')">  John 3:8</span>,&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	

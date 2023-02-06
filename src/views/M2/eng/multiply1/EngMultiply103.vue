@@ -162,7 +162,7 @@ export default {
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Though all Christians have the Spirit living in them, not all Christians are directed and empowered by the Spirit. When we trust in our own efforts or take control of our lives, the Bible calls us carnal and we don&rsquo;t experience an abundant or fruitful life. Read <span class="popup-link" @click = "popUp('pop1')"> Galatians 5:22-24</a</span>bsp;
+	<li class="nobreak-final-final">Though all Christians have the Spirit living in them, not all Christians are directed and empowered by the Spirit. When we trust in our own efforts or take control of our lives, the Bible calls us carnal and we don&rsquo;t experience an abundant or fruitful life. Read <span class="popup-link" @click = "popUp('pop1')"> Galatians 5:22-24</span>.&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -189,7 +189,9 @@ export default {
 <p class="forward">Review Spiritual Breathing</p>
 
 <ul class="forward">
-	<li>Exhale &ndash; <span class="popup-link" @click = "popUp('pop2')"> 1 John 1:9</a</span><div class="popup invisible" id="pop2"><!-- begin bible -->
+	<li>Exhale &ndash; <span class="popup-link" @click = "popUp('pop2')"> 1 John 1:9</span>
+
+	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">9&nbsp;</sup>If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.</p>

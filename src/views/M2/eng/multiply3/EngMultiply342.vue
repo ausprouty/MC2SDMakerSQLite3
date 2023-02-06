@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	</div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</a</span>i>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</span></li>
 </ul>
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
@@ -203,7 +203,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">On his way to Jerusalem, Paul and the ministry team stopped in Miletus. Paul called the Ephesian elders to come so that he could speak to them one last time. From Paul&rsquo;s experiences we learn a lot about the perseverance it takes to plant churches in non-Christian cities. Paul faced many trials and hardships, but still told the Ephesians the truth. He did not change his message to please the people. Paul also modeled complete surrender to the Lord&rsquo;s will even in the midst of suffering. We also learn a lot about the important role that elders have. They are to guard their lives and be a model of how to walk with Jesus. They are also to guard God&rsquo;s people and feed them by teaching the Word. Jesus taught that the nature of the Kingdom of God would always include the presence of evil (<span class="popup-link" @click = "popUp('pop1')"> Matthew 13:24-30</a</span>/p>
+<p class="up">On his way to Jerusalem, Paul and the ministry team stopped in Miletus. Paul called the Ephesian elders to come so that he could speak to them one last time. From Paul&rsquo;s experiences we learn a lot about the perseverance it takes to plant churches in non-Christian cities. Paul faced many trials and hardships, but still told the Ephesians the truth. He did not change his message to please the people. Paul also modeled complete surrender to the Lord&rsquo;s will even in the midst of suffering. We also learn a lot about the important role that elders have. They are to guard their lives and be a model of how to walk with Jesus. They are also to guard God&rsquo;s people and feed them by teaching the Word. Jesus taught that the nature of the Kingdom of God would always include the presence of evil (<span class="popup-link" @click = "popUp('pop1')"> Matthew 13:24-30</span>).</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <p><sup class="versenum">24&nbsp;</sup>Jesus told them another parable: &ldquo;The kingdom of heaven is like a man who sowed good seed in his field.<sup class="versenum">25&nbsp;</sup>But while everyone was sleeping, his enemy came and sowed weeds among the wheat, and went away.<sup class="versenum">26&nbsp;</sup>When the wheat sprouted and formed heads, then the weeds also appeared.</p>
@@ -216,7 +216,7 @@ export default {
 
 <p><sup class="versenum">29&nbsp;</sup>&ldquo;&lsquo;No,&rsquo; he answered, &lsquo;because while you are pulling the weeds, you may uproot the wheat with them.<sup class="versenum">30&nbsp;</sup>Let both grow together until the harvest. At that time I will tell the harvesters: First collect the weeds and tie them in bundles to be burned; then gather the wheat and bring it into my barn.&rsquo;&rdquo;</p>
 <!-- end bible --></div>
-Paul knew they would face the dangers of false teachers whose desire was to destroy believers. This period ends with Paul stating that his work was done in the Eastern part of the Roman Empire (<span class="popup-link" @click = "popUp('pop2')"> Romans 15:19</a</span>nbsp;
+Paul knew they would face the dangers of false teachers whose desire was to destroy believers. This period ends with Paul stating that his work was done in the Eastern part of the Roman Empire (<span class="popup-link" @click = "popUp('pop2')"> Romans 15:19</span>).&nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <p><sup class="versenum">19&nbsp;</sup>by the power of signs and wonders, through the power of the Spirit of God. So from Jerusalem all the way around to Illyricum, I have fully proclaimed the gospel of Christ.</p>

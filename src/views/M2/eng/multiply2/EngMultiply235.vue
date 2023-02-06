@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -229,7 +229,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">While the apostles were out on their ministry trips, King Herod Antipas was celebrating his birthday. He threw a big banquet and invited all the military commanders and upper-class people of Galilee to one of his palaces. He made a foolish promise to his niece because he liked the way she danced for the guests. Her mother, Herodias, seized the opportunity to get revenge on John the Baptist. She requested his beheading. Herod, not willing to lose face in front of his guests, did what Herodias asked and executed John. Meanwhile, Jesus was continuing His training and discipleship of others as He traveled from town to town (<span class="popup-link" @click = "popUp('pop4')"> Matthew 11:1</a</span>nbsp;
+	<li class="nobreak-final-final">While the apostles were out on their ministry trips, King Herod Antipas was celebrating his birthday. He threw a big banquet and invited all the military commanders and upper-class people of Galilee to one of his palaces. He made a foolish promise to his niece because he liked the way she danced for the guests. Her mother, Herodias, seized the opportunity to get revenge on John the Baptist. She requested his beheading. Herod, not willing to lose face in front of his guests, did what Herodias asked and executed John. Meanwhile, Jesus was continuing His training and discipleship of others as He traveled from town to town (<span class="popup-link" @click = "popUp('pop4')"> Matthew 11:1</span>).&nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -244,7 +244,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop9')"> Mark 6:14-34</a</span>/span>
+	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop9')"> Mark 6:14-34</span>; </span>
 
 	<div class="popup invisible" id="pop9"><span class="for-enrichment"><!-- begin bible --> </span>
 
@@ -280,7 +280,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --></span></div>
-	<span class="for-enrichment"> <span class="popup-link" @click = "popUp('pop3')"> Luke 9:7-11</a</span>/span>
+	<span class="for-enrichment"> <span class="popup-link" @click = "popUp('pop3')"> Luke 9:7-11</span>. </span>
 
 	<div class="popup invisible" id="pop3"><span class="for-enrichment"><!-- begin bible --> </span>
 

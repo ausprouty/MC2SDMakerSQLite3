@@ -71,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -235,7 +235,7 @@ export default {
 
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop3')"> Luke 9:12-17</a</span>bsp;</span>
+	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop3')"> Luke 9:12-17</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop3"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -251,7 +251,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop4')"> Matthew 14:15-21</a</span>bsp;</span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop4')"> Matthew 14:15-21</span>;&nbsp;</span>
 
 	<div class="popup invisible" id="pop4"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -267,7 +267,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Mark 6:35-44</a</span>span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Mark 6:35-44</span>.</span>
 
 	<div class="popup invisible" id="pop5"><span class="for-enrichment"><!-- begin bible --></span>
 
