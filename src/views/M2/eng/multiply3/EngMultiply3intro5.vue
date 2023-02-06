@@ -69,8 +69,8 @@ export default {
 
 <p>   
     <vue-image-zoomer
-    regular="images/zoom/eng/multiply3/Trip3.png" 
-    zoom="images/zoom/eng/multiply3/Trip3.png" :zoom-amount="3" img-class="img-fluid" alt="">
+    regular="/images/zoom/eng/multiply3/Trip3.png" 
+    zoom="/images/zoom/eng/multiply3/Trip3.png" :zoom-amount="3" img-class="img-fluid" alt="">
     <img src="@/assets/images/eng/multiply3/Trip3.png" img-class="img-fluid" />
     </vue-image-zoomer></p>
 

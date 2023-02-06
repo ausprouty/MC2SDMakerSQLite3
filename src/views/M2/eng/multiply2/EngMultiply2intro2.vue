@@ -68,8 +68,8 @@ export default {
   <p class="year">
    
     <vue-image-zoomer
-    regular="images/zoom/eng/multiply2/Period2.png" 
-    zoom="images/zoom/eng/multiply2/Period2.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
+    regular="/images/zoom/eng/multiply2/Period2.png" 
+    zoom="/images/zoom/eng/multiply2/Period2.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
     <img src="@/assets/images/eng/multiply2/Period2.png" img-class="img-fluid" />
     </vue-image-zoomer></p>
 

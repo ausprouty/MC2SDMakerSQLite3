@@ -52,30 +52,18 @@ export default {
 }
 </script>
 <template>
-  <!-- begin note sdcard -->
-<div class="note-area">
-    <form class="auto_submit_item">
-      <textarea
-        class="textarea resize-ta"
-        @keyup="this.addNote('note2Text')"
-        id="note2Text"
-      ></textarea>
-    </form>
-</div>
-<!-- end note sdcard -->
 
-</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>4.</h1></div>
                         <div class="chapter_title ltr"><h1>How to Walk in the Spirit</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-  
+
         <button id="MC2/eng/audio/tc/tc04.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #4: How to Walk in the Spirit"&nbsp; </button>
           <div class="collapsed"></div>
-        
+
 
 <!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2>+ Introduction</h2></div>
@@ -236,7 +224,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-			  
+
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
@@ -253,7 +241,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 </div>
 
 <!-- end mc2 sdcard languageFooter -->
-</div><!--- Created by publishPage-->
+<!--- Created by publishPage-->
 
 </template>
 <!-- begin sdcard Footer -->

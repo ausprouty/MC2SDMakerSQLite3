@@ -67,8 +67,8 @@ export default {
 <div id="showVideoOptions"></div>
   <p>   
     <vue-image-zoomer
-    regular="images/zoom/eng/multiply3/Trip4.png" 
-    zoom="images/zoom/eng/multiply3/Trip4.png" :zoom-amount="3" img-class="img-fluid" alt="">
+    regular="/images/zoom/eng/multiply3/Trip4.png" 
+    zoom="/images/zoom/eng/multiply3/Trip4.png" :zoom-amount="3" img-class="img-fluid" alt="">
     <img src="@/assets/images/eng/multiply3/Trip4.png" img-class="img-fluid" />
     </vue-image-zoomer></p>
 
