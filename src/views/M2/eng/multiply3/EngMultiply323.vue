@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -215,7 +211,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Jesus promised the Apostles, &ldquo;If they persecute Me, they will also persecute you.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> John 15:20</span>).&nbsp;&nbsp;</p>
+<p class="up">Jesus promised the Apostles, &ldquo;If they persecute Me, they will also persecute you.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> John 15:20</a</span>nbsp;&nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -224,7 +220,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-This time persecution breaks out against the Apostles and other church leaders. The Lord allows the Apostle James to be killed, but He allows Peter to miraculously escape from Herod. Even though the believers were praying for the Lord to save Peter, some of them doubted it could happen (12:13). There is no common outcome to persecution: sometimes believers escape, sometimes they are killed; sometimes God does a miracle, sometimes He does not. The Lord taught &ldquo;love your enemies and pray for those who persecute you&rdquo; and &ldquo;vengeance is mine and I will repay&rdquo; (<span class="popup-link" @click = "popUp('pop2')"> Matthew 5:43-48</span>;&nbsp;
+This time persecution breaks out against the Apostles and other church leaders. The Lord allows the Apostle James to be killed, but He allows Peter to miraculously escape from Herod. Even though the believers were praying for the Lord to save Peter, some of them doubted it could happen (12:13). There is no common outcome to persecution: sometimes believers escape, sometimes they are killed; sometimes God does a miracle, sometimes He does not. The Lord taught &ldquo;love your enemies and pray for those who persecute you&rdquo; and &ldquo;vengeance is mine and I will repay&rdquo; (<span class="popup-link" @click = "popUp('pop2')"> Matthew 5:43-48</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -233,10 +229,10 @@ This time persecution breaks out against the Apostles and other church leaders. 
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop3')"> Rom 12:17-21</span>).&nbsp;
+<span class="popup-link" @click = "popUp('pop3')"> Rom 12:17-21</a</span>nbsp;
 
 <div class="popup invisible" id="pop3">&nbsp;</div>
-At this time God responds to the arrogance and attack of Herod by removing him, while further spreading His own Word. This story includes the third summary statement found in the book of Acts: the word of God increased and multiplied (<span class="popup-link" @click = "popUp('pop4')"> Acts 12:24</span>).&nbsp;
+At this time God responds to the arrogance and attack of Herod by removing him, while further spreading His own Word. This story includes the third summary statement found in the book of Acts: the word of God increased and multiplied (<span class="popup-link" @click = "popUp('pop4')"> Acts 12:24</a</span>nbsp;
 
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>

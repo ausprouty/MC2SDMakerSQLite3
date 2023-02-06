@@ -43,27 +43,27 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
 <template>
-
+  <div id="nav">
+    <div class="nav full internal-link" @click="this.pageGoBack('eng-tc-index')">
+        <img src="@/assets/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </div>
+</div>
 <div class="page_content ltr">
 <div class="block ltr">
                         <div class="chapter_number ltr"><h1>4.</h1></div>
                         <div class="chapter_title ltr"><h1>How to Walk in the Spirit</h1></div>
                     </div>
 <div id="showVideoOptions"></div>
-
+  
         <button id="MC2/eng/audio/tc/tc04.mp3" type="button" class="external-audio">
            Listen to &nbsp;"TC #4: How to Walk in the Spirit"&nbsp; </button>
           <div class="collapsed"></div>
-
+        
 
 <!-- begin default revealSummary -->
 <div id="Summary0" class="summary"><h2>+ Introduction</h2></div>
@@ -210,7 +210,6 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 </div>
 <!-- end note sdcard -->
 
-</div>
 
 <p>Adapted from <em>The Transferable Concepts</em> by Bill Bright. All rights reserved.</p>
 
@@ -224,7 +223,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 			<td class="social" @click="share('languages', '', '')">
 				  <img class="social" src="@/assets/images/standard/languages.png" />
 			  </td>
-
+			  
 			<td class="social"  @click="share('android', 'eng', '')">
 				<img  class="social" src="@/assets/images/standard/android.png" />
 			</td>
@@ -241,7 +240,7 @@ In the same way, we as Christians do not depend on feelings or emotions, but we 
 </div>
 
 <!-- end mc2 sdcard languageFooter -->
-<!--- Created by publishPage-->
+</div><!--- Created by publishPage-->
 
 </template>
 <!-- begin sdcard Footer -->

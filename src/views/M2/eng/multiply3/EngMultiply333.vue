@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -198,7 +194,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">The ministry team of Paul, Silas, Timothy and Luke are in Philippi. Because there was no synagogue, they went to the place of prayer down by the river to look for others who had a spiritual interest. A demon possessed slave girl tried to associate with the team, but Paul knew from painful experience the danger of people thinking he was representing false religious practices (<span class="popup-link" @click = "popUp('pop1')"> Acts 14:8-20</span>).&nbsp;</p>
+<p class="up">The ministry team of Paul, Silas, Timothy and Luke are in Philippi. Because there was no synagogue, they went to the place of prayer down by the river to look for others who had a spiritual interest. A demon possessed slave girl tried to associate with the team, but Paul knew from painful experience the danger of people thinking he was representing false religious practices (<span class="popup-link" @click = "popUp('pop1')"> Acts 14:8-20</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

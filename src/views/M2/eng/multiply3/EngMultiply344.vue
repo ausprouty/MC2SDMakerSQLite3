@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -186,7 +182,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Jews from the province of Asia were very familiar with Paul and Trophimus from Paul&rsquo;s long stay in Ephesus. They saw an opportunity to try to stop Paul, so they stirred up the crowd against him. When they came against Paul, he was actually in the temple practicing purification that the Jewish law required. The Jews&rsquo; accusations were false, but their actions demonstrated the common misunderstandings about what Paul was teaching. The Jews were so passionate about their religion that they quickly moved to respond with violence. The Lord used the Roman authorities to rescue Paul from the mob. The prophecies made by the Spirit came true (<span class="popup-link" @click = "popUp('pop1')"> Acts 21:4</span>,&nbsp;</p>
+<p class="up">Jews from the province of Asia were very familiar with Paul and Trophimus from Paul&rsquo;s long stay in Ephesus. They saw an opportunity to try to stop Paul, so they stirred up the crowd against him. When they came against Paul, he was actually in the temple practicing purification that the Jewish law required. The Jews&rsquo; accusations were false, but their actions demonstrated the common misunderstandings about what Paul was teaching. The Jews were so passionate about their religion that they quickly moved to respond with violence. The Lord used the Roman authorities to rescue Paul from the mob. The prophecies made by the Spirit came true (<span class="popup-link" @click = "popUp('pop1')"> Acts 21:4</a</span>bsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -195,7 +191,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop2')"> Acts 24:11</span>)&nbsp;
+<span class="popup-link" @click = "popUp('pop2')"> Acts 24:11</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

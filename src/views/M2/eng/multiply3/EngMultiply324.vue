@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -193,7 +189,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">The leadership team in the church at Antioch consisted of five men with different gifts and different backgrounds. The Spirit directed them to send out Saul and Barnabas, two members of the team, to make disciples and start new churches in new territories. Barnabas and Saul decided to take Barnabas&rsquo; young cousin, John Mark, with them as an assistant. The first place they visited was Barnabas&rsquo; home of Cyprus, an island off the coast of Syria. It was also believers from Cyprus that had help start the church in Antioch (<span class="popup-link" @click = "popUp('pop1')"> Acts 11:20</span>).&nbsp;</p>
+<p class="up">The leadership team in the church at Antioch consisted of five men with different gifts and different backgrounds. The Spirit directed them to send out Saul and Barnabas, two members of the team, to make disciples and start new churches in new territories. Barnabas and Saul decided to take Barnabas&rsquo; young cousin, John Mark, with them as an assistant. The first place they visited was Barnabas&rsquo; home of Cyprus, an island off the coast of Syria. It was also believers from Cyprus that had help start the church in Antioch (<span class="popup-link" @click = "popUp('pop1')"> Acts 11:20</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -202,7 +198,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-These relationships likely influenced their plans. As a Roman citizen, Saul used his Gentile name, Paul, while he traveled. Paul and Barnabas are introduced to the governor of the island through a Jewish sorcerer which led to major spiritual conflict. Paul did not respond with fear but with the authority of Jesus (<span class="popup-link" @click = "popUp('pop2')"> Matthew 28:18-20</span>)&nbsp;
+These relationships likely influenced their plans. As a Roman citizen, Saul used his Gentile name, Paul, while he traveled. Paul and Barnabas are introduced to the governor of the island through a Jewish sorcerer which led to major spiritual conflict. Paul did not respond with fear but with the authority of Jesus (<span class="popup-link" @click = "popUp('pop2')"> Matthew 28:18-20</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

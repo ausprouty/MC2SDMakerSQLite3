@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -217,7 +213,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">For Paul&rsquo;s entire Christian life, the Jews who rejected Jesus also rejected him and the gospel. We are reminded of Jesus&rsquo; teaching, &ldquo;if they reject you, they reject me, and the one who sent me&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Luke 10:16</span>).&nbsp;</p>
+<p class="up">For Paul&rsquo;s entire Christian life, the Jews who rejected Jesus also rejected him and the gospel. We are reminded of Jesus&rsquo; teaching, &ldquo;if they reject you, they reject me, and the one who sent me&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Luke 10:16</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -226,7 +222,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-The Jews viewed Paul as a blasphemer and his message as a threat to their own self-serving nationalistic view of God&rsquo;s purpose. We see God&rsquo;s sovereignty through the use of Paul&rsquo;s nephew learning about the plot to have him assassinated. In response, the commander sent 470 Roman troops to transport Paul safely the 112 km (70 miles) to the seaside city of Caesarea. Governor Felix kept him under guard in the summer palace of former King Herod the Great (<span class="popup-link" @click = "popUp('pop2')"> Matthew 2:1</span>;&nbsp;
+The Jews viewed Paul as a blasphemer and his message as a threat to their own self-serving nationalistic view of God&rsquo;s purpose. We see God&rsquo;s sovereignty through the use of Paul&rsquo;s nephew learning about the plot to have him assassinated. In response, the commander sent 470 Roman troops to transport Paul safely the 112 km (70 miles) to the seaside city of Caesarea. Governor Felix kept him under guard in the summer palace of former King Herod the Great (<span class="popup-link" @click = "popUp('pop2')"> Matthew 2:1</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -235,7 +231,7 @@ The Jews viewed Paul as a blasphemer and his message as a threat to their own se
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop3')"> Luke 1:5</span>).&nbsp;
+<span class="popup-link" @click = "popUp('pop3')"> Luke 1:5</a</span>nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>

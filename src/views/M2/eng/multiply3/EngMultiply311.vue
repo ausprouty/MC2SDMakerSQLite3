@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -190,7 +186,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">We learn about one of the seven appointed men named Stephan. Stephen&rsquo;s ministry was to care for the widows and to manage the resources of the church. In addition to this, he was sharing the gospel with other Greek speaking Jews by visiting the synagogues that they attended. The Spirit empowered Stephen to perform miracles and to speak with wisdom. This is the first mention of a non-apostle doing the same work that the Apostles had been doing. The Apostles were making the next generation of disciples by passing on what they had learned from Jesus. This is an answer to Jesus&rsquo; prayer for the Apostles and for those who would believe as a result of their witness (<span class="popup-link" @click = "popUp('pop1')"> John 17:20</span>).&nbsp;</p>
+<p class="up">We learn about one of the seven appointed men named Stephan. Stephen&rsquo;s ministry was to care for the widows and to manage the resources of the church. In addition to this, he was sharing the gospel with other Greek speaking Jews by visiting the synagogues that they attended. The Spirit empowered Stephen to perform miracles and to speak with wisdom. This is the first mention of a non-apostle doing the same work that the Apostles had been doing. The Apostles were making the next generation of disciples by passing on what they had learned from Jesus. This is an answer to Jesus&rsquo; prayer for the Apostles and for those who would believe as a result of their witness (<span class="popup-link" @click = "popUp('pop1')"> John 17:20</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

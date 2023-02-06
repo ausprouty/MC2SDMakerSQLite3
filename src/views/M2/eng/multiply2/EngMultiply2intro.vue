@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -63,7 +59,7 @@ export default {
   <p>Jesus is our model for life and ministry. Because He is our model, it is important to know His character, His priorities, and His process for building a disciple-making movement. This movement multiplies others for fulfilling the Great Commission.</p>
 
 <ul>
-	<li class="nobreak-final-final">Christmas is the time we celebrate the mystery of The Word (<span class="popup-link" @click = "popUp('pop1')"> John 1:1</span>).&nbsp;
+	<li class="nobreak-final-final">Christmas is the time we celebrate the mystery of The Word (<span class="popup-link" @click = "popUp('pop1')"> John 1:1</a</span>nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -72,8 +68,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;The Word became fully human ( <span class="popup-link" @click = "popUp('pop2')"> John 1:14</span>)
-
+	&nbsp;The Word became fully human ( <span class="popup-link" @click = "popUp('pop2')"> John 1:14</a</span>
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
@@ -87,7 +82,7 @@ export default {
 <p>Though fully God, He chose to live His life as fully man, in total surrendered obedience to His heavenly Father. What He achieved in His life and ministry, He achieved as the man from Nazareth, the Son of Man, through the power and presence of the Holy Spirit in fulfilment of the Father&rsquo;s will. Though He had every right to operate out of his divinity, He chose to only live out of His perfect sinless humanity to be our example of how to fully glorify God in our life and ministry.</p>
 
 <ul>
-	<li class="nobreak-final-final">Jesus was and will always be fully God. Even though He had all the authority, power and resources of heaven at his command, He never used it. Instead He chose to &ldquo;become like his brothers in every way&rdquo; (<span class="popup-link" @click = "popUp('pop3')"> Hebrews 2:17</span>)&nbsp;
+	<li class="nobreak-final-final">Jesus was and will always be fully God. Even though He had all the authority, power and resources of heaven at his command, He never used it. Instead He chose to &ldquo;become like his brothers in every way&rdquo; (<span class="popup-link" @click = "popUp('pop3')"> Hebrews 2:17</a</span>bsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -96,7 +91,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;but without sin. Because of this, the book of Hebrews encourages us, &ldquo;Therefore, holy brothers, who share in the heavenly calling, fix your thoughts on Jesus, the apostle and high priest whom we confess.&rdquo; (<span class="popup-link" @click = "popUp('pop4')"> Hebrews 3:1</span>).&nbsp;
+	&nbsp;but without sin. Because of this, the book of Hebrews encourages us, &ldquo;Therefore, holy brothers, who share in the heavenly calling, fix your thoughts on Jesus, the apostle and high priest whom we confess.&rdquo; (<span class="popup-link" @click = "popUp('pop4')"> Hebrews 3:1</a</span>nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -111,7 +106,7 @@ export default {
 <p>The four Gospel writers record a summary of His life and teachings. By studying their written witness, we can learn about the development of His movement. In His humanity, even Jesus was subject to time and space and lived in the sequence of hours, days, weeks, years. He initiated and developed His movement in time. Therefore, Jesus&rsquo; case study is very instructive for leaders. We gain insight into how His life and movement unfolded over time by reconstructing a chronological sequence from the evidence provided by the Gospels.</p>
 
 <ul>
-	<li class="nobreak-final-final">Luke tells us that he sought to provide a well investigated and &ldquo;orderly account&rdquo; of Jesus life (<span class="popup-link" @click = "popUp('pop5')"> Luke 1:1-4</span>).&nbsp;
+	<li class="nobreak-final-final">Luke tells us that he sought to provide a well investigated and &ldquo;orderly account&rdquo; of Jesus life (<span class="popup-link" @click = "popUp('pop5')"> Luke 1:1-4</a</span>nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -120,8 +115,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;The other writers were not concerned with order of events but arranged their accounts around themes. For example, John, the last of the four to write his gospel, recorded a lot of new material filling in some of the gaps in time especially the first year and a half (John 1-4) and the last few weeks (<span class="popup-link" @click = "popUp('pop6')"> John 12-21</span>)
-
+	&nbsp;The other writers were not concerned with order of events but arranged their accounts around themes. For example, John, the last of the four to write his gospel, recorded a lot of new material filling in some of the gaps in time especially the first year and a half (John 1-4) and the last few weeks (<span class="popup-link" @click = "popUp('pop6')"> John 12-21</a</span>
 	<div class="popup invisible" id="pop6"><!-- begin bible -->
 	<div>
 	<div>
@@ -432,8 +426,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;of Jesus earthly life and ministry. In fact, <span class="popup-link" @click = "popUp('pop7')"> John 13-20</span>
-
+	&nbsp;of Jesus earthly life and ministry. In fact, <span class="popup-link" @click = "popUp('pop7')"> John 13-20</a</span>
 	<div class="popup invisible" id="pop7"><!-- begin bible -->
 	<div>
 	<div>
@@ -752,7 +745,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final">Luke tells us that Jesus was born during the reign of King Herod [the Great] (<span class="popup-link" @click = "popUp('pop8')"> Luke 1:5</span>),&nbsp;
+	<li class="nobreak-final-final">Luke tells us that Jesus was born during the reign of King Herod [the Great] (<span class="popup-link" @click = "popUp('pop8')"> Luke 1:5</a</span>nbsp;
 
 	<div class="popup invisible" id="pop8"><!-- begin bible -->
 	<div>
@@ -761,7 +754,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;during the reign of Caesar Augustus (<span class="popup-link" @click = "popUp('pop9')"> Luke 2:1-7</span>)&nbsp;
+	&nbsp;during the reign of Caesar Augustus (<span class="popup-link" @click = "popUp('pop9')"> Luke 2:1-7</a</span>bsp;
 
 	<div class="popup invisible" id="pop9"><!-- begin bible -->
 	<div>
@@ -772,10 +765,10 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	and while Quirinius was governor of Syria <span class="popup-link" @click = "popUp('pop10')"> (Luke 2:2</span>).&nbsp;
+	and while Quirinius was governor of Syria <span class="popup-link" @click = "popUp('pop10')"> (Luke 2:2</a</span>nbsp;
 
 	<div class="popup invisible" id="pop10">&nbsp;</div>
-	&nbsp;He also states Jesus started his ministry during the 15th reign of Tiberius Caesar (<span class="popup-link" @click = "popUp('pop11')"> Luke 3:1-2</span>)&nbsp;
+	&nbsp;He also states Jesus started his ministry during the 15th reign of Tiberius Caesar (<span class="popup-link" @click = "popUp('pop11')"> Luke 3:1-2</a</span>bsp;
 
 	<div class="popup invisible" id="pop11"><!-- begin bible -->
 	<div>
@@ -784,7 +777,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;and that Jesus was about 30 years old when he started (<span class="popup-link" @click = "popUp('pop12')"> Luke 3:21-23</span>).&nbsp;
+	&nbsp;and that Jesus was about 30 years old when he started (<span class="popup-link" @click = "popUp('pop12')"> Luke 3:21-23</a</span>nbsp;
 
 	<div class="popup invisible" id="pop12"><!-- begin bible -->
 	<div>

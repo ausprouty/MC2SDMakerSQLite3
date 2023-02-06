@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -193,7 +189,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Paul had plans of going into the province of Asia, which is west of Galatia, but the Lord had other plans for the ministry team. After being prevented by the Holy Spirit from going west into Asia and northeast into Bithynia, the team traveled northwest to the city of Troas on the west coast of modern day Turkey. Luke, the author of the book of Acts, joins the team in Troas as noted by the use of &ldquo;we&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Acts 16:10</span>).&nbsp;</p>
+<p class="up">Paul had plans of going into the province of Asia, which is west of Galatia, but the Lord had other plans for the ministry team. After being prevented by the Holy Spirit from going west into Asia and northeast into Bithynia, the team traveled northwest to the city of Troas on the west coast of modern day Turkey. Luke, the author of the book of Acts, joins the team in Troas as noted by the use of &ldquo;we&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Acts 16:10</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

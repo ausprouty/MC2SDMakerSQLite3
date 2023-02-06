@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -214,7 +210,7 @@ and turn, and I would heal them.&rsquo;</p>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">The Roman believers would have received Paul&rsquo;s letter almost 3 years earlier. Paul kept the pattern of starting with the Jews, giving them evidence from scripture that Jesus is the Messiah, and then starting to share with the non-Jewish people. The Jewish leader&rsquo;s testimony gives a glimpse into the spread of the gospel, &ldquo;we know people everywhere are talking against this sect&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Acts 28:22</span>).&nbsp;</p>
+<p class="up">The Roman believers would have received Paul&rsquo;s letter almost 3 years earlier. Paul kept the pattern of starting with the Jews, giving them evidence from scripture that Jesus is the Messiah, and then starting to share with the non-Jewish people. The Jewish leader&rsquo;s testimony gives a glimpse into the spread of the gospel, &ldquo;we know people everywhere are talking against this sect&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Acts 28:22</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -223,7 +219,7 @@ and turn, and I would heal them.&rsquo;</p>
 </div>
 </div>
 <!-- end bible --></div>
-Paul was able to witness to his Roman guards and even members of Caesar&rsquo;s household became believers (<span class="popup-link" @click = "popUp('pop2')"> Philippians 4:22</span>).&nbsp;
+Paul was able to witness to his Roman guards and even members of Caesar&rsquo;s household became believers (<span class="popup-link" @click = "popUp('pop2')"> Philippians 4:22</a</span>nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

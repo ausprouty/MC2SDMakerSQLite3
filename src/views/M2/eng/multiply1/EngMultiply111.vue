@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -73,9 +69,7 @@ export default {
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 95:1-7</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 95:1-7</a</span><div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
 	<div>
@@ -133,7 +127,7 @@ export default {
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final"><span class="back">In the book of Acts, we see how believers trained others to be trainers of others. One of the first followers of Jesus was a man named Barnabas. He found a new believer named Paul and helped him. Paul found a young believer named Timothy and took Timothy with him to share the gospel in many places. Later, Paul wrote to Timothy that he should train faithful men in the churches to find other younger Christians to train. Read <span class="popup-link" @click = "popUp('pop2')"> 2 Timothy 2:2</span>.&nbsp;</span>
+	<li class="nobreak-final-final"><span class="back">In the book of Acts, we see how believers trained others to be trainers of others. One of the first followers of Jesus was a man named Barnabas. He found a new believer named Paul and helped him. Paul found a young believer named Timothy and took Timothy with him to share the gospel in many places. Later, Paul wrote to Timothy that he should train faithful men in the churches to find other younger Christians to train. Read <span class="popup-link" @click = "popUp('pop2')"> 2 Timothy 2:2</a</span>bsp;</span>
 
 	<div class="popup invisible" id="pop2"><span class="back"><!-- begin bible --></span>
 

@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -98,8 +94,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">The Lord not only loves us, He has a vision for our lives. What is that vision? It is to be like Christ. <span class="popup-link" @click = "popUp('pop1')"> Romans 8:29</span>
-
+	<li class="nobreak-final-final">The Lord not only loves us, He has a vision for our lives. What is that vision? It is to be like Christ. <span class="popup-link" @click = "popUp('pop1')"> Romans 8:29</a</span>
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
@@ -107,8 +102,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	says that His plan is that we all conform to the image of Christ, to experience and reflect the Father like Christ did. And the great news is that this work of Christlikeness is God&rsquo;s work. <span class="popup-link" @click = "popUp('pop2')"> Philippians 1:6</span>
-
+	says that His plan is that we all conform to the image of Christ, to experience and reflect the Father like Christ did. And the great news is that this work of Christlikeness is God&rsquo;s work. <span class="popup-link" @click = "popUp('pop2')"> Philippians 1:6</a</span>
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
@@ -187,7 +181,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 3:13-17</span>.&nbsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 3:13-17</a</span>bsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -200,7 +194,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	Jesus himself was baptized and modelled it to His followers. Ever since the time of Christ, everyone who begins to follow Him has made this commitment. Our willingness to be baptized shows others that there has been a real change in our lives. It symbolizes our bold identification with the death and resurrection of Jesus (<span class="popup-link" @click = "popUp('pop4')"> Romans 6:4-5</span>).&nbsp;
+	Jesus himself was baptized and modelled it to His followers. Ever since the time of Christ, everyone who begins to follow Him has made this commitment. Our willingness to be baptized shows others that there has been a real change in our lives. It symbolizes our bold identification with the death and resurrection of Jesus (<span class="popup-link" @click = "popUp('pop4')"> Romans 6:4-5</a</span>nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -226,7 +220,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul class="forward">
-	<li class="forward">The Holy Spirit is working in the lives of people you know to draw them to Jesus. The Holy Spirit wants to express the love of the Father through you so they can experience Jesus and connect with Him personally. The daily act of pray, care, share is the first step in this process (<span class="popup-link" @click = "popUp('pop5')"> Acts 17:27</span>).&nbsp;
+	<li class="forward">The Holy Spirit is working in the lives of people you know to draw them to Jesus. The Holy Spirit wants to express the love of the Father through you so they can experience Jesus and connect with Him personally. The daily act of pray, care, share is the first step in this process (<span class="popup-link" @click = "popUp('pop5')"> Acts 17:27</a</span>nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>

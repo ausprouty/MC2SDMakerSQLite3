@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -217,7 +213,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">As a Roman citizen, Paul was being protected by the commander, but he was still in great danger. The Roman commander displayed integrity by seeking to understand the situation and follow Roman civil law. The Jews were very zealous about their religious beliefs, willing to kill those who believed differently or, in their understanding, &ldquo;offended&rdquo; God. Paul took advantage of the theological differences among the Jewish leaders to shift the focus from himself onto to their theological disagreement. Jesus appeared to Paul to encourage him that He was working through him, in spite of the hostile response of the Jewish religious leaders. As we pursue the expansion of God&rsquo;s Kingdom, Jesus keeps his promise to &ldquo;never leave us nor forsake us.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Matthew 28:20</span>).&nbsp;</p>
+<p class="up">As a Roman citizen, Paul was being protected by the commander, but he was still in great danger. The Roman commander displayed integrity by seeking to understand the situation and follow Roman civil law. The Jews were very zealous about their religious beliefs, willing to kill those who believed differently or, in their understanding, &ldquo;offended&rdquo; God. Paul took advantage of the theological differences among the Jewish leaders to shift the focus from himself onto to their theological disagreement. Jesus appeared to Paul to encourage him that He was working through him, in spite of the hostile response of the Jewish religious leaders. As we pursue the expansion of God&rsquo;s Kingdom, Jesus keeps his promise to &ldquo;never leave us nor forsake us.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Matthew 28:20</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -226,7 +222,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:10</span>.&nbsp;
+Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:10</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

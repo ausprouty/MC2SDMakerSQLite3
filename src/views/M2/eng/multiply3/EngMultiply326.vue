@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -189,7 +185,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">One week after Paul originally shared at the Synagogue, many more people came to hear God&rsquo;s word. Jewish leaders of the synagogue became jealous, so they began speaking against what Paul was saying. Instead of arguing with the leaders, Paul understood that Jesus was shifting their focus to minister to the interested Gentiles, and many were saved. We learn that even though the Lord sovereignly knows who will believe the message of the gospel, the work of sharing the gospel still needs to take place (<span class="popup-link" @click = "popUp('pop1')"> Acts 13:48</span>).&nbsp;</p>
+<p class="up">One week after Paul originally shared at the Synagogue, many more people came to hear God&rsquo;s word. Jewish leaders of the synagogue became jealous, so they began speaking against what Paul was saying. Instead of arguing with the leaders, Paul understood that Jesus was shifting their focus to minister to the interested Gentiles, and many were saved. We learn that even though the Lord sovereignly knows who will believe the message of the gospel, the work of sharing the gospel still needs to take place (<span class="popup-link" @click = "popUp('pop1')"> Acts 13:48</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -198,7 +194,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-After just a few weeks a church started in Antioch of Pisidia. As a result, the new believers spread the word of the Lord throughout the whole region (<span class="popup-link" @click = "popUp('pop2')"> Acts 13:49</span>).&nbsp;
+After just a few weeks a church started in Antioch of Pisidia. As a result, the new believers spread the word of the Lord throughout the whole region (<span class="popup-link" @click = "popUp('pop2')"> Acts 13:49</a</span>nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

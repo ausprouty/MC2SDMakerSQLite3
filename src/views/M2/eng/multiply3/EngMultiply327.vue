@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -182,7 +178,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">At Iconium, Paul and Barnabas modeled the same principle of intentional relationships that they had used in Pisidian Antioch. Their starting point was to share the message of Jesus at the local synagogue, where they were certain of an interest in spiritual conversations. The Lord confirmed the message of the gospel through miraculous signs and a large number of Jews and Gentiles came to believe. A church was planted and they discipled the new believers. Paul and Barnabas spoke boldly for the Lord. Again, the call to follow Jesus divided the community and those hostile to the Gospel stirred up persecution, planning to kill Paul and Barnabas. So they left that city just as Jesus instructed the Apostles when He sent them out, &ldquo;when you are persecuted in one place, flee to another.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Matthew 10:23</span>).&nbsp;</p>
+<p class="up">At Iconium, Paul and Barnabas modeled the same principle of intentional relationships that they had used in Pisidian Antioch. Their starting point was to share the message of Jesus at the local synagogue, where they were certain of an interest in spiritual conversations. The Lord confirmed the message of the gospel through miraculous signs and a large number of Jews and Gentiles came to believe. A church was planted and they discipled the new believers. Paul and Barnabas spoke boldly for the Lord. Again, the call to follow Jesus divided the community and those hostile to the Gospel stirred up persecution, planning to kill Paul and Barnabas. So they left that city just as Jesus instructed the Apostles when He sent them out, &ldquo;when you are persecuted in one place, flee to another.&rdquo; (<span class="popup-link" @click = "popUp('pop1')"> Matthew 10:23</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

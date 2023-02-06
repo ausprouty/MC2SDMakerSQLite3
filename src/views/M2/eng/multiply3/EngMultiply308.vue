@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -207,7 +203,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">The believers had a loving community. They boldly shared their faith and made sacrifices to care for one another. We see how one man from Cyprus, Joseph called Barnabas, generously sold some land he owned to help meet the needs of others in the church. But we also see how one couple tried to deceive the church. Their motive was not to help the poor, but to increase their reputation as being generous and spiritual among the believers. The Lord intervened and the hypocrisy of Ananias and Sapphira was not allowed to spread. We learn that lying to the Holy Spirit is the same as lying to God, which makes the Holy Spirit equal with God (<span class="popup-link" @click = "popUp('pop1')"> Acts 5:3-4</span>).&nbsp;</p>
+<p class="up">The believers had a loving community. They boldly shared their faith and made sacrifices to care for one another. We see how one man from Cyprus, Joseph called Barnabas, generously sold some land he owned to help meet the needs of others in the church. But we also see how one couple tried to deceive the church. Their motive was not to help the poor, but to increase their reputation as being generous and spiritual among the believers. The Lord intervened and the hypocrisy of Ananias and Sapphira was not allowed to spread. We learn that lying to the Holy Spirit is the same as lying to God, which makes the Holy Spirit equal with God (<span class="popup-link" @click = "popUp('pop1')"> Acts 5:3-4</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

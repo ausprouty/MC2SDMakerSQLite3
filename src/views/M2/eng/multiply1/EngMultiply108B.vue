@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -74,8 +70,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 92:1-2</span>
-
+	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 92:1-2</a</span>
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>

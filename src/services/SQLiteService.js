@@ -4,10 +4,19 @@ export default {
 	async notes (route){
 
 		var source = localStorage.getItem('mc2NoteSource');
+		var data = []
 		if (source == 'database'){
-			return await this.notesFromDatabase(route)
+			data =  await this.notesFromDatabase(route)
 		}
-		return this.notesFromLocalStorage(route)
+		else{
+            data =  this.notesFromLocalStorage(route)
+		}
+		for (var i = 0; i< data.length; i++){
+			var noteid = data[i].noteid
+			var height= this.calcNoteHeight(data[i].note)
+			document.getElementById(noteid).value = data[i].note
+			document.getElementById(noteid).style.height = height + 'px'
+		}
 	},
 
 	async addNote(noteid, route, noteText){

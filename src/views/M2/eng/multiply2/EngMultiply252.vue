@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -75,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -212,7 +208,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Peter leads the group to the mountain where Jesus meets with them. They worship Him as the risen savior of the world. It is here that Jesus sums up His life&rsquo;s work and gives them one simple command &ndash; make disciples! All of their training has prepared them for this. Jesus says &ldquo;Go&rdquo; which literally means, &ldquo;as you go through life, make disciples.&rdquo; In the daily activities of life, we should invest in others. He says that this is for everyone, every culture, every tribe, every tongue. The movement of disciple-making should cover the whole world. Jesus promises that He will always be with us as we obey this command. This is the lifestyle that Jesus is asking us to have. Significantly, this event takes place &ldquo;on a mountain in Galilee&rdquo; overlooking the landscape where they were called and trained for His mission, and from where they could see surrounding nations. Jesus&rsquo; final appearance would be a few days later when he ascends from the Mount of Olives, just outside Jerusalem (<span class="popup-link" @click = "popUp('pop3')"> Acts 1 :1-11</span>).
+	<li class="nobreak-final-final">Peter leads the group to the mountain where Jesus meets with them. They worship Him as the risen savior of the world. It is here that Jesus sums up His life&rsquo;s work and gives them one simple command &ndash; make disciples! All of their training has prepared them for this. Jesus says &ldquo;Go&rdquo; which literally means, &ldquo;as you go through life, make disciples.&rdquo; In the daily activities of life, we should invest in others. He says that this is for everyone, every culture, every tribe, every tongue. The movement of disciple-making should cover the whole world. Jesus promises that He will always be with us as we obey this command. This is the lifestyle that Jesus is asking us to have. Significantly, this event takes place &ldquo;on a mountain in Galilee&rdquo; overlooking the landscape where they were called and trained for His mission, and from where they could see surrounding nations. Jesus&rsquo; final appearance would be a few days later when he ascends from the Mount of Olives, just outside Jerusalem (<span class="popup-link" @click = "popUp('pop3')"> Acts 1 :1-11</a</span>
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -235,7 +231,7 @@ export default {
 </div>
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop4')"> Mark 16:19-20</span>;&nbsp;</span>
+	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop4')"> Mark 16:19-20</a</span>bsp;</span>
 
 	<div class="popup invisible" id="pop4"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -245,7 +241,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Luke 24:50-53</span>;&nbsp;</span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Luke 24:50-53</a</span>bsp;</span>
 
 	<div class="popup invisible" id="pop5"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -255,7 +251,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Acts 1:1-11</span>.</span>
+	<span class="for-enrichment">&nbsp;<span class="popup-link" @click = "popUp('pop6')"> Acts 1:1-11</a</span>span>
 
 	<div class="popup invisible" id="pop6"><span class="for-enrichment"><!-- begin bible --></span>
 

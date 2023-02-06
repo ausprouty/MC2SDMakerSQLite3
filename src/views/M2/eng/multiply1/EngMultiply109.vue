@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -74,8 +70,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36 </span>
-
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Romans 11:33-36 </a</span>
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
@@ -119,7 +114,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">God changes lives and uses them for His glory. One example is the story of a middle eastern man named Adam. He was trained to be a martyr for his religion. But all of that changed one night when he dramatically met Christ. He was so excited about his new relationship to Christ, he began to witness to all of those he knew. Despite being persecuted, he continues to share the gospel and train others. Encourage them by reading <span class="popup-link" @click = "popUp('pop2')"> 1 Corinthians 1:24-31</span>.&nbsp;
+	<li class="nobreak-final-final">God changes lives and uses them for His glory. One example is the story of a middle eastern man named Adam. He was trained to be a martyr for his religion. But all of that changed one night when he dramatically met Christ. He was so excited about his new relationship to Christ, he began to witness to all of those he knew. Despite being persecuted, he continues to share the gospel and train others. Encourage them by reading <span class="popup-link" @click = "popUp('pop2')"> 1 Corinthians 1:24-31</a</span>bsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
@@ -203,7 +198,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Luke 10:1-11</span>.&nbsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Luke 10:1-11</a</span>bsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -269,7 +264,7 @@ export default {
 
 <div class="for-enrichment">
 <ul>
-	<li class="nobreak-final-final">For further enrichment: Study the following Persons of Peace and discuss with another group member:<span class="popup-link" @click = "popUp('pop4')">  Luke 19:1-10</span>,&nbsp;
+	<li class="nobreak-final-final">For further enrichment: Study the following Persons of Peace and discuss with another group member:<span class="popup-link" @click = "popUp('pop4')">  Luke 19:1-10</a</span>bsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -286,7 +281,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Mark 5:14-20</span>,&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop5')"> Mark 5:14-20</a</span>bsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -297,7 +292,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> John 4:1-42</span>,&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop6')"> John 4:1-42</a</span>bsp;
 
 	<div class="popup invisible" id="pop6"><!-- begin bible -->
 	<div>
@@ -354,7 +349,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop7')"> Acts 16:13-15&nbsp;</span>.&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop7')"> Acts 16:13-15&nbsp;</a</span>bsp;
 
 	<div class="popup invisible" id="pop7"><!-- begin bible -->
 	<div>

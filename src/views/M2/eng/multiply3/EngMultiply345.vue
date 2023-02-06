@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -214,7 +210,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">The Lord had prepared Paul for this moment through his life in Taurus, his Greek education, his training as a Jewish religious teacher, and his missionary experiences. This is the first time Luke, the writer of Acts, records Paul sharing his testimony. Paul told the church in Rome that he was not ashamed of the gospel (<span class="popup-link" @click = "popUp('pop1')"> Romans 1:16</span>),&nbsp;</p>
+<p class="up">The Lord had prepared Paul for this moment through his life in Taurus, his Greek education, his training as a Jewish religious teacher, and his missionary experiences. This is the first time Luke, the writer of Acts, records Paul sharing his testimony. Paul told the church in Rome that he was not ashamed of the gospel (<span class="popup-link" @click = "popUp('pop1')"> Romans 1:16</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -223,7 +219,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-and he continued to share the gospel regardless of the circumstances or the consequences. Paul uses the opportunity to witness to his countrymen by sharing: his life before meeting the living Jesus, how he met Jesus, and how Jesus changed his life and his mission. Later Paul would encourage his next generation leaders, Timothy and Titus, to be ready for every opportunity to share their experience and knowledge of Jesus (<span class="popup-link" @click = "popUp('pop2')"> Titus 3:1</span>;&nbsp;
+and he continued to share the gospel regardless of the circumstances or the consequences. Paul uses the opportunity to witness to his countrymen by sharing: his life before meeting the living Jesus, how he met Jesus, and how Jesus changed his life and his mission. Later Paul would encourage his next generation leaders, Timothy and Titus, to be ready for every opportunity to share their experience and knowledge of Jesus (<span class="popup-link" @click = "popUp('pop2')"> Titus 3:1</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -232,7 +228,7 @@ and he continued to share the gospel regardless of the circumstances or the cons
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop3')"> 2 Timothy 4:2</span>).&nbsp;
+<span class="popup-link" @click = "popUp('pop3')"> 2 Timothy 4:2</a</span>nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -241,8 +237,7 @@ and he continued to share the gospel regardless of the circumstances or the cons
 </div>
 </div>
 <!-- end bible --></div>
-From Paul&rsquo;s own testimony we learn that both men and women in the early church suffered for their faith in Jesus (<span class="popup-link" @click = "popUp('pop4')"> Acts 22:4</span>).
-
+From Paul&rsquo;s own testimony we learn that both men and women in the early church suffered for their faith in Jesus (<span class="popup-link" @click = "popUp('pop4')"> Acts 22:4</a</span>
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
 <div>

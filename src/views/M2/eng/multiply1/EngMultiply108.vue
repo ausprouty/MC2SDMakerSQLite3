@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -74,7 +70,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 33:1-5</span>&nbsp;and sing 1-2 songs</li>
+	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 33:1-5</a</span>sp;and sing 1-2 songs</li>
 </ul>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
@@ -191,8 +187,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">Jesus has great compassion for people! He asked the blind man an amazing question, &ldquo;What do you want me to do for you?&rdquo; Then He met the man&rsquo;s needs. In <span class="popup-link" @click = "popUp('pop2')"> John 14:12-13</span>
-
+	<li class="nobreak-final-final">Jesus has great compassion for people! He asked the blind man an amazing question, &ldquo;What do you want me to do for you?&rdquo; Then He met the man&rsquo;s needs. In <span class="popup-link" @click = "popUp('pop2')"> John 14:12-13</a</span>
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">12&nbsp;</sup>Very truly I tell you, whoever believes in me will do the works I have been doing, and they will do even greater things than these, because I am going to the Father.<sup class="versenum">13&nbsp;</sup>And I will do whatever you ask in my name, so that the Father may be glorified in the Son.</p>
 	<!-- end bible --></div>

@@ -247,8 +247,10 @@ div.block-quote {
   padding: 20px;
 }
 div.zoom-image{
-  border: 2px;
-  color:var(--color-blue-mc2);
+      border: 2px;
+      color:var(--color-blue-mc2);
+      padding: 3px;
+      border-style: solid;
 }
 
 img {

@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -203,7 +199,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Paul was not the only one starting churches. We learn from this story about other communities of believers that had been formed apart from Paul&rsquo;s work. In Caesarea, they stayed with Philip who witnessed to the Samaritans and the Ethiopian Eunuch (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:40</span>).&nbsp;</p>
+<p class="up">Paul was not the only one starting churches. We learn from this story about other communities of believers that had been formed apart from Paul&rsquo;s work. In Caesarea, they stayed with Philip who witnessed to the Samaritans and the Ethiopian Eunuch (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:40</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -212,7 +208,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Through Philip&rsquo;s daughters, we learn that women also received gifts from the Holy Spirit like prophecy. On two occasions, prophecies were given through the Holy Spirit about the danger Paul would face in Jerusalem, but this was not new to Paul. Paul was being compelled by the Spirit to go to Jerusalem (<span class="popup-link" @click = "popUp('pop2')"> Acts 19:21</span>),&nbsp;
+Through Philip&rsquo;s daughters, we learn that women also received gifts from the Holy Spirit like prophecy. On two occasions, prophecies were given through the Holy Spirit about the danger Paul would face in Jerusalem, but this was not new to Paul. Paul was being compelled by the Spirit to go to Jerusalem (<span class="popup-link" @click = "popUp('pop2')"> Acts 19:21</a</span>nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -221,7 +217,7 @@ Through Philip&rsquo;s daughters, we learn that women also received gifts from t
 </div>
 </div>
 <!-- end bible --></div>
-and he had been told that persecution awaited him (<span class="popup-link" @click = "popUp('pop3')"> Acts 20: 22-23</span>).&nbsp;
+and he had been told that persecution awaited him (<span class="popup-link" @click = "popUp('pop3')"> Acts 20: 22-23</a</span>nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -230,8 +226,7 @@ and he had been told that persecution awaited him (<span class="popup-link" @cli
 </div>
 </div>
 <!-- end bible --></div>
-Paul had accepted that the will of the Lord for him included suffering. Issues from eight years earlier about practicing the Law were still bothering Jewish believers in Jerusalem (<span class="popup-link" @click = "popUp('pop4')"> Acts 11</span>
-
+Paul had accepted that the will of the Lord for him included suffering. Issues from eight years earlier about practicing the Law were still bothering Jewish believers in Jerusalem (<span class="popup-link" @click = "popUp('pop4')"> Acts 11</a</span>
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
 <div>
@@ -261,7 +256,7 @@ Paul had accepted that the will of the Lord for him included suffering. Issues f
 </div>
 </div>
 <!-- end bible --></div>
-and <span class="popup-link" @click = "popUp('pop5')"> Acts 15</span>).&nbsp;
+and <span class="popup-link" @click = "popUp('pop5')"> Acts 15</a</span>nbsp;
 
 <div class="popup invisible" id="pop5"><!-- begin bible -->
 <div>
@@ -311,7 +306,7 @@ says the Lord, who does these things&rsquo;&mdash;<br />
 </div>
 </div>
 <!-- end bible --></div>
-Paul submitted to the Jerusalem leaders&rsquo; requests to fulfil the law so that the local believers would not stumble. Read <span class="popup-link" @click = "popUp('pop6')"> Romans 14:13-19</span>.&nbsp;
+Paul submitted to the Jerusalem leaders&rsquo; requests to fulfil the law so that the local believers would not stumble. Read <span class="popup-link" @click = "popUp('pop6')"> Romans 14:13-19</a</span>bsp;
 
 <div class="popup invisible" id="pop6"><!-- begin bible -->
 <div>

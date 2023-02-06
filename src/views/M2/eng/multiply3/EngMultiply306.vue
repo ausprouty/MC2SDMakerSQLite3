@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -74,7 +70,7 @@ export default {
 
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
-<p class="back">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>;&nbsp;</p>
+<p class="back">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>bsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -86,7 +82,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a)
+<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -219,7 +215,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">This is the first miracle Jesus does after his ascension. The disciples were continuing to live out His model of Holy Spirit power and dependence. Peter and John were going about their normal routine when this event took place. Jesus had taught them to give to whoever asked of them, (<span class="popup-link" @click = "popUp('pop4')"> Matthew 5:42</span>)&nbsp;</p>
+<p class="up">This is the first miracle Jesus does after his ascension. The disciples were continuing to live out His model of Holy Spirit power and dependence. Peter and John were going about their normal routine when this event took place. Jesus had taught them to give to whoever asked of them, (<span class="popup-link" @click = "popUp('pop4')"> Matthew 5:42</a</span>bsp;</p>
 
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
@@ -228,7 +224,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-and they had already experienced being used to heal others during their short-term mission trips (<span class="popup-link" @click = "popUp('pop5')"> Matthew 10</span>).
+and they had already experienced being used to heal others during their short-term mission trips (<span class="popup-link" @click = "popUp('pop5')"> Matthew 10</a</span>
 
 <div class="popup invisible" id="pop5"><!-- begin bible -->
 <div>

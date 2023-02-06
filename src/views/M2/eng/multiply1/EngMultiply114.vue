@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -73,9 +69,7 @@ export default {
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 <ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Matthew 10:28-30</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
+	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Matthew 10:28-30</a</span><div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">28&nbsp;</sup>Do not be afraid of those who kill the body but cannot kill the soul. Rather, be afraid of the One who can destroy both soul and body in hell.<sup class="versenum">29&nbsp;</sup>Are not two sparrows sold for a penny? Yet not one of them will fall to the ground outside your Father&rsquo;s care.<sup class="versenum">30&nbsp;</sup>And even the very hairs of your head are all numbered.</p>
@@ -83,8 +77,7 @@ export default {
 	</div>
 	<!-- end bible --></div>
 	and sing songs.&nbsp;</li>
-	<li class="back">Use a Statement of Faith about Jesus, like<span class="popup-link" @click = "popUp('pop2')">  Philippians 2:11</span>b;
-	<div class="popup invisible" id="pop2"><!-- begin bible -->
+	<li class="back">Use a Statement of Faith about Jesus, like<span class="popup-link" @click = "popUp('pop2')">  Philippians 2:11</a</span>	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
 	<div>
@@ -94,9 +87,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop3')"> 1 Timothy 2:4-6</span>a
-
-	<div class="popup invisible" id="pop3"><!-- begin bible -->
+	&nbsp;<span class="popup-link" @click = "popUp('pop3')"> 1 Timothy 2:4-6</a</span>	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -131,7 +122,7 @@ export default {
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop4')"> Hebrews 10:19-25</span>.&nbsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop4')"> Hebrews 10:19-25</a</span>bsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -215,7 +206,7 @@ export default {
 <p class="up">Jesus modelled to His followers a way to remember His sacrificial death on the cross. [Take a piece of bread] The bread represents His body that was broken for us. [Show them wine or juice] The drink represents His blood that was shed for us and opened a new way to relate to God. He also commanded them to keep practicing it.&nbsp;</p>
 
 <ul>
-	<li class="nobreak-final-final">In <span class="popup-link" @click = "popUp('pop5')"> 1 Corinthians 11:23-30</span>,&nbsp;
+	<li class="nobreak-final-final">In <span class="popup-link" @click = "popUp('pop5')"> 1 Corinthians 11:23-30</a</span>bsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>
@@ -242,9 +233,7 @@ export default {
 <p>Practice the Lord&rsquo;s supper. Use what local church leaders have given or use the suggested practice below.&nbsp;&nbsp; &nbsp;</p>
 
 <ul>
-	<li>Read <span class="popup-link" @click = "popUp('pop6')"> 1 Corinthians 11:23-30</span>
-
-	<div class="popup invisible" id="pop6"><!-- begin bible -->
+	<li>Read <span class="popup-link" @click = "popUp('pop6')"> 1 Corinthians 11:23-30</a</span><div class="popup invisible" id="pop6"><!-- begin bible -->
 	<div>
 	<div>
 	<p><sup class="versenum">23&nbsp;</sup>For I received from the Lord what I also passed on to you: The Lord Jesus, on the night he was betrayed, took bread,<sup class="versenum">24&nbsp;</sup>and when he had given thanks, he broke it and said, &ldquo;This is my body, which is for you; do this in remembrance of me.&rdquo;<sup class="versenum">25&nbsp;</sup>In the same way, after supper he took the cup, saying, &ldquo;This cup is the new covenant in my blood; do this, whenever you drink it, in remembrance of me.&rdquo;<sup class="versenum">26&nbsp;</sup>For whenever you eat this bread and drink this cup, you proclaim the Lord&rsquo;s death until he comes.</p>

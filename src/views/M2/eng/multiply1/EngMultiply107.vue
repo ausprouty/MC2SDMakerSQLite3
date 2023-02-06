@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -74,8 +70,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 16:7-11</span>
-
+	<li class="back">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 16:7-11</a</span>
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<p><sup class="versenum">7&nbsp;</sup>I will praise the <span class="small-caps">Lord, who counsels me;<br />
@@ -118,8 +113,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="back"><span class="popup-link" @click = "popUp('pop2')"> John 16 </span>
-
+	<li class="back"><span class="popup-link" @click = "popUp('pop2')"> John 16 </a</span>
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">1 </sup>&ldquo;All this I have told you so that you will not fall away.<sup class="versenum">2&nbsp;</sup>They will put you out of the synagogue; in fact, the time is coming when anyone who kills you will think they are offering a service to God.<sup class="versenum">3&nbsp;</sup>They will do such things because they have not known the Father or me.<sup class="versenum">4&nbsp;</sup>I have told you this, so that when their time comes you will remember that I warned you about them. I did not tell you this from the beginning because I was with you,<sup class="versenum">5&nbsp;</sup>but now I am going to him who sent me. None of you asks me, &lsquo;Where are you going?&rsquo;<sup class="versenum">6&nbsp;</sup>Rather, you are filled with grief because I have said these things.<sup class="versenum">7&nbsp;</sup>But very truly I tell you, it is for your good that I am going away. Unless I go away, the Advocate will not come to you; but if I go, I will send him to you.<sup class="versenum">8&nbsp;</sup>When he comes, he will prove the world to be in the wrong about sin and righteousness and judgment:<sup class="versenum">9&nbsp;</sup>about sin, because people do not believe in me;<sup class="versenum">10&nbsp;</sup>about righteousness, because I am going to the Father, where you can see me no longer;<sup class="versenum">11&nbsp;</sup>and about judgment, because the prince of this world now stands condemned.</p>
 

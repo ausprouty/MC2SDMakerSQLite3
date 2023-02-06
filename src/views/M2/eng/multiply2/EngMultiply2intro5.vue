@@ -48,11 +48,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -80,7 +76,7 @@ export default {
 Multiplication of the movement: prayerfully selecting and developing new leaders, sending proven multipliers to continue as movement building leaders</p>
 
 <ul>
-	<li class="nobreak-final-final">This period lasts for about 15 months and begins with the appointing of the Twelve as Apostles. The Apostles become &ldquo;leaders in training&rdquo; within the larger group of ministry workers. There is still a larger group of followers and seekers (<span class="popup-link" @click = "popUp('pop1')"> Luke 6:12-19</span>).&nbsp;
+	<li class="nobreak-final-final">This period lasts for about 15 months and begins with the appointing of the Twelve as Apostles. The Apostles become &ldquo;leaders in training&rdquo; within the larger group of ministry workers. There is still a larger group of followers and seekers (<span class="popup-link" @click = "popUp('pop1')"> Luke 6:12-19</a</span>nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -94,7 +90,7 @@ Multiplication of the movement: prayerfully selecting and developing new leaders
 	</div>
 	<!-- end bible --></div>
 	&nbsp;The Twelve are the fruit of Jesus&rsquo; deliberate selection, appointment, training and personal investment. This is further demonstrated after Pentecost through the Kingdom expansion captured in the Book of Acts.</li>
-	<li class="nobreak-final-final">Later in this period, Jesus sent out 72&nbsp;others (<span class="popup-link" @click = "popUp('pop2')"> Luke 10:1</span>) .
+	<li class="nobreak-final-final">Later in this period, Jesus sent out 72&nbsp;others (<span class="popup-link" @click = "popUp('pop2')"> Luke 10:1</a</span>
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
 	<div>
@@ -102,7 +98,7 @@ Multiplication of the movement: prayerfully selecting and developing new leaders
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;Even though they were not given the same formal leadership status within the Gospel record as the Twelve, they too were commissioned as &ldquo;apostles&rdquo; (i.e. sent ones). We see the built-in multiplication of leaders as this new group was commanded to pray for the next generation of workers that would be raised up through their work (<span class="popup-link" @click = "popUp('pop3')"> Luke 10:2</span>).&nbsp;
+	&nbsp;Even though they were not given the same formal leadership status within the Gospel record as the Twelve, they too were commissioned as &ldquo;apostles&rdquo; (i.e. sent ones). We see the built-in multiplication of leaders as this new group was commanded to pray for the next generation of workers that would be raised up through their work (<span class="popup-link" @click = "popUp('pop3')"> Luke 10:2</a</span>nbsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -111,7 +107,7 @@ Multiplication of the movement: prayerfully selecting and developing new leaders
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;No doubt many of these un-named 72&nbsp;missionaries were present in the early church, among the 120 in the upper room and included among the 500 people Jesus appeared to after His resurrection (<span class="popup-link" @click = "popUp('pop4')"> 1 Corinthians 15:6</span>).&nbsp;
+	&nbsp;No doubt many of these un-named 72&nbsp;missionaries were present in the early church, among the 120 in the upper room and included among the 500 people Jesus appeared to after His resurrection (<span class="popup-link" @click = "popUp('pop4')"> 1 Corinthians 15:6</a</span>nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>

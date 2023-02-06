@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -107,7 +103,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">God loves people! The Bible tells us God&rsquo;s desire is that all people are saved and come to understand the truth (<span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 2:4</span>).&nbsp;
+	<li class="nobreak-final-final">God loves people! The Bible tells us God&rsquo;s desire is that all people are saved and come to understand the truth (<span class="popup-link" @click = "popUp('pop1')"> 1 Timothy 2:4</a</span>nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>

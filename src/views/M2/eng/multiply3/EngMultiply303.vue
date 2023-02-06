@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -198,7 +194,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Pentecost was one of the three main annual Jewish feasts and was attended by Jewish pilgrims from every part of the Roman world. It occurs 50 days after the Passover feast and is the anniversary of the Old Testament occasion of Moses receiving the Law from God (Exodus 20). 120 men and women were gathered together when the Spirit came. On the night Jesus was arrested, He taught the disciples that the coming Spirit would be another helper who would live in them (<span class="popup-link" @click = "popUp('pop1')"> John 14:16-17</span>).</p>
+<p class="up">Pentecost was one of the three main annual Jewish feasts and was attended by Jewish pilgrims from every part of the Roman world. It occurs 50 days after the Passover feast and is the anniversary of the Old Testament occasion of Moses receiving the Law from God (Exodus 20). 120 men and women were gathered together when the Spirit came. On the night Jesus was arrested, He taught the disciples that the coming Spirit would be another helper who would live in them (<span class="popup-link" @click = "popUp('pop1')"> John 14:16-17</a</span>/p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -207,17 +203,14 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-This new relationship with the Holy Spirit was promised hundreds of years earlier through prophets like Ezekiel. Read <span class="popup-link" @click = "popUp('pop2')"> Ezekiel 36:26-27</span>.
-
-<div class="popup invisible" id="pop2"><!-- begin bible -->
+This new relationship with the Holy Spirit was promised hundreds of years earlier through prophets like Ezekiel. Read <span class="popup-link" @click = "popUp('pop2')"> Ezekiel 36:26-27</a</span><div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
 <div>
 <p><sup class="versenum">26&nbsp;</sup>I will give you a new heart and put a new spirit in you; I will remove from you your heart of stone and give you a heart of flesh.<sup class="versenum">27&nbsp;</sup>And I will put my Spirit in you and move you to follow my decrees and be careful to keep my laws.</p>
 </div>
 </div>
 <!-- end bible --></div>
-&nbsp;The Spirit was sent to comfort, teach, lead, convict of sin, produce fruit, and empower the disciples to continue the work for which Jesus had trained them (<span class="popup-link" @click = "popUp('pop3')"> John 14-15</span>).
-
+&nbsp;The Spirit was sent to comfort, teach, lead, convict of sin, produce fruit, and empower the disciples to continue the work for which Jesus had trained them (<span class="popup-link" @click = "popUp('pop3')"> John 14-15</a</span>
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
 <div>

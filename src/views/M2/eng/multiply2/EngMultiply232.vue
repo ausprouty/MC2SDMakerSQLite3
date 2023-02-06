@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -75,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;&nbsp;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>nbsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	<!-- end bible --></div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</span>a).&nbsp;
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6</a</span>&nbsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<p><sup class="versenum">4&nbsp;</sup>who wants all people to be saved and to come to a knowledge of the truth.<sup class="versenum">5&nbsp;</sup>For there is one God and one mediator between God and mankind, the man Christ Jesus,<sup class="versenum">6&nbsp;</sup>who gave himself as a ransom for all people.&nbsp;</p>
@@ -217,7 +213,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">As the movement grew, Jesus had a hard time finding a place to rest undisturbed. He was so tired that he slept through a storm on the lake! Yes, Jesus got tired just like we do. He was fully human and became like us, His own creations (<span class="popup-link" @click = "popUp('pop3')"> Hebrews 2:17</span></p>
+<p class="up">As the movement grew, Jesus had a hard time finding a place to rest undisturbed. He was so tired that he slept through a storm on the lake! Yes, Jesus got tired just like we do. He was fully human and became like us, His own creations (<span class="popup-link" @click = "popUp('pop3')"> Hebrews 2:17</a</span>>
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -235,7 +231,7 @@ export default {
 
 
 <ul>
-	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop4')"> Luke 8:22-25</span>;&nbsp;</span>
+	<li class="nobreak-final-final"><span class="for-enrichment">For Further Study: <span class="popup-link" @click = "popUp('pop4')"> Luke 8:22-25</a</span>bsp;</span>
 
 	<div class="popup invisible" id="pop4"><span class="for-enrichment"><!-- begin bible --></span>
 
@@ -251,7 +247,7 @@ export default {
 	</div>
 	</div>
 	<span class="for-enrichment"> <!-- end bible --> </span></div>
-	<span class="for-enrichment"><span class="popup-link" @click = "popUp('pop5')"> Matthew 8:18-27</span>.&nbsp;</span>
+	<span class="for-enrichment"><span class="popup-link" @click = "popUp('pop5')"> Matthew 8:18-27</a</span>bsp;</span>
 
 	<div class="popup invisible" id="pop5"><span class="for-enrichment"><!-- begin bible --></span>
 

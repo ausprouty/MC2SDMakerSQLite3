@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -105,8 +101,7 @@ export default {
 <!-- end default revealSummary -->
 
 <ul>
-	<li class="nobreak-final-final">When we accept Christ, our lives are changed forever. <span class="popup-link" @click = "popUp('pop1')"> 2 Corinthians 5:17</span>
-
+	<li class="nobreak-final-final">When we accept Christ, our lives are changed forever. <span class="popup-link" @click = "popUp('pop1')"> 2 Corinthians 5:17</a</span>
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>

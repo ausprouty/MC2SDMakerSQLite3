@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -75,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	</div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</span></li>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</a</span>i>
 </ul>
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
@@ -209,7 +205,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">Stephen showed his skill in handling the Word of God and confronted the leaders with words of truth. He accused them of disobeying God, sinning against the Holy Spirit, the Law, and Jesus the Messiah. When Stephen told them he could see Jesus, &ldquo;the Son of Man&rdquo;, the leaders erupted into violence against him. Jesus had taught the disciples that the people who killed them would think they were serving God (<span class="popup-link" @click = "popUp('pop3')"> Matthew 10:16-39</span>).</p>
+<p class="up">Stephen showed his skill in handling the Word of God and confronted the leaders with words of truth. He accused them of disobeying God, sinning against the Holy Spirit, the Law, and Jesus the Messiah. When Stephen told them he could see Jesus, &ldquo;the Son of Man&rdquo;, the leaders erupted into violence against him. Jesus had taught the disciples that the people who killed them would think they were serving God (<span class="popup-link" @click = "popUp('pop3')"> Matthew 10:16-39</a</span>/p>
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -237,7 +233,7 @@ a daughter-in-law against her mother-in-law&mdash;<br />
 </div>
 </div>
 <!-- end bible --></div>
-Jesus was seen standing (not sitting) at the place of honor next to God the Father watching over all these events, but He didn&rsquo;t rescue Stephen from death. Stephen prayed directly to Jesus while he was dying, and his request reflected that he understood Jesus&rsquo; equality with God (<span class="popup-link" @click = "popUp('pop4')"> Acts 7:59-60</span>).
+Jesus was seen standing (not sitting) at the place of honor next to God the Father watching over all these events, but He didn&rsquo;t rescue Stephen from death. Stephen prayed directly to Jesus while he was dying, and his request reflected that he understood Jesus&rsquo; equality with God (<span class="popup-link" @click = "popUp('pop4')"> Acts 7:59-60</a</span>
 
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>

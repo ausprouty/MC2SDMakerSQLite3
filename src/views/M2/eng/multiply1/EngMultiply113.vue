@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -73,9 +69,7 @@ export default {
 <div class="collapsed" id ="Text0">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 100</span>
-
-	<div class="popup invisible" id="pop1"><!-- begin bible -->
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop1')"> Psalm 100</a</span><div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
 	<div>
 	<div>
@@ -124,7 +118,7 @@ export default {
 <div class="collapsed" id ="Text1">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:1-10</span>.&nbsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 2:1-10</a</span>bsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
@@ -204,7 +198,7 @@ export default {
 <div class="collapsed" id ="Text3">
 <!-- end default revealSummary -->
 <ul>
-	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 16:18</span>.&nbsp;
+	<li class="nobreak-final-final">Read <span class="popup-link" @click = "popUp('pop3')"> Matthew 16:18</a</span>bsp;
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>

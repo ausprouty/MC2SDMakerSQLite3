@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -188,7 +184,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Our past several stories have been focused on Peter, but he was not the only believer who was active during this time. The believers that fled Jerusalem during Saul&rsquo;s persecution (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:1</span>)&nbsp;</p>
+<p class="up">Our past several stories have been focused on Peter, but he was not the only believer who was active during this time. The believers that fled Jerusalem during Saul&rsquo;s persecution (<span class="popup-link" @click = "popUp('pop1')"> Acts 8:1</a</span>bsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

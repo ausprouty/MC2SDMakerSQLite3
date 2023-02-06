@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -217,7 +213,7 @@ against the Lord<br />
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">The religious leaders were upset that Peter was teaching people about the resurrection of the dead through Jesus, so they arrested Peter and John. When the crowds witnessed the healing of the lame man and listened to Peter&rsquo;s testimony, another 2,000 men, plus women and children, became believers. Jesus had taught the apostles not to worry about what they were to say when they were dragged in front of authorities. He promised that the Spirit would guide them in what to say (<span class="popup-link" @click = "popUp('pop1')"> Matthew 10:17-20</span>).&nbsp;</p>
+<p class="up">The religious leaders were upset that Peter was teaching people about the resurrection of the dead through Jesus, so they arrested Peter and John. When the crowds witnessed the healing of the lame man and listened to Peter&rsquo;s testimony, another 2,000 men, plus women and children, became believers. Jesus had taught the apostles not to worry about what they were to say when they were dragged in front of authorities. He promised that the Spirit would guide them in what to say (<span class="popup-link" @click = "popUp('pop1')"> Matthew 10:17-20</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

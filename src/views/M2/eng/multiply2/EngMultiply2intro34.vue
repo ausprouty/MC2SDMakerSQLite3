@@ -48,11 +48,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -84,7 +80,7 @@ export default {
 <strong>Period 3 Ministry Training</strong></p>
 
 <ul>
-	<li class="nobreak-final-final">This period lasts for 6-9 months and starts with Jesus moving to Capernaum. During this period, Jesus challenges the four fishermen (<span class="popup-link" @click = "popUp('pop1')"> Mark 1:16-20</span>)&nbsp;
+	<li class="nobreak-final-final">This period lasts for 6-9 months and starts with Jesus moving to Capernaum. During this period, Jesus challenges the four fishermen (<span class="popup-link" @click = "popUp('pop1')"> Mark 1:16-20</a</span>bsp;
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<div>
@@ -95,7 +91,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	&nbsp;who had already been followers of Jesus since His baptism. Jesus begins to change their priorities and they become trainees in fishing for men. These four men form the initial mission team but Jesus soon adds Levi (<span class="popup-link" @click = "popUp('pop2')"> Mark 2:13-17</span>)&nbsp;
+	&nbsp;who had already been followers of Jesus since His baptism. Jesus begins to change their priorities and they become trainees in fishing for men. These four men form the initial mission team but Jesus soon adds Levi (<span class="popup-link" @click = "popUp('pop2')"> Mark 2:13-17</a</span>bsp;
 
 	<div class="popup invisible" id="pop2"><!-- begin bible -->
 	<div>
@@ -115,7 +111,7 @@ export default {
 <strong>Period 4 Expanded Outreach</strong></p>
 
 <ul>
-	<li class="nobreak-final-final">This period lasts for 6-9 months and runs parallel with Period 3. While Jesus is recruiting an initial ministry team to share in the work of the mission, He generates opportunities for their &lsquo;field training&rsquo; through local &nbsp;outreaches (<span class="popup-link" @click = "popUp('pop3')"> Mark 1:21-34</span>) ,
+	<li class="nobreak-final-final">This period lasts for 6-9 months and runs parallel with Period 3. While Jesus is recruiting an initial ministry team to share in the work of the mission, He generates opportunities for their &lsquo;field training&rsquo; through local &nbsp;outreaches (<span class="popup-link" @click = "popUp('pop3')"> Mark 1:21-34</a</span>
 
 	<div class="popup invisible" id="pop3"><!-- begin bible -->
 	<div>
@@ -134,7 +130,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	regional outreaches and expanded campaigns (<span class="popup-link" @click = "popUp('pop4')"> Mark 1:35-39</span>).&nbsp;
+	regional outreaches and expanded campaigns (<span class="popup-link" @click = "popUp('pop4')"> Mark 1:35-39</a</span>nbsp;
 
 	<div class="popup invisible" id="pop4"><!-- begin bible -->
 	<div>
@@ -145,7 +141,7 @@ export default {
 	</div>
 	</div>
 	<!-- end bible --></div>
-	This expanded outreach is characterized by an acceleration of the movement but also brings increased opposition (<span class="popup-link" @click = "popUp('pop5')"> Mark 3:6</span>).&nbsp;
+	This expanded outreach is characterized by an acceleration of the movement but also brings increased opposition (<span class="popup-link" @click = "popUp('pop5')"> Mark 3:6</a</span>nbsp;
 
 	<div class="popup invisible" id="pop5"><!-- begin bible -->
 	<div>

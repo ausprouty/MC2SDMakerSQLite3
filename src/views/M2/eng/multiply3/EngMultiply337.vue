@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -184,7 +180,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Paul&rsquo;s co-workers, Aquila and Priscilla moved from Corinth to Ephesus. They met a disciple of John the Baptist named Apollos. Apollos was an educated man who knew the scriptures well, but he did not have a full understanding about Jesus. We see in this story a great example of disciples making disciples. Aquila and Priscilla discipled Apollos, who in turn went to Achaia to disciple the people in Corinth (<span class="popup-link" @click = "popUp('pop1')"> Acts 19:1</span>).&nbsp;</p>
+<p class="up">Paul&rsquo;s co-workers, Aquila and Priscilla moved from Corinth to Ephesus. They met a disciple of John the Baptist named Apollos. Apollos was an educated man who knew the scriptures well, but he did not have a full understanding about Jesus. We see in this story a great example of disciples making disciples. Aquila and Priscilla discipled Apollos, who in turn went to Achaia to disciple the people in Corinth (<span class="popup-link" @click = "popUp('pop1')"> Acts 19:1</a</span>nbsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -193,7 +189,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 4:11-16</span>.&nbsp;
+Read <span class="popup-link" @click = "popUp('pop2')"> Ephesians 4:11-16</a</span>bsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>

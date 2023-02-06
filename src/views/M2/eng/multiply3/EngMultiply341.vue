@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -75,13 +71,13 @@ export default {
 <p class="back"><em>Read a scripture and sing worship songs.</em></p>
 
 <ul>
-	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</span>b;
+	<li class="nobreak-final-final">(Optional) Jesus Christ is Lord, to the glory of God the Father. He wants all men to be saved and to come to the knowledge of the truth. For there is one God and one mediator also between God and man, the man Jesus Christ, who gave himself as a ransom for all. (<span class="popup-link" @click = "popUp('pop1')"> Philippians 2:11</a</span>
 
 	<div class="popup invisible" id="pop1"><!-- begin bible -->
 	<p><sup class="versenum">11&nbsp;</sup>and every tongue acknowledge that Jesus Christ is Lord,<br />
 	&nbsp;&nbsp;&nbsp;&nbsp;to the glory of God the Father.</p>
 	</div>
-	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</span></li>
+	&nbsp;<span class="popup-link" @click = "popUp('pop2')"> 1 Timothy 2:4-6a)</a</span>i>
 </ul>
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
@@ -203,7 +199,7 @@ export default {
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
 
-<p class="up">As was his practice, Paul revisited the churches he started to encourage them and give them more teaching. He first went to Macedonia to visit the churches in the cities of Philippi, Thessalonica and Berea. During his stay, he wrote another letter to the Corinthians. After several months in Macedonia, Paul traveled to Achaia to visit the believers in Corinth. Before leaving for Jerusalem, he wrote a letter to the churches in Rome to let them know about his travel plans and to explain the gospel more deeply to them (<span class="popup-link" @click = "popUp('pop1')"> Romans 1:11</span>,&nbsp;</p>
+<p class="up">As was his practice, Paul revisited the churches he started to encourage them and give them more teaching. He first went to Macedonia to visit the churches in the cities of Philippi, Thessalonica and Berea. During his stay, he wrote another letter to the Corinthians. After several months in Macedonia, Paul traveled to Achaia to visit the believers in Corinth. Before leaving for Jerusalem, he wrote a letter to the churches in Rome to let them know about his travel plans and to explain the gospel more deeply to them (<span class="popup-link" @click = "popUp('pop1')"> Romans 1:11</a</span>bsp;</p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>
@@ -212,7 +208,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop2')"> Romans 15:28</span>).&nbsp;
+<span class="popup-link" @click = "popUp('pop2')"> Romans 15:28</a</span>nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -221,7 +217,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-We see how Paul was always expanding his ministry team, developing leaders for the harvest from the harvest field. Seven people are mentioned who came from other movement centers. We learn from Paul&rsquo;s letters that he created unity among the different churches by collecting an offering to help the poor believers in Jerusalem (<span class="popup-link" @click = "popUp('pop3')"> 2 Corinthians 8:1-7</span>,&nbsp;
+We see how Paul was always expanding his ministry team, developing leaders for the harvest from the harvest field. Seven people are mentioned who came from other movement centers. We learn from Paul&rsquo;s letters that he created unity among the different churches by collecting an offering to help the poor believers in Jerusalem (<span class="popup-link" @click = "popUp('pop3')"> 2 Corinthians 8:1-7</a</span>bsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -230,7 +226,7 @@ We see how Paul was always expanding his ministry team, developing leaders for t
 </div>
 </div>
 <!-- end bible --></div>
-<span class="popup-link" @click = "popUp('pop4')"> Romans 15:25-26</span>).&nbsp;
+<span class="popup-link" @click = "popUp('pop4')"> Romans 15:25-26</a</span>nbsp;
 
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
@@ -239,8 +235,7 @@ We see how Paul was always expanding his ministry team, developing leaders for t
 </div>
 </div>
 <!-- end bible --></div>
-He linked leaders and churches together to help them see that they were part of a bigger movement (<span class="popup-link" @click = "popUp('pop7')"> 1 Thessalonians 2:14</span>;
-
+He linked leaders and churches together to help them see that they were part of a bigger movement (<span class="popup-link" @click = "popUp('pop7')"> 1 Thessalonians 2:14</a</span>
 <div class="popup invisible" id="pop7"><!-- begin bible -->
 <div>
 <div>
@@ -248,7 +243,7 @@ He linked leaders and churches together to help them see that they were part of 
 </div>
 </div>
 <!-- end bible --></div>
-&nbsp; <span class="popup-link" @click = "popUp('pop6')"> 2 Thessalonians 1:4</span>).&nbsp;
+&nbsp; <span class="popup-link" @click = "popUp('pop6')"> 2 Thessalonians 1:4</a</span>nbsp;
 
 <div class="popup invisible" id="pop6"><!-- begin bible -->
 <div>

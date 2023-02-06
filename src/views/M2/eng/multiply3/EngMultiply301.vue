@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -200,7 +196,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">The story describes Acts as the continuation of Jesus&rsquo; ministry. What He started on earth, He is continuing from heaven through His Spirit-empowered followers. Before Jesus returns to heaven, He gives proof that He is alive and continues to teach about the nature of His Kingdom. Even after all the events that took place, the disciples we still did not fully understand the Kingdom and wondered when political power would be restored to the nation of Israel. Jesus taught that the Kingdom will spread through witnesses and the work of the Spirit, not by soldiers or by revolutionary violence. The disciples are now being sent like Jesus, but they need the Spirit&rsquo;s power to walk as Jesus walked. They are to stay focused on the mission of making disciples of all nations until Jesus physically returns the same way He left. Read <span class="popup-link" @click = "popUp('pop1')"> Matthew 28:18-20</span>.</p>
+<p class="up">The story describes Acts as the continuation of Jesus&rsquo; ministry. What He started on earth, He is continuing from heaven through His Spirit-empowered followers. Before Jesus returns to heaven, He gives proof that He is alive and continues to teach about the nature of His Kingdom. Even after all the events that took place, the disciples we still did not fully understand the Kingdom and wondered when political power would be restored to the nation of Israel. Jesus taught that the Kingdom will spread through witnesses and the work of the Spirit, not by soldiers or by revolutionary violence. The disciples are now being sent like Jesus, but they need the Spirit&rsquo;s power to walk as Jesus walked. They are to stay focused on the mission of making disciples of all nations until Jesus physically returns the same way He left. Read <span class="popup-link" @click = "popUp('pop1')"> Matthew 28:18-20</a</span>p>
 
 <div class="popup invisible" id="pop1"><!-- begin bible -->
 <div>

@@ -43,11 +43,7 @@ export default {
     useFindSummaries()
     useFindCollapsible()
     useRevealMedia()
-    let notes = await SQLiteService.notes(this.$route.name)
-    for (var i = 0; i< notes.length; i++){
-      var noteid = notes[i].noteid
-      document.getElementById(noteid).value =notes[i].note
-    }
+    await SQLiteService.notes(this.$route.name)
   },
 }
 </script>
@@ -188,7 +184,7 @@ export default {
 <div id="Summary2" class="summary"><h2 class="up">+ Summary</h2></div>
 <div class="collapsed" id ="Text2">
 <!-- end default revealSummary -->
-<p class="up">Unlike the other cities Paul and Barnabas visited, Lystra was a smaller, rural city that did not have a synagogue. The local people in Lystra still practiced their native religion and spoke their local language. Just as Jesus and Peter had healed the lame (<span class="popup-link" @click = "popUp('pop5')"> Matthew 15:30-31</span>;&nbsp;</p>
+<p class="up">Unlike the other cities Paul and Barnabas visited, Lystra was a smaller, rural city that did not have a synagogue. The local people in Lystra still practiced their native religion and spoke their local language. Just as Jesus and Peter had healed the lame (<span class="popup-link" @click = "popUp('pop5')"> Matthew 15:30-31</a</span>bsp;</p>
 
 <div class="popup invisible" id="pop5"><!-- begin bible -->
 <div>
@@ -201,7 +197,7 @@ export default {
 <p>&nbsp;</p>
 
 <div class="popup invisible" id="pop1">&nbsp;</div>
-<span class="popup-link" @click = "popUp('pop2')"> Acts 3:1-10</span>),&nbsp;
+<span class="popup-link" @click = "popUp('pop2')"> Acts 3:1-10</a</span>nbsp;
 
 <div class="popup invisible" id="pop2"><!-- begin bible -->
 <div>
@@ -212,7 +208,7 @@ export default {
 </div>
 </div>
 <!-- end bible --></div>
-Paul also responded to the Holy Spirit&rsquo;s prompting by healing a man lame from birth. Confusion followed as people interpreted the miracle through their own religion. They mistakenly concluded that Paul and Barnabas were gods, but there were some people who believed their message (<span class="popup-link" @click = "popUp('pop3')"> Acts 14:20</span>).&nbsp;
+Paul also responded to the Holy Spirit&rsquo;s prompting by healing a man lame from birth. Confusion followed as people interpreted the miracle through their own religion. They mistakenly concluded that Paul and Barnabas were gods, but there were some people who believed their message (<span class="popup-link" @click = "popUp('pop3')"> Acts 14:20</a</span>nbsp;
 
 <div class="popup invisible" id="pop3"><!-- begin bible -->
 <div>
@@ -221,7 +217,7 @@ Paul also responded to the Holy Spirit&rsquo;s prompting by healing a man lame f
 </div>
 </div>
 <!-- end bible --></div>
-Even after facing violent persecution, Paul boldly went back to the city to be with the new believers. Later Paul would write these words, &ldquo;everyone who wants to live a godly life in Christ Jesus will be persecuted&rdquo; (<span class="popup-link" @click = "popUp('pop4')"> 2 Timothy 3:12</span>).&nbsp;
+Even after facing violent persecution, Paul boldly went back to the city to be with the new believers. Later Paul would write these words, &ldquo;everyone who wants to live a godly life in Christ Jesus will be persecuted&rdquo; (<span class="popup-link" @click = "popUp('pop4')"> 2 Timothy 3:12</a</span>nbsp;
 
 <div class="popup invisible" id="pop4"><!-- begin bible -->
 <div>
