@@ -66,11 +66,13 @@ export default {
 <h1>Period 3 -- Ministry Training and Period 4 -- Expanded Outreach</h1>
 <div id="showVideoOptions"></div>
   <p class="year">   
+    <div class="zoom-image">
     <vue-image-zoomer
     regular="/images/zoom/eng/multiply2/Period34.png" 
     zoom="/images/zoom/eng/multiply2/Period34.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
     <img src="@/assets/images/eng/multiply2/Period34.png" img-class="img-fluid" />
-    </vue-image-zoomer></p>
+    </vue-image-zoomer>
+    </div></p>
 
 <p class="year">Period 3: Ministry Training &amp;&nbsp;Period 4: Expanded Outreach&nbsp;</p>
 

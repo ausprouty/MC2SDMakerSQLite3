@@ -68,11 +68,13 @@ export default {
   <h2>3rd Missionary Journey from Antioch</h2>
 
 <p>   
+    <div class="zoom-image">
     <vue-image-zoomer
     regular="/images/zoom/eng/multiply3/Trip3.png" 
     zoom="/images/zoom/eng/multiply3/Trip3.png" :zoom-amount="3" img-class="img-fluid" alt="">
     <img src="@/assets/images/eng/multiply3/Trip3.png" img-class="img-fluid" />
-    </vue-image-zoomer></p>
+    </vue-image-zoomer>
+    </div></p>
 
 <p>[52 -57 AD]</p>
 

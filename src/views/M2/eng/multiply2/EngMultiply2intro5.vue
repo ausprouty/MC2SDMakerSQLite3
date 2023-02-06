@@ -66,11 +66,13 @@ export default {
 <h1>Period 5 -- Leadership Multiplication </h1>
 <div id="showVideoOptions"></div>
   <p class="year">   
+    <div class="zoom-image">
     <vue-image-zoomer
     regular="/images/zoom/eng/multiply2/Period5.png" 
     zoom="/images/zoom/eng/multiply2/Period5.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
     <img src="@/assets/images/eng/multiply2/Period5.png" img-class="img-fluid" />
-    </vue-image-zoomer></p>
+    </vue-image-zoomer>
+    </div></p>
 
 <p class="year">Period 5: Leadership Multiplication:&nbsp;around Late 28 AD &ndash; Spring 30 AD</p>
 

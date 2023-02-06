@@ -67,11 +67,13 @@ export default {
 <div id="showVideoOptions"></div>
   <p class="year">
    
+    <div class="zoom-image">
     <vue-image-zoomer
     regular="/images/zoom/eng/multiply2/Period2.png" 
     zoom="/images/zoom/eng/multiply2/Period2.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
     <img src="@/assets/images/eng/multiply2/Period2.png" img-class="img-fluid" />
-    </vue-image-zoomer></p>
+    </vue-image-zoomer>
+    </div></p>
 
 <p class="year">Period 2: Ministry Foundations:&nbsp; around Spring 26 AD - Late 27 AD</p>
 

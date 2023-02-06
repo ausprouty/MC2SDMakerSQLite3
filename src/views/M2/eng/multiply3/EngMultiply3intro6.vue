@@ -66,11 +66,13 @@ export default {
 <h1>Period 6: Representing the Movement of Jesus</h1>
 <div id="showVideoOptions"></div>
   <p>   
+    <div class="zoom-image">
     <vue-image-zoomer
     regular="/images/zoom/eng/multiply3/Trip4.png" 
     zoom="/images/zoom/eng/multiply3/Trip4.png" :zoom-amount="3" img-class="img-fluid" alt="">
     <img src="@/assets/images/eng/multiply3/Trip4.png" img-class="img-fluid" />
-    </vue-image-zoomer></p>
+    </vue-image-zoomer>
+    </div></p>
 
 <p>[57- 62 AD]</p>
 

@@ -66,11 +66,13 @@ export default {
 <h1>Period 1 -- Preparation</h1>
 <div id="showVideoOptions"></div>
   <p class="year">   
+    <div class="zoom-image">
     <vue-image-zoomer
     regular="/images/zoom/eng/multiply2/Period1.png" 
     zoom="/images/zoom/eng/multiply2/Period1.png" :zoom-amount="3" img-class="img-fluid" alt="Stage of Ministry">
     <img src="@/assets/images/eng/multiply2/Period1.png" img-class="img-fluid" />
-    </vue-image-zoomer><br />
+    </vue-image-zoomer>
+    </div><br />
 Period 1: Preparation: around 4 B.C. &ndash; 26 AD</p>
 
 <h2><br />

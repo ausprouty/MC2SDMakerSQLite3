@@ -288,15 +288,15 @@ export default {
         clickZoom: Boolean,
         hoverMessage: {
             type: String,
-            default: '<span class="vh--icon">&#9906;</span> 悬停缩放'
+            default: '<span class="vh--icon">&#9906;</span> Hover to Zoom'
         },
         touchMessage: {
             type: String,
-            default: '<span class="vh--icon">&#9906;</span> 点击缩放'
+            default: '<span class="vh--icon">&#9906;</span> Touch to Zoom'
         },
         clickMessage: {
             type: String,
-            default: '<span class="vh--icon">&#9906;</span> 点击放大'
+            default: '<span class="vh--icon">&#9906;</span> Click to Zoom'
         },
         closePos: {
             type: String,
