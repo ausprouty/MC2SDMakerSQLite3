@@ -5,15 +5,18 @@ import { createApp } from "vue";
 import "./assets/styles/appGLOBAL.css";
 import "./assets/styles/cardGLOBAL.css";
 import "./assets/styles/mc2GLOBAL.css";
+import { Capacitor } from "@capacitor/core";
 
 import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
+const app = createApp(App).use(router);
+router.isReady().then(() => {
+    app.mount("#app");
+});
 
 window.addEventListener("DOMContentLoaded", async () => {
-  const app = createApp(App).use(router);
   var noteSource = localStorage.getItem('mc2NoteSource')
   if (noteSource != 'localstorage'){
     const sqlite = new SQLiteConnection(CapacitorSQLite);
-
     try {
       const ret = await sqlite.checkConnectionsConsistency();
       const isConn = (await sqlite.isConnection("db_mc2notes")).result;
@@ -41,7 +44,5 @@ window.addEventListener("DOMContentLoaded", async () => {
       localStorage.setItem('mc2NoteSource', 'localstorage')
     }
   }
-  router.isReady().then(() => {
-      app.mount("#app");
-    });
+
 });
