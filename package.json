@@ -35,5 +35,9 @@
     "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
     "vue-sqlite-hook": "^3.0.3"
-  }
+  },
+  "browserslist": [
+    "chrome >= 60",
+    "and_chr >= 60"
+  ]
 }
