@@ -111,6 +111,7 @@ export async function useRevealMedia() {
       localStorage.setItem('sd_url', sd_url)
       return sd_url
     }).catch(error=>{
+      localStorage.setItem('sd_filepath', null)
       console.log("error getExternalSdCardDetails")
       console.log(error);
     });
