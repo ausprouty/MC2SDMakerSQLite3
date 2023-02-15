@@ -18,19 +18,24 @@ const router = createRouter({
     ...routesEngMultiply2,
     ...routesEngMultiply3,
     ...routesEngProphet,
-     ...routesEngTc,
+    ...routesEngTc,
 
-     {
-      path: "/",
+    {
+      path: "/index",
         name: "eng-index",
         component: function () {
           return import(
             /* webpackChunkName: "prototype" */ "../views/M2/eng/index.vue"
           );
         }
-      },
+    },
     {
-      path: "/M2/eng/seek",
+      path: "/",
+      name: "notfound",
+      component: notFound,
+    },
+    {
+        path: "/M2/eng/seek",
         name: "eng-seek-index",
         component: function () {
           return import(
@@ -43,8 +48,6 @@ const router = createRouter({
     name: "notfound",
     component: notFound,
     }
-
-
   ],
 });
 
