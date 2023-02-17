@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    buildToolsVersion '28.0.2'
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.mc2.english"
@@ -50,4 +52,5 @@ try {
     }
 } catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+
 }
