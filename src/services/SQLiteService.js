@@ -2,8 +2,9 @@ import { CapacitorSQLite, SQLiteConnection } from "@capacitor-community/sqlite";
 
 export default {
 	async notes (route){
-
-		var source = localStorage.getItem('mc2NoteSource');
+		console.log ('notes attempting to find source')
+		var source = await this.getDataSource()
+		console.log ('notes found source')
 		var data = []
 		if (source == 'database'){
 			data =  await this.notesFromDatabase(route)
@@ -17,6 +18,7 @@ export default {
 			document.getElementById(noteid).value = data[i].note
 			document.getElementById(noteid).style.height = height + 'px'
 		}
+		console.log ('notes displayed')
 	},
 
 	async addNote(noteid, route, noteText){
@@ -138,5 +140,45 @@ export default {
 	// min-height + lines x line-height + padding + border
 	let newHeight = 20 + (numberOfLineBreaks + longLines) * 20 + 12 + 2
 	return newHeight
+	},
+	async getDataSource(){
+		var noteSource = localStorage.getItem('mc2NoteSource')
+		if (!noteSource){
+			noteSource= await createDataStore()
+		}
+		return noteSource
+	},
+	async createDataStore(){
+		const sqlite = new SQLiteConnection(CapacitorSQLite);
+		console.log ('createDataStore attempting to create database')
+		try {
+			const ret = await sqlite.checkConnectionsConsistency();
+			const isConn = (await sqlite.isConnection("db_mc2notes")).result;
+			let db;
+			if (ret.result && isConn) {
+				db = await sqlite.retrieveConnection("db_mc2notes");
+			} else {
+				db = await sqlite.createConnection("db_mc2notes", false, "no-encryption", 1);
+			}
+			await db.open();
+			const query = `
+			CREATE TABLE IF NOT EXISTS notes (
+					page   VARCHAR NOT NULL,
+					noteid VARCHAR NOT NULL,
+					note TEXT,
+					CONSTRAINT note_index PRIMARY KEY (page, noteid)
+				); `
+			const res = await db.execute(query);
+			if (res.changes && res.changes.changes && res.changes.changes < 0) {
+				console.log ('createDataStore says database was NOT created')
+				localStorage.setItem('mc2NoteSource', 'localstorage')
+				return;
+			}
+			await sqlite.closeConnection("db_mc2notes");
+			localStorage.setItem('mc2NoteSource', 'database')
+		} catch (err) {
+			localStorage.setItem('mc2NoteSource', 'localstorage')
+		}
+		return localStorage.getItem('mc2NoteSource')
 	}
 }

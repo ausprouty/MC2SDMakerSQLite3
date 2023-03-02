@@ -28,6 +28,35 @@ ionic cap run android -l --external
 
 
 
+In order to compile Java 9+ source, please set compileSdkVersion to 30 or above
+https://stackoverflow.com/questions/66449161/how-to-upgrade-an-android-project-to-java-11
+
+https://developer.android.com/studio/write/java8-support
+The Android Gradle plugin 3.0.0 and later supports all Java 7 language features and a subset of Java 8 language features that vary by platform version.
+
+In order to compile Java 9+ source, please set compileSdkVersion to 30 or above
+Affected Modules: capacitor-android, capacitor-community-sqlite, capacitor-cordova-android-plugins, capacitor-filesystem
+
+To use an Android Emulator you must use an API 24+ system image. The System WebView does not automatically update on emulators. Physical devices should work as low as API 21 as long as their System WebView is updated.
+
+
+Must compile to API 30 because capacitor is written in Java9+
+
+Dependency 'androidx.coordinatorlayout:coordinatorlayout:1.2.0' requires libraries and applications that
+      depend on it to compile against version 31 or later of the
+      Android APIs.
+
+      :app is currently compiled against android-30.
+
+      Recommended action: Update this project to use a newer compileSdkVersion
+      of at least 31, for example 33.
+
+      Note that updating a library or application's compileSdkVersion (which
+      allows newer APIs to be used) can be done separately from updating
+      targetSdkVersion (which opts the app in to new runtime behavior) and
+      minSdkVersion (which determines which devices the app can be installed
+      on).
+
 
 DEV:
 

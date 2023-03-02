@@ -11,6 +11,7 @@ STructural Elements
 }
 div.page_content {
   max-width: 620px;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   padding-left: 10px;
