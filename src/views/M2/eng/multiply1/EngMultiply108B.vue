@@ -3,9 +3,14 @@ import SQLiteService from '@/services/SQLiteService.js'
 import { useFindSummaries, useFindCollapsible, usePopUp} from "@/assets/javascript/revealText.js"
 import { useRevealMedia } from "@/assets/javascript/revealMedia.js"
 import { useShare} from "@/assets/javascript/share.js"
+import VueImageZoomer from '@/components/VueImageZoomer.vue'
+import '@/assets/styles/vueImageZoomer.css';
 
 
 export default {
+  components: {
+    VueImageZoomer
+  },
    methods:{
     async addNote(noteid){
        var noteText = document.getElementById(noteid).value
@@ -186,7 +191,14 @@ export default {
 
 <p>[Use the 4 Fields diagram to explain]</p>
 
-<p style="text-align:center"><img alt="4 fields kingdom growth process" src="@/assets/images/eng/custom/4fields_complete.jpg" style="width:100%" /></p>
+<p style="text-align:center">   
+    <div class="zoom-image">
+    <vue-image-zoomer
+    regular="/images/zoom/eng/custom/4fields_complete.jpg" 
+    zoom="/images/zoom/eng/custom/4fields_complete.jpg" :zoom-amount="3" img-class="img-fluid" alt="4 fields kingdom growth process">
+    <img src="@/assets/images/eng/custom/4fields_complete.jpg" img-class="img-fluid" />
+    </vue-image-zoomer>
+    </div></p>
 
 <p>From this story we learn that there is a process of how the Kingdom Grows.&nbsp; It can be illustrated by 4 kinds of fields.&nbsp;</p>
 

@@ -17,6 +17,7 @@ export async function useRevealMedia() {
       hideMedia();;
      }
   }).catch(error=>{
+      hideMedia()
       console.log("error - You can not check External Storage")
       console.log(error);
   });
